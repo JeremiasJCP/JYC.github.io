@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas JYC</title>
+    <link rel="stylesheet" href="../styles/JuegoPreguntas.css">
+    <link rel="icon" type="image/png" href="../Multimedia/preguntas.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="ContenedorGeneral">
+    <header class="encabezado">
+        <div class="Logo">
+            <p>✨</p><h1>JYC</h1><p>✨</p>
+        </div>
+        <h1>
+            Juego de Preguntas
+        </h1>
+        <div class="elementoParaVolverAtras">
+            <a href="./Principal.html"><span class="material-symbols-outlined">home</span></a>
+        </div>
+    </header>
+
+    <section class="Contenido">
+        
+        <article class="texIntrucciones">
+            Al amor  de mi vida, 
+            Yeethanny Martínez. <br><br>
+
+            Te invito a un emocionante juego de preguntas centrado en nuestra relación en pareja. A través del chat, generaremos preguntas y compartiremos nuestras respuestas de manera divertida y cómoda. Exploraremos juntos momentos especiales y reflexionaremos sobre nuestra historia y conexión emocional. ¡Prepárate para disfrutar de este juego único de autodescubrimiento!
+            Con entusiasmo,
+            <br><br>
+            Jeremías...
+          </article>
+          <div id="alinearElementosInfoYCard">
+            <section class="info">
+              <div id="contenedorElementosInfo">
+                  <h4>Preguntas</h4>
+                  <p id="totalPreguntas"></p>
+              </div>
+
+              <div id="contenedorElementosInfo">
+                  <h4>Numero de Definiciones</h4>
+                  <p id="totalTemas"></p>
+              </div>
+
+              <div id="contenedorElementosInfo">
+                  <h4>Definiciones</h4>
+                  <p id="nombresTemas"></p>
+              </div>
+
+            </section>
+
+            <div class="Juego">
+
+              <div class="card">
+                  <p id="definicion"></p>
+                  <h2 class="textCard" id="pregunta"></h2>
+                  <button id="BotonActualizarPregunta" class="actualizar" onclick="mostrarPregunta()">Mas..</button>
+              </div>
+            
+          </div>
+        </div>
+        <div class="">
+
+        </div>
+    </section>
+    </div>
+</body>
+<script>
+var diccionario = {
+  romanticas: [
+    { pregunta: "¿Cuál es tu recuerdo favorito de nuestro primer beso?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestra vida cotidiana juntos?", definicion: "Romántica" },
+    { pregunta: "¿Cuál crees que es nuestra mayor fortaleza como pareja?", definicion: "Romántica" },
+    { pregunta: "¿Qué canción te hace pensar en mí y por qué?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es el lugar más romántico en el que hemos estado juntos?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de cómo nos apoyamos mutuamente en nuestros sueños y metas?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestras conversaciones profundas?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es tu recuerdo favorito de nuestra primera vez juntos?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo más emocionante que hemos hecho juntos en el último año?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es tu mayor fantasía romántica que te gustaría hacer realidad?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestros momentos de complicidad y conexión emocional?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es tu memoria favorita de cuando nos conocimos?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de cómo nos complementamos como pareja?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es la experiencia más emocionalmente profunda que hemos compartido como pareja?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de cómo te hago sentir en nuestra relación?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es tu lugar favorito para hacer el amor fuera de la habitación?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de cómo nos apoyamos emocionalmente en momentos difíciles?", definicion: "Romántica" },
+    { pregunta: "¿Cuál es el mayor obstáculo que hemos superado juntos como pareja?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de cómo nos comunicamos y resolvemos conflictos?", definicion: "Romántica" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestra conexión íntima y cómo podemos fortalecerla aún más?", definicion: "Romántica" }
+  ],
+  intimas: [
+    { pregunta: "¿Qué es lo que más te atrae físicamente de mí?", definicion: "Íntimo" },
+    { pregunta: "¿Cuál es tu fantasía más salvaje que te gustaría explorar juntos?", definicion: "Íntimo" },
+    { pregunta: "¿Cuál es tu fantasía erótica favorita que te gustaría cumplir conmigo?", definicion: "Íntimo" },
+    { pregunta: "¿Qué es lo que más te atrae de mi mente y forma de pensar?", definicion: "Íntimo" },
+    { pregunta: "¿Cuál es tu sueño o meta personal que te gustaría que apoyara como tu pareja?", definicion: "Íntimo" },
+    { pregunta: "¿Cuál es tu fantasía erótica más atrevida que te gustaría explorar conmigo?", definicion: "Íntimo" },
+    { pregunta: "¿Cuál es tu posición favorita en el sexo oral y por qué?", definicion: "Íntimo" },
+    { pregunta: "¿Qué es lo que más te excita de nuestros momentos de coqueteo y seducción?", definicion: "Íntimo" },
+    { pregunta: "¿Qué es lo que más te atrae de mi sentido del humor y nuestras risas compartidas?", definicion: "Íntimo" },
+    { pregunta: "¿Cuál es tu lugar favorito para hacer el amor en la naturaleza y por qué?", definicion: "Íntimo" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestros momentos de sensualidad y seducción?", definicion: "Íntimo" }
+  ],
+  cotidianas: [
+    { pregunta: "¿Qué es lo que más te gusta de nuestra vida sexual?", definicion: "Cotidiano" },
+    { pregunta: "¿Cuál ha sido el momento más gracioso que hemos compartido como pareja?", definicion: "Cotidiano" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestras aventuras espontáneas e impredecibles?", definicion: "Cotidiano" },
+    { pregunta: "¿Cuál es el mayor sacrificio que has hecho por nuestra relación y cómo ha valido la pena?", definicion: "Cotidiano" },
+    { pregunta: "¿Cuál es tu lugar favorito para hacer el amor en un viaje y por qué?", definicion: "Cotidiano" },
+    { pregunta: "¿Qué es lo que más te gusta de cómo nos apoyamos emocionalmente en momentos difíciles?", definicion: "Cotidiano" },
+    { pregunta: "¿Cuál es tu fantasía erótica favorita que te gustaría cumplir conmigo?", definicion: "Cotidiano" },
+    { pregunta: "¿Qué es lo que más te atrae de mi mente y forma de pensar?", definicion: "Cotidiano" },
+    { pregunta: "¿Cuál es el mayor obstáculo que hemos superado juntos como pareja?", definicion: "Cotidiano" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestros momentos de coqueteo y seducción?", definicion: "Cotidiano" },
+    { pregunta: "¿Cuál es tu lugar favorito para hacer el amor en la naturaleza y por qué?", definicion: "Cotidiano" },
+    { pregunta: "¿Qué es lo que más te gusta de nuestros momentos de sensualidad y seducción?", definicion: "Cotidiano" }
+  ]
+};
+
+var preguntasUsadas = []; // Almacenar las preguntas ya utilizadas
+
+var preguntaElemento = document.getElementById("pregunta");
+var definicionElemento = document.getElementById("definicion");
+var cardElemento = document.querySelector(".card");
+
+// Función para mostrar una pregunta y su definición
+function mostrarPregunta() {
+  var temaAleatorio = Object.keys(diccionario)[Math.floor(Math.random() * Object.keys(diccionario).length)];
+  var preguntasTema = diccionario[temaAleatorio];
+
+  // // Verificar si se han utilizado todas las preguntas del tema
+  // if (preguntasUsadas.length === preguntasTema.length) {
+  //   var contenedorElemento = document.getElementById("contenedor");
+  //   contenedorElemento.textContent = "¡Felicidades! Has completado todas las preguntas.";
+  //   return;
+  // }
+
+  var preguntaAleatoria;
+  do {
+    preguntaAleatoria = preguntasTema[Math.floor(Math.random() * preguntasTema.length)];
+  } while (preguntasUsadas.includes(preguntaAleatoria.pregunta)); // Buscar una pregunta no utilizada
+
+  preguntasUsadas.push(preguntaAleatoria.pregunta); // Agregar la pregunta utilizada al arreglo
+
+  preguntaElemento.textContent = preguntaAleatoria.pregunta;
+  definicionElemento.textContent = preguntaAleatoria.definicion;
+
+  // Asignar clase CSS según el tipo de definición
+  if (temaAleatorio === "romanticas") {
+    cardElemento.className = "card card-romanticas";
+  } else if (temaAleatorio === "intimas") {
+    cardElemento.className = "card card-intimas";
+  } else if (temaAleatorio === "cotidianas") {
+    cardElemento.className = "card card-cotidianas";
+  }
+}
+
+// Contar preguntas en html
+function contarPreguntas(diccionario) {
+  let totalPreguntas = 0;
+  for (const tema in diccionario) {
+    totalPreguntas += diccionario[tema].length;
+  }
+  return totalPreguntas;
+}
+
+const total = contarPreguntas(diccionario);
+document.getElementById("totalPreguntas").textContent += total;
+
+// Contar Temas html
+function contarTemas(diccionario) {
+  const temas = Object.keys(diccionario);
+  return temas.length;
+}
+
+const totalTemas = contarTemas(diccionario);
+document.getElementById("totalTemas").textContent += totalTemas;
+
+// Nobres de las definiciones
+function obtenerNombresTemas(diccionario) {
+  const temas = Object.keys(diccionario);
+  return temas.join(", ");
+}
+
+const nombresTemas = obtenerNombresTemas(diccionario);
+document.getElementById("nombresTemas").textContent += nombresTemas;
+
+// Mostrar una pregunta al cargar la página
+window.addEventListener("load", function() {
+  mostrarPregunta();
+});
+</script>
+</html>

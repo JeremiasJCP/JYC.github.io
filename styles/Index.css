@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Loved by the King', cursive; */
+
+body {
+  background-image: url(https://i.ibb.co/vj15HsX/Fondo-min.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-width: 100vw; */
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  filter: brightness(200%);
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  max-width: 900px;
+  width: 60%;
+  background: transparent;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.20);
+  /* padding: 30px; */
+  box-sizing: border-box;
+  height: max-content;
+  font-size: 50%;
+}
+
+/* formulario de login */
+#login {
+  font-family:'Times New Roman', Times, serif;
+  color: white;
+  text-decoration: double;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  min-width: 40px;
+  height: 100%;
+  font-size: 80%;
+  background-image: url(https://i.ibb.co/jwVkXT8/fondo-Index-JYC.giff);
+  opacity: 0.4;
+  background-position: center;
+  /* padding: 20px; */
+  border-radius: 10%;
+  background-color: rgba(255, 255, 255, 0.168);
+}
+
+#loginform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#login label {
+  display: block;
+  font-family: 'Overpass', sans-serif;
+  font-size: 150%;
+  color: white;
+  margin-top: 15px;
+}
+
+#login input{
+  background-color: transparent;
+  border: none;
+  padding: 25px;
+}
+
+#login input:hover {
+  font-family: 'Overpass', sans-serif;
+  font-size: 200%;
+  text-align: center;
+  color: white;
+  display: block;
+  width: 50%;
+  height: 40px;
+  margin-bottom: 10px;
+  /* padding: 5px 5px 5px 10px; */
+  margin: 10px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.749);
+}
+
+#login input:active {
+  background-color: white;
+  color: black;
+}
+
+
+
+.botonVerificar{
+  font-size: 15px;
+  color:#2b97d1;
+  /* color:#fe00d8; */
+  /* padding: 10px; */
+  margin-top: 20px;
+  border-radius: 10%;
+  background-color: #000000;  
+}
+
+.botonVerificar:hover {
+  background-color: #09435f;
+  color:#ffffff; 
+  /* padding: 10px; */
+  /* margin: 10px; */
+  margin-top: 20px;
+  border-radius: 20%;
+}
+
+#derecho {
+  text-align: center;
+  width: 100%;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.titulo {
+  font-size: 200%;
+  color:white;
+}
+
+#ycmlogin{
+  font-size: 150%;
+  color: white;
+}
+
+hr {
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #dfcdc3;
+  
+}
+
+#mensajePiePagina{
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+@media all and (max-width: 775px)
+{
+
+  #contenedorcentrado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  
+  #login {
+      margin: 0 auto;
+      font-size: 10px;
+
+  }
+  
+  #login label {
+      text-align: center;
+  }
+  .botonVerificar{
+    font-size: 10px;
+     padding: 10px;
+    margin-top: 20px;
+    border-radius: 10%;
+    background-color: #000000;
+    border: #2b97d1 1px solid;
+    
+  }
+}

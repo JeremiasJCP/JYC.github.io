@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive; */
+
+
+
+
+.alinearEncabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.817);
+    height: 80px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+#encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.241);
+    padding: 10px;
+    width: 95%;
+    font-size: 13px;
+}
+
+#contenedorLogo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Logo{
+    color: rgb(0, 157, 255);
+    font-family: 'Dancing Script', cursive;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+.dropdown-btn{
+    display: none;
+}
+
+.dropdown-content {
+    display: flex;
+    color: aliceblue;
+}
+
+.dropdown-content a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px; 
+    padding: 10px;
+}
+
+
+
+
+/* Imagen */
+
+.contenedorImagenInicioPagina{
+
+    display: flex;
+    flex-direction: column;
+}
+
+#imagenInicioPagina{
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+
+
+    /* Menu */
+    .dropdown {
+        position: relative;
+
+    }
+    .dropdown-btn{
+        display: block;
+        color:rgb(0, 157, 255);
+        background: rgba(0, 0, 0, 0);
+        border: none;
+    }
+    .dropdown-content a{
+        flex-direction: row-reverse;
+        border-bottom: 1px solid rgb(0, 157, 255);
+    }
+    
+    .dropdown-content a:hover{
+        background: #011C40;
+        color: rgb(192, 225, 255);
+    }
+
+    .dropdown-content a:active{
+        background: #011c4095;
+        color: rgb(192, 225, 255);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100vh;
+        height: 100vh;
+        right: 100%;
+        background-color: rgba(0, 0, 0, 0.654);
+       }
+        
+    .dropdown-content.active {
+        display: block;
+    }
+}

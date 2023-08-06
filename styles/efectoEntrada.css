@@ -1,0 +1,21 @@
+.efectoentrada {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 2s, transform 2s;
+  }
+  
+.efectoentrada.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.efectoentradados {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+.efectoentradados.active {
+    opacity: 1;
+}
+  

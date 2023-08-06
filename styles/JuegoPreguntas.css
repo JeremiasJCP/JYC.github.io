@@ -1,0 +1,211 @@
+/* text-transform: capitalize;  para que el texto empiece en mayuscula*/
+
+
+.ContenedorGeneral{
+    width: 100%;
+    padding: none;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 60%;
+}
+
+.Logo{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.Logo h1{
+    color: white;
+    font-size: 120%;
+}
+.Logo p{
+    font-size: 90%;
+}
+
+.elementoParaVolverAtras{
+    width: 20%;
+    color: white;
+}
+
+
+
+
+
+/* Contenido */
+
+.Contenido{
+    width: 100%;
+    background-image: url(../Multimedia/JuegoPreguntas/Fondo.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* texIntrucciones */
+
+.texIntrucciones{
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.595);
+    color: white;
+    border-radius: 20px;
+}
+
+/* Info */
+
+#alinearElementosInfoYCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: start;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: rgba(57, 57, 222, 0.562);
+    border-radius: 20px;
+}
+
+#contenedorElementosInfo{
+    color: rgb(255, 253, 250);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* padding: 10px; */
+    text-transform: capitalize;
+    white-space: pre-wrap;
+}
+
+#contenedorElementosInfo h4{
+    width: 50%;
+    text-align:start;
+    font-size: larger;
+}
+
+#contenedorElementosInfo p{
+    width: 30%;
+    text-align: end;
+    font-size: medium;
+}
+/* Juego */
+
+.Juego{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    min-width: 70%;
+    max-width: 80%;
+    height: max-content;
+    padding: 10px;
+    background: blue;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.card-romanticas {
+    background-color:  #69113A;
+}
+
+.card-intimas {
+    background-color: #260119;
+    color: white;
+}
+
+.card-cotidianas {
+    background-color: #000057;
+}
+
+#definicion{
+    font-size: medium;
+    color: white;
+}
+
+.textCard{
+    color: white;
+    padding: 3px;
+    text-align: center;
+    box-sizing: border-box;
+ 
+}
+
+#BotonActualizarPregunta{
+    width: 50%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.8 ease;
+}
+
+#BotonActualizarPregunta:hover{
+    width: 60%;
+    color: rgb(253, 253, 253);
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+#BotonActualizarPregunta:hover{
+    box-shadow: 0 8px 8px 0 #bebbbc,0 8px 8px 0 #adadab;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+              
+
+
+@media (max-width: 700px) {
+
+    .texIntrucciones{
+        width: 90%;
+    }
+
+    #alinearElementosInfoYCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+}
+
+.Juego{
+    width: 100%;
+}
+}

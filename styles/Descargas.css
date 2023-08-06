@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Noto+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,100&display=swap');
+
+/* font-family: 'Lovers Quarrel', cursive; logo
+font-family: 'Noto Serif', serif; body
+font-family: 'Goudy Bookletter 1911', serif; #Notas*/
+/* font-family: 'Sofia Sans Condensed', sans-serif; otros */
+
+body{
+  background: black;
+}
+
+.contenedorPrincipal{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Contenido */
+.contenedorGeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenedorGeneral p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20%;
+    background: #000000;
+    border-radius: 10px;
+    width: 50%;
+    border: 1px solid purple
+}
+
+.contenedorGeneralDescargas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.alineadorElementos{
+    width: 40%;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alineadorElementos img{
+    width: 10%;
+    /* height: 30vh; */
+    border-radius: 20px;
+}
+
+.alineadorElementos a{
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #800080;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+/* Pie de Pagina */
+
+footer {
+    background-color: #0000006b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .contenidoPiePagina {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contenidoPiePagina p {
+    margin-bottom: 10px;
+  }
+  
+  .linksPiePagina {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linksPiePagina li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .linksPiePagina li:last-child {
+    margin-right: 0;
+  }
+  
+  .linksPiePagina a {
+    text-decoration: none;
+    color: #a09f9f;
+  }
+  
+  .linksPiePagina a:hover {
+    text-decoration: underline;
+  }
+
+
+@media (max-width: 700px) {
+
+    /* Contenido */
+    .contenedorGeneral{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contenedorGeneral p{
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        background: #000000;
+        border-radius: 10px;
+        width: 50%;
+        border: 1px solid purple }
+
+    .contenedorGeneralDescargas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .alineadorElementos{
+        width: 100%;
+        margin: 10px;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alineadorElementos img{
+        width: 40%;
+        height: 30vh;
+        border-radius: 20px;
+    }
+
+    .alineadorElementos a{
+        background: #000000;
+        color: white;
+        text-decoration: none;
+        border: 1px solid purple;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+}

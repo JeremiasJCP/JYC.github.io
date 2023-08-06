@@ -1,0 +1,59 @@
+/* Pie de Pagina */
+
+footer {
+    background-color: #0000006b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .contenidoPiePagina {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contenidoPiePagina p {
+    margin-bottom: 10px;
+  }
+  
+  .linksPiePagina {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linksPiePagina li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .linksPiePagina li:last-child {
+    margin-right: 0;
+  }
+  
+  .linksPiePagina a {
+    text-decoration: none;
+    color: #a09f9f;
+  }
+  
+  .linksPiePagina a:hover {
+    text-decoration: underline;
+  }
+
+#textMiTodo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 80%;
+}
+
+.DerechosReservados{
+  font-size: 52%;
+}
+
+.elementos-Mi-todo{
+  color: rgba(255, 255, 255, 0.792);
+  font-size: 60%;
+  width: 20%;
+  margin: 10px;
+}

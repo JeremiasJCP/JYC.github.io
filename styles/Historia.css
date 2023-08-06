@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Noto+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,100&display=swap');
+
+/* font-family: 'Lovers Quarrel', cursive; logo
+font-family: 'Noto Serif', serif; body
+font-family: 'Goudy Bookletter 1911', serif; #Notas*/
+/* font-family: 'Sofia Sans Condensed', sans-serif; otros */
+
+
+body{
+    background: black;
+}
+
+.contenedorPrincipal{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedorImagenInicioPagina{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+ } 
+
+ .contenedorImagenInicioPagina img{
+    width: 100%;
+ }
+
+
+/* Contenido Historia */
+
+.contenedorHistoria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.271);
+
+}
+
+.tituloHistoria{
+    color: white;
+    text-align: center;
+    font-size: 20;
+}
+
+.svgChicaleyendo{
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contenedorImagenesPequeños{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#FotosDePequeños{
+    width: 30%;
+    height: 69vh;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.HistoriaText{
+    color: white;
+    font-size: 100%;
+    text-align: center;
+    padding: 10%;
+}
+
+#imagenHistoriaReencuentro{
+    width: 60%;
+    border-radius: 30px;
+
+}
+
+#alinearFotosActuales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#FotosActuales{
+    width: 40%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#FotoJuntos{
+    width: 80%;
+    border-radius: 20px;
+}
+
+
+
+  @media (max-width: 700px) {
+
+ /* Imagen */
+    
+
+    
+    /* Contenido Historia */
+    
+    .contenedorHistoria{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: wh;
+    }
+    
+    .tituloHistoria{
+        color: white;
+        text-align: center;
+        font-size: 20;
+    }
+    
+    #contenedorImagenesPequeños{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #FotosDePequeños{
+        width: 40%;
+        margin: 10px;
+        height: 25vh;
+        border-radius: 10px;
+    }
+    
+    .HistoriaText{
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #imagenHistoriaReencuentro{
+        width: 60%;
+        border-radius: 30px;
+    
+    }
+    
+    #alinearFotosActuales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #FotosActuales{
+        width: 40%;
+        margin: 10px;
+    }
+    
+    #FotoJuntos{
+        width: 80%;
+    } 
+  }

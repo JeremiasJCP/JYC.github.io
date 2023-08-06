@@ -1,0 +1,60 @@
+/* Notas */
+
+
+#Nota{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 20px;
+    color: #000000b3;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#notasDinamicas{
+    border: 2px solid rgba(0, 0, 0, 0.252);
+    border-radius: 05px ;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #d4006a9d;
+    margin-top: 10px;
+    width: 30%;
+}
+
+#actualizarNotaBoton{
+    border: 1px solid black;
+    height: max-content;
+    font-size: 14px;
+    border-radius: 50px ;
+    width: 90%;
+    /* font-size: 15px; */
+    color: #eefffd;
+    background: #0c0c0cc9;
+
+}
+
+@media (max-width: 700px) {
+     /* Notas */
+    
+    
+     #Nota{
+
+        font-size: 90%;
+      }
+      
+      #notasDinamicas{
+          width: 60%;
+
+      }
+
+      #actualizarNotaBoton{
+        font-size: 60%;
+        border-radius: 50px ;
+        width: 90%;
+        /* font-size: 15px; */
+        color: #e3127b;
+    }
+}

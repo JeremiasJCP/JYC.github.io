@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página princess</title>
+    <link rel="stylesheet" href="./styles/Index.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/b269HR2/LogoJYC.png">
+</head>
+<body>
+    <div id="contenedor"> 
+        <div id="contenedorcentrado">
+
+            <div id="derecho">
+                <div class="titulo">
+                    Bienvenida
+                </div>
+                <hr>
+                <p id="ycmlogin">
+                    <br>YCM & JCP <br>
+                    JYC
+
+                    <br> <br>
+                    Toca el Logo E Ingresa Con tu código
+                </p>
+            </div>
+
+            <!-- <div id="login">
+                <input type="tel" class="code">
+                <button class="botonVerificar">Enter</button>
+            </div> -->
+
+            <form id="loginForm">
+                <div id="login">
+                <label for="accessCode">Código de Acceso:</label>
+                <input type="tel" id="accessCode" class="code" name="accessCode">
+                <button type="submit" class="botonVerificar">Iniciar sesión</button>
+                </div>
+            </form>
+
+            <p id="mensajePiePagina">Si tienes problemas al iniciar sesión, contáctame de inmediato.</p>
+              
+        </div>
+    </div>
+    
+</body>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+  var accessCodeInput = document.getElementById('accessCode');
+  var accessCode = accessCodeInput.value;
+
+  if (accessCode === '1717029090') {
+    window.location.href = "./html/Principal.html";
+    // window.location.href = "./html/PrincipalRespaldo.html";
+    console.log('se redirigio');
+    console.log('Acceso concedido');
+
+  }else if (accessCode === '5092'){
+    window.location.href = "./html/Principal.html";
+    console.log('se redirigio a la pagina standar');
+    console.log('Acceso concedido');
+
+  }else {
+    // Código de acceso inválido, muestra un mensaje de error
+    console.log('Código de acceso incorrecto');
+    alert("Codigo invalido")
+    // Por ejemplo, mostrar un mensaje de error en la página
+  }
+});
+
+</script>
+</html>

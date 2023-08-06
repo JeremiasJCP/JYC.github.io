@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Noto+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,100&display=swap');
+
+/* font-family: 'Lovers Quarrel', cursive; logo
+font-family: 'Noto Serif', serif; body
+font-family: 'Goudy Bookletter 1911', serif; #Notas*/
+/* font-family: 'Sofia Sans Condensed', sans-serif; otros */
+
+  
+body{
+    background: rgb(0, 0, 0);
+}
+
+.contenedorPrincipal{
+    width: 100%;
+    background: #000000;
+}
+    /* Borde dorado en movimiento */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+.border-gradient {
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, #000000, #9b0000, #ffcc00);
+    border-image-slice: 1;
+    animation: gradient-animation 4s infinite linear;
+}
+
+.alinearEncabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+#encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background: black;
+    padding: 10px;
+    width: 95%;
+    font-size: 13px;
+}
+#contenedorLogo{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#contenedorLogo img{
+    width: 15%;
+    /* height: 20%; */
+}
+
+.Logo{
+    color: orange;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 20px;
+}
+
+
+
+                    /* Menu */
+.dropdown {
+    position: relative;
+
+}
+.dropdown-btn{
+    color: orange;
+    background: black;
+    border: none;
+}
+.dropdown-content a{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px; 
+    border: 1px solid orange;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: black;
+    
+
+}
+    
+.dropdown-content.active {
+    display: block;
+}
+    
+
+
+
+/* Imagen */
+
+.contenedorImagenInicioPagina{
+    border: 10px solid black;
+    display: flex;
+    flex-direction: column;
+}
+#imagenInicioPagina{
+    width: 100%;
+}
+
+
+/* Contenido */
+
+.contenedorGeneralContenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alineadorElementos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alineadorElementos h1, h2{
+    margin-top: 30px;
+    font-size: 300%;
+    text-align: center;
+    color: white;
+}
+
+.alineadorElementos img{
+    width: 60%;
+    margin: 10px;
+    border-radius: 10px;
+    border: orange solid 2px;
+}
+
+#BotonIrCuenta{
+    background-color: #000000;
+    color: orange;
+    border: 1px solid rgb(158, 103, 1);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+/* Pie de Pagina */
+
+footer {
+    background-color: #0000006b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+  }
+  
+  .contenidoPiePagina {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contenidoPiePagina p {
+    margin-bottom: 10px;
+  }
+  
+  .linksPiePagina {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linksPiePagina li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .linksPiePagina li:last-child {
+    margin-right: 0;
+  }
+  
+  .linksPiePagina a {
+    text-decoration: none;
+    color: #a09f9f;
+  }
+  
+  .linksPiePagina a:hover {
+    text-decoration: underline;
+  }
+
+@media (max-width: 700px) {
+    /* Contenido */
+
+.contenedorGeneralContenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alineadorElementos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alineadorElementos h1, h2{
+    margin-top: 30px;
+    font-size: 100%;
+    text-align: center;
+    color: white;
+}
+
+.alineadorElementos img{
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+    border: orange solid 2px;
+}
+
+#BotonIrCuenta{
+    background-color: #000000;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+}

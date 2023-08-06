@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Noto+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive; */
+
+/* font-family: 'Lovers Quarrel', cursive; logo
+font-family: 'Noto Serif', serif; body
+font-family: 'Goudy Bookletter 1911', serif; #Notas*/
+/* font-family: 'Sofia Sans Condensed', sans-serif; otros */
+   
+
+body{
+  background: black;
+}
+
+.contenedorPrincipal{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Logo{
+  font-family: 'Dancing Script', cursive;
+}
+
+#imagenInicioPagina {
+    filter: grayscale(100%);
+    animation: grayscaleAnimation 5s infinite;
+  }
+  
+  @keyframes grayscaleAnimation {
+    0% {
+        filter: grayscale(0%);
+      }
+    10% {
+        filter: grayscale(10%);
+      }
+    18% {
+        filter: grayscale(18%);
+    }
+
+    24% {
+      filter: grayscale(24%);
+    }
+    30% {
+        filter: grayscale(30%);
+    }
+    40% {
+        filter: grayscale(4%);
+      }
+    50% {
+        filter: grayscale(50%);
+    }
+
+    80% {
+      filter: grayscale(80%);
+    }
+
+    100% {
+      filter: grayscale(100%);
+    }
+
+    90% {
+        filter: grayscale(90%);
+      }
+    80% {
+        filter: grayscale(80%);
+      }
+    78% {
+        filter: grayscale(78%);
+    }
+
+    64% {
+      filter: grayscale(64%);
+    }
+    50% {
+        filter: grayscale(50%);
+    }
+    40% {
+        filter: grayscale(4%);
+      }
+    30% {
+        filter: grayscale(30%);
+    }
+
+    10% {
+      filter: grayscale(10%);
+    }
+
+    0% {
+      filter: grayscale(0%);
+    }
+    0% {
+        filter: grayscale(0%);
+      }
+    0% {
+        filter: grayscale(0%);
+      }  
+  }
+  
+
+/* Contenido */
+
+.SeccionDespuesEncabezado{
+    text-align: center;
+}
+
+#Titulo{
+    padding-left: 20px;
+    font-size: 100%;
+    color: white;
+    text-align: start;
+}
+
+.svgEnamorados{
+    width: 20%;
+}
+
+#info{
+    color: white;
+}
+
+/* Iconos */
+
+.Iconos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Distancia */
+
+.contenedorDistancia{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgb(0, 157, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 237, 237);    
+    border-radius: 20px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 80%;
+    margin: 10px;
+}
+
+.contenedorDistancia img{
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 90%;
+    /* height: 22vh; */
+}
+
+.contenedorDistancia p{
+    font-size: 100%
+}
+
+
+/* Dias */
+
+
+.diasJuntos{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 18px;
+    border: 2px solid rgb(0, 157, 255);
+    background-image: url(https://i.ibb.co/MkPkxqm/Fondo-Otro.png);
+    background-position: center;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: max-content;
+    padding: 5px;
+    border-radius: 20px;
+    width: 24%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.diasJuntos h3{
+  background-color: rgba(0, 0, 0, 0.762);
+  border-radius: 10px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 100%;
+}
+
+.numJuntos{
+  width: 50%;
+  margin: 0% auto;
+}
+
+.SinVernos{
+  width: 50%;
+  margin: 0% auto;
+}
+
+#diferencia-dias{
+  background-color: rgba(0, 0, 0, 0.885);
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 120%;
+}
+
+#diasSinVernos{
+    background-color: rgba(0, 0, 0, 0.885);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 120%;
+
+}
+
+.frasesCanciones{
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 61%;
+  min-height: 100px;
+  max-height: max-content;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0.578);;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+#frase-Cancion{
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  width: 80%;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.botonFrasesCanciones{
+  background-color: transparent;
+  color: rgb(31, 123, 172);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.mensajePrincipal{
+  color: white;
+  background: rgba(0, 0, 0, 0.683);
+  padding: 7%;
+  border-radius: 15px;
+}
+
+.imagenes-Mensaje-Principal-imagenuno{
+  width: 30%;
+  margin-top: -5%;
+  margin-left: 68%;
+}
+
+.imagenes-Mensaje-Principal{
+  margin: 5px;
+  width: 30%;
+}
+
+
+/* Video Ani */
+.mastext{
+  margin: 0% auto;
+    padding: 10px;
+    font-size: 80%;
+    color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+
+.loNuevo{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.loNuevoo{
+    background: #0000006c;
+    width: 75%;
+    color: white;
+    border-radius: 20px;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(133, 240, 227, 0.458);
+    margin-bottom: 10px;
+}
+
+.loNuevo h3{
+    margin: 10px;
+    height: max-content;
+    text-align:inherit;
+    color: white;
+    font-size: 80%;
+    box-sizing: border-box;
+    /* width: 10%;X */
+}
+
+
+#ajusteDescripcionLoNuevo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 60%;
+}
+
+
+
+.loNuevoo p{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.loNuevoo a{
+    background: rgb(0, 157, 255);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}            
+
+.loNuevoo a:hover{
+    background: #000000;
+    color: #7379ea;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    transform: scale3d(1.5, 1.5, 0.3);
+        -webkit-transform: scale3d(1.5, 1.5, 0.3);
+        -moz-transform: scale3d(1.5, 1.5, 0.3);
+}
+
+
+@media (max-width: 700px) {
+    
+    #contenedorLogo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    
+    #contenedorLogo img{
+        width: 30%;
+    }
+    
+
+    
+    
+    /* Imagen */
+    
+    .contenedorImagenInicioPagina{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        
+    }
+    #imagenInicioPagina{
+        width: 100%;
+    }
+    
+    
+    
+    /* Contenido */
+    
+
+    .SeccionDespuesEncabezado{
+      background-color: rgba(0, 0, 0, 0.656);
+      width: 90%;
+      margin: 0% auto;
+      border-radius: 20px;
+    }
+
+    #Titulo{
+      text-align: center;
+    }
+
+    /* Iconos */
+    
+        .Iconos{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    /* Distancia */
+    
+    .contenedorDistancia{
+        background-color: rgba(0, 0, 0, 0.735);
+        color: rgb(199, 199, 199);   
+        font-size: 80%;
+        width: 60%;
+    }
+    
+    
+    
+    
+    /* Dias */
+    
+    
+    .diasJuntos{
+      font-size: 90%;
+      width: 50%;
+      display: flex;
+    }
+
+    .numJuntos{
+      width: 50%;
+    }
+    
+    .SinVernos{
+      width: 50%;
+    }
+    /* Pie de Pagina */
+    
+    footer {
+        background-color: #000000;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      
+      .contenidoPiePagina {
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+      .contenidoPiePagina p {
+        margin-bottom: 6px;
+      }
+      
+      .linksPiePagina {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .linksPiePagina li {
+        display: inline;
+        margin-right: 15px;
+      }
+      
+      .linksPiePagina li:last-child {
+        margin-right: 0;
+      }
+      
+      .linksPiePagina a {
+        text-decoration: none;
+        color: #a09f9f;
+      }
+      
+      .linksPiePagina a:hover {
+        text-decoration: underline;
+      }  
+  }

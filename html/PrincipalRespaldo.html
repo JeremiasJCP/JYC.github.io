@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Princess</title>
+    <link rel="stylesheet" href="../styles/principal.css">
+    <link rel="stylesheet" href="../styles/efectoEntrada.css">
+    <link rel="icon" type="image/png" href="../Multimedia/Estrellas.png">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="contenedorPrincipal">
+        <div class="alinearEncabezado">
+            <section id="encabezado" class="border-gradient content">
+                <div id="contenedorLogo">
+                    <a class="Logo" href="Principal.html"><h2 class="Logo" >JYC</h2></a>
+                    <img src="../Multimedia/Iconos/Estrellas.png" alt="logo">
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn">&#9776</button>
+                    <div class="dropdown-content">
+                    <!-- <a href="./Principal.html">Inicio</a>
+                    <a href="./Historia.html">Historia</a>
+                    <!-- <a href="./Linea de Tiempo.html">Linea de Tiempo</a> -->
+                    <<!-- <a href="./Descargas.html">Descargas</a> -->
+                    <!-- <a href="./Cuenas.html">Cuentas</a> -->
+                    <a href="./cartas.html">Cartas</a>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+        <div class="haicendoEspacio" style="width: 100%; background-color: transparent; height: 60px;"></div>
+        <div class="contenedorImagenInicioPagina"> 
+            <img id="imagenInicioPagina" src="../Multimedia/Imagenes Principales/principal.gif" alt="Imagen Principal">
+        </div>
+
+    <!-- Fin de Encabezado -->
+    <section class="SeccionDespuesEncabezado">
+        <h1 id="Titulo">Bienvenida mi amor</h2>
+        <hr>
+        <p id="info">La página está en mantenimiento justo ahora.  <br> Por ahora solo tienes acceso a esta sección de la página. <br> Te Amo <br> Lamento los inconvenientes.</p>
+
+    </section>
+
+    <section class="Iconos">
+        <!-- Icono Distancia -->
+        <div class="contenedorDistancia efectoentrada">
+            <h3>Distancia que nos separa...</h3>
+            <img src="../Multimedia/Otros elementos/Distancia.webp" alt="ImagenDeDistancia">
+            <p>7.369 km </p>
+        </div>
+
+        <!-- Icono Notas -->
+        <div id="notasDinamicas" class="notasDinamicas efectoentrada">
+            <div>
+            <p id="Nota">Solamente un recordatorio...</p>
+            <p id="Nota" class="Nota"></p>
+            </div>
+            <button onclick="actualizarNota()" id="actualizarNotaBoton">Actualizar</button>
+        </div>
+
+        <!-- Icono Dias -->
+        <div class="diasJuntos efectoentrada">
+            <center>
+            <h3>Dias Juntos</h3>
+        
+            <p id="diferencia-dias"></p>
+            <h3>Dias Sin Vernos</h3>
+            <p id="diasSinVernos"></p>
+            </center>
+        </div>
+    </section>
+
+    <!-- Contenido -->
+
+    <!-- <div class="mastext">
+        <H1>Video de Aniversario</H1>
+        Clic en la imagen para descargar
+       <a href="../Multimedia/Video 13Meses/Video 13 Meses Juntos, Te Amo Y +J.mp4" download> </a>
+    </div> -->
+
+
+    <!-- <article class="mensajeDeAniversario">
+        Feliz Aniversario, mi amor 😍💕 <br> <br>
+
+
+
+    </article> -->
+
+
+    <section class="loNuevo efectoentrada">
+        <h3 >Actualizaciones</h3>
+        <div class="loNuevoo efectoentrada">
+            <h3>Cartas</h3>
+            <div id="ajusteDescripcionLoNuevo ">
+                <p>
+                    <br>
+                    Ahora tenemos secccion de cartas
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="loNuevoo efectoentrada efectoentrada">
+            <h3>Juego de Preguntas</h3>
+            <div id="ajusteDescripcionLoNuevo">
+                <p>
+                    Juego de Preguntas
+                </p>
+
+                <a href="./JuegoPreguntas.html">Ir al Juego</a>
+            </div>
+        </div> -->
+
+        <div class="loNuevoo efectoentrada">
+            <h3>Iconos</h3>
+            <div id="ajusteDescripcionLoNuevo">
+                <p>
+                    Ahora ya no es una corona solamente... <br>
+                    Explora la pagina y encuentra todos los iconos y colores
+                </p>
+            </div>
+        </div>
+
+        <div class="loNuevoo efectoentrada">
+            <h3>Codigo</h3>
+            <div id="ajusteDescripcionLoNuevo">
+                <p>
+                    Necesitaras un codigo para iniciar secion en esta pagina... <br>
+                    Esto ara el proceso mas rapido
+                </p>
+            </div>
+        </div>
+
+        <div class="loNuevoo efectoentrada">
+            <h3>Tu Codigo</h3>
+            <div id="ajusteDescripcionLoNuevo">
+                <p>
+                   171702 
+                </p>
+            </div>
+        </div>
+
+        <div class="loNuevoo efectoentrada">
+            <h3>Emojis</h3>
+            <div id="ajusteDescripcionLoNuevo">
+                <p>
+                    Ahora tenemos emojis en nuestra página
+                    <br>💕👑✨🤞 Descúbrelos todos...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="mastext">
+        JYC <br><br>
+        Es una combinación de nuestros nombres en una nueva función. Esta función se usa de la misma manera que las funciones anteriores, pero se refiere a los dos en lugar de solo uno de nosotros.
+    <video class="videoJYC" src="../Multimedia/jyc/Video, Explicacion JYC.mp4" controls></video>
+    </div>
+    <!-- Pie de pagina -->
+    
+    <footer>
+        <div class="contenidoPiePagina">
+          <p>© 2023 Pagina para mi princesa. Todos los derechos reservados.</p>
+          <p>Se estara agregando contenido a la pagina</p>
+          <ul class="linksPiePagina">
+            <li><a href="./Principal.html">Inicio</a></li>
+            <!-- <li><a href="#">Videos</a></li> -->
+            <li><a href="./Historia.html">Historia</a></li>
+            <li><!-- <a href="./Linea de Tiempo.html">Linea de Tiempo</a> --></li>
+          </ul>
+        </div>
+      </footer>
+      
+        
+    </div>
+</body>
+<script>
+
+
+var nota 
+var notas = [
+    `"Aunque no puedo abrazarte en este momento,<br>
+    quiero que sepas que siempre estás en mi corazón.<br>
+    Eres la persona más importante de mi vida y te <br>
+    amo con todo mi ser".` , 
+
+    `"El amor que tenemos es tan fuerte que<br>
+    ni la distancia puede separarnos. <br>
+    Te amo y siempre estaré aquí para ti".` ,
+
+    `"A pesar de la distancia, siento tu amor<br>
+    en cada latido de mi corazón. <br>
+    Gracias por hacer que cada día sea especial".` ,
+
+    `"Cada vez que pienso en ti, mi corazón <br>
+    se llena de amor y felicidad. Eres la mejor<br>
+    parte de mi vida y no puedo esperar <br>
+    a estar juntos de nuevo".`,
+
+    `"Aunque no podamos estar juntos en persona,<br>
+    mi amor por ti nunca se desvanece. <br>
+    Siempre estás en mi mente y en mi corazón".`,
+
+    `"Eres mi mejor amiga, mi compañera, mi todo. <br>
+    Estoy tan agradecido de tenerte en mi vida y no<br>
+    puedo esperar para crear más recuerdos juntos".`,
+
+    `"Incluso a miles de kilómetros de distancia,<br>
+    siento tu amor en mi corazón todos los días. <br>
+    Te extraño y no puedo esperar a <br>
+    volver a verte pronto".`,
+
+    `"Cada día que pasa, <br>
+    Te extraño  muchisimo mas. <br>
+    Pero saber que tenemos <br>
+    un amor tan fuerte y <br>
+    verdadero me da la fuerza <br>
+    para seguir adelante".`,
+
+    `"Aunque estemos lejos, <br>
+    el amor que siento por ti <br>
+    nunca se desvanece. <br>
+    Te extraño muchísimo <br>
+    y espero poder abrazarte pronto".`,
+
+    `"Te amo con todo lo que puede amar este corazón, princesa.".`,
+
+    `"Y si un día no puedo estar contigo, recuerda que este 
+    corazón es tuyo → ❤️. Que sin importar nada, siempre está 
+    pensando en ti...".`,
+
+    `"No importa que tan difícil sea, siempre estaré para ti mi amor,
+    siempre tendrás a tu príncipe azul 💙👑, 
+    tu mejor amigo y compañero💕.".`,
+
+    `"No tengo muy claro que te gusto de mí en un principio,
+     solo sé que te amo y pido que nunca te vayas de mi vida, 
+     tú vuelves todo mejor, como me encantas,
+    <br> <br>                                                                                         
+    My princess".`,
+
+    `"Quiero estar contigo 🤞🏼
+    No importa si hacerlo implica que nos separa una distancia que no podemos pensar en minutos. Te elijo a ti. No importa cuánto tenga que esperar por besar esos labios otra vez ✨. Mi corazón es tuyo 💟. Por qué contigo no quiero un momento, no quiero una breve historia. Quiero una vida 📈, una vida que quiero llenar de hermosos momentos 💓, y aunque las cosas se pongan difíciles, quiero que sepas que estaré para ti, Amor de mi Vida 😍
+    "`,
+
+    `"Bonito es poder explicar con dos palabras lo que siento por ti, bonito es que tú seas mi primer pensamiento por la mañana y el último al cerrar los ojos ✨. <br><br> Bonito es poder decir que siempre cuento contigo 🥹, que sin importar nada me ayudas, me mimas, me consientes, me entiendes, me regañas 🤭. Contigo lo quiero todo mi amor 😊, no quiero que sea temporal 😔, quiero que sea ♾.  Y si, ya lo dije, qué bonito es poder decir lo que sientes con dos palabras “Te Amo” 😍👑"`,
+
+
+
+]
+function notaAleatoria(){
+    var numero = notas.length;
+    var i = Math.floor(Math.random() * numero);
+    nota= notas[i];
+}
+
+function actualizarNota() {
+    notaAleatoria();
+    var nuevoContenido = nota;
+    document.getElementById("Nota").innerHTML = nuevoContenido;
+    actualizarFecha()
+}
+
+function diasSinVernos(){
+    // Define la primera fecha como 18 de mayo de 2022
+    var fechaUno = new Date(2023, 1, 27); // El mes se indica desde 0 (enero) hasta 11 (diciembre)  la fecha real es 28 de febrero del 2023, se coloca 27 ya que en programcion empezamos a contar desde cero
+    
+    // Obtiene la fecha actual
+    var fechaDos = new Date();
+    
+    // Calcula la cantidad de días entre las dos fechas
+    var diferencia = fechaDos.getTime() - fechaUno.getTime(); // getTime() devuelve la cantidad de milisegundos desde el 1 de enero de 1970
+    var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
+    
+    // Actualiza el contenido del elemento p con el resultado
+    console.log("Dias Sin Vernos" + fechaUno + " y " + fechaDos + " es: " + cantidadDias);
+    document.getElementById("diasSinVernos").textContent = cantidadDias;
+
+}
+
+function actualizarFecha(){
+    // Define la primera fecha como 18 de mayo de 2022
+    var fecha1 = new Date(2022, 4, 18); // El mes se indica desde 0 (enero) hasta 11 (diciembre)
+
+    // Obtiene la fecha actual
+    var fecha2 = new Date();
+
+    // Calcula la cantidad de días entre las dos fechas
+    var diferencia = fecha2.getTime() - fecha1.getTime(); // getTime() devuelve la cantidad de milisegundos desde el 1 de enero de 1970
+    var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
+
+    // Actualiza el contenido del elemento p con el resultado
+    console.log("Dias Juntos" + fecha1 + " y " + fecha2 + " es: " + cantidadDias);
+    document.getElementById("diferencia-dias").textContent = cantidadDias;
+    diasSinVernos()
+}
+
+
+window.addEventListener('load', actualizarNota)
+
+</script>
+<script src="../Js/efectoEntrada.js"></script>
+</html>
