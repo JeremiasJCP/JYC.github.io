@@ -16,13 +16,12 @@ font-family: 'Goudy Bookletter 1911', serif; #Notas*/
   
 body{
     background: black;
+    color: #827C78;
 }
 
 .contenedorPrincipal{
-    /* background: #36001f9b; */
-    background-image: url(https://images.unsplash.com/photo-1603346133929-24265debae88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&w=1000&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(18,11,155);
+    background: linear-gradient(0deg, rgba(18,11,155,1) 0%, rgba(7,0,36,1) 60%);
 }
   
 .alinearEncabezado{
@@ -172,7 +171,7 @@ body{
     background-color: #003A69;
     padding: 10px;
     border-radius: 10px;
-    color: #000000;
+    color: #827C78;
     text-align: center;
     text-decoration: none;
 }
@@ -193,7 +192,7 @@ body{
     background-color: #003A69;
     padding: 10px;
     border-radius: 10px;
-    color: #000000;
+    color: #827C78;
     text-align: center;
     text-decoration: none;
 }
@@ -211,7 +210,37 @@ body{
   }
 
 
+.listadecartas{
+    width: 90%;
+    border-radius: 20px;
+    list-style: none;
+    background: rgb(7,0,36);
+    background: radial-gradient(circle, rgba(7,0,36,1) 0%, rgba(6,58,160,1) 0%);background: rgb(6,58,160);
+    background: radial-gradient(circle, rgba(6,58,160,1) 0%, rgba(7,0,36,1) 45%);
+    font-size: 70%;
+}
 
+.list{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: start;
+    
+}
+
+.list li{
+    margin: 05px;
+    font-size: 80%;
+}
+
+.list a{
+    margin-top: 0px;
+    color: #d7d6d5d8;
+    text-decoration: none;
+}
 /* Cartas de El */
 
 .titleCartasEl{
@@ -232,6 +261,7 @@ body{
     position: fixed;
     top: 80vh;
     left:  80%;
+    border: 1px solid #827C78;
     color: #827C78;
     width: min-content;
     background: #000000;
@@ -285,8 +315,8 @@ body{
     justify-content: center;
     width: 80%;
     font-size: 90%;
-    color: black;
-    background: #003A69;
+    color: #C5C5C5;
+    background: #003a69a9;
     border: 3px;
     border-radius: 20px;
 }
