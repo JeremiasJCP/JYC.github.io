@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/cartas.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/b269HR2/LogoJYC.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="..//styles/carruselNotas.css">
     <link rel="stylesheet" href="../styles/notas-Dinamicas.css">
     <link rel="stylesheet" href="../styles/footer.css">
@@ -15,7 +16,7 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <div class="contenedorPrincipal">
+    <div class="contenedorPrincipal" id="contenedorPrincipal">
 
       <div class="alinearEncabezado">
         <section id="encabezado" class="border-gradient content">
@@ -94,7 +95,60 @@
         </div>
 
         <!-- Fin de Carrusel de Fotos -->
+
         
+
+        <!-- Listado de cartas -->
+        <section class="lista de cartas">
+          <ul>
+            <h1>Cartas de El</h1>
+            <ul>
+              <li><a href="#BuenasTardes">Buenas Tardes</a></li>
+
+              <li><a href="#UnMensajeenviado">Un Mensaje enviado...</a></li>
+
+              <li><a href="#14Meses">14 Meses</a></li>
+
+              <li><a href="#13Meses">13 Meses</a></li>
+
+              <li><a href="#Léelacuantasveces">Léela las veces que necesites</a></li>
+
+              <li><a href="#nota13Meses">Nota 13 Meses</a></li>
+
+              <li><a href="#BuenosDias13">Buenos Dias: 13 meses</a></li>
+
+              <li><a href="#seEscapa">¿Y si el amor se escapa?</a></li>
+
+              <li><a href="#12Meses">12 Meses</a></li>
+
+              <li><a href="#NotitaAmor">Una notita de amor</a></li>
+              
+              <li><a href="#Volvere">Volvere</a></li>
+            </ul>
+            
+            <ul>
+              <h1>Cartas de Ella</h1>
+
+              <li><a href="#Tuprimeranota">Tu primera nota</a></li>
+
+              <li><a href="#Portadademicuaderno">Portada de mi cuaderno (JCP)</a></li>
+
+              <li><a href="#Merayastelacamisa">Me rayaste la camisa (JCP)</a></li>
+
+              <li><a href="#TeAmo">Te Amo</a></li>
+
+              <li><a href="#14 MesesElla">14 Meses</a></li>
+
+              <li><a href="#BuenasNoche">Buenas Noches</a></li>
+
+              <!-- <li><a href="#FelizViajeCartaLarga">Feliz Viaje (Carta de despedida)</a></li> -->
+
+              <li><a href="#9Meses">9 Meses</a></li>
+
+            </ul>
+          </ul>
+        </section>
+
         <!-- Icono Notas -->
         <div id="notasDinamicas" class="notasDinamicas efectoentrada">
           <div>
@@ -103,7 +157,9 @@
           <button onclick="actualizarNota()" id="actualizarNotaBoton">Actualizar</button>
       </div>
 
-
+      <a href="#contenedorPrincipal"><span class="material-symbols-outlined volverArriba">
+        arrow_upward
+      </span></a>
       <section class="ContenedorCartasGlobal">
             <section class="CartasDeEl" id="CartasDeEl">
 
@@ -114,10 +170,10 @@
                 </section>
                 <img src="https://i.ibb.co/8dX0KWb/El.jpg" alt="Imagen cartas de ella">
               </div>
-
-              <div id="contenedorElementosCartas">
+              
+              <div class="contenedorElementosCartas" id= "BuenasTardes">
                 <div id="ContenedorCarta">
-                    <h3 id="titleCarta">Buenas Tardes </h3>
+                    <h3 id="titleCarta " >Buenas Tardes </h3>
                     <p id="carta">Hola, buenas tardes...
                       Hace tiempo que no me dirijo a ti de esa forma, es más, ni siquiera tengo memoria de haberlo hecho alguna vez. Me pongo a pensar, es que desde el principio tuvimos una forma distinta de decir las cosas. Siempre fue un "hola" seco, con el tiempo un "hola, ¿cómo estás?" y un beso en la mejilla, y luego, un suave beso en los labios, acompañado de un fuerte abrazo que dice "Te extrañé". <br> <br>Cómo anhelo que vuelva a ser así, llegar una mañana y ser una de las primeras personas que veas en el día, o pasar por tu casa por la tarde antes de que se oculte el sol. Te extraño y te necesito. <br> <br>Desde hace mucho siempre has estado presente en mi vida, ya perdí la cuenta de todas las veces que me has ayudado, me has escuchado y has demostrado ser la mejor amiga y novia del mundo. <br> <br>No puedo esperar para volver a estar contigo, para volver a tocar esas manitas tan bonitas con esas uñitas siempre arregladitas, volver a besarte y cuidarte, y decirte buenos días/tardes/noches, mi amor. Quiero que tú y yo volvamos a estar tan unidos que la gente sienta celos y empiece a comentar lo unidos que somos, como un barril de miel. <br> <br>Quiero que tengas una hermosa tarde, mi amor. Eres la mejor, no pienso ir a ningún lado. <br> <br>Te amo ❤</p>
                 </div>
@@ -126,11 +182,11 @@
               </div>
 
 
-              <div id="contenedorElementosCartas">
+              <div class="contenedorElementosCartas" id="UnMensajeenviado"> 
                 <div id="ContenedorCarta">
                     <h3 id="titleCarta">Un Mensaje enviado...</h3>
                     <p id="carta">
-                      Sabes me ayudaste a
+                            Sabes me ayudaste a
                             encontrarme, estaba perdido
                             y no sabía qué hacer. Fuiste la
                             razón de mi sonrisa por mucho
@@ -164,7 +220,7 @@
                 <!-- <a id="botonDescargar" href="#" download>Descargar esta Carta</a> -->
             </div>
             
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="14Meses">
               <div id="ContenedorCarta">
                   <h3 id="titleCarta">14 Meses</h3>
                   <p id="carta">
@@ -201,7 +257,7 @@
               <!-- <a id="botonDescargar" href="#" download>Descargar esta Carta</a> -->
           </div>
 
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="13Meses">
                 <div id="ContenedorCarta">
                     <h3 id="titleCarta">13 Meses</h3>
                     <p id="carta">
@@ -222,7 +278,7 @@
                 <!-- <a id="botonDescargar" href="#" download>Descargar esta Carta</a> -->
             </div>
 
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="Léelacuantasveces">
               <div id="ContenedorCarta">
                   <h3 id="titleCarta">Léela las veces que lo necesites </h3>
                   <p id="carta">
@@ -243,7 +299,7 @@
               <!-- <a id="botonDescargar" href="../Multimedia/Descargas/Carta 12 Meses JCP.pdf" download>Descargar esta Carta</a> -->
           </div>
 
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="nota13Meses">
               <div id="ContenedorCarta">
                   <h3 id="titleCarta">Nota: 13 Meses</h3>
                   <p id="carta">
@@ -252,7 +308,7 @@
               <p class="fechaCarta">18/06/2023</p>
             </div>
 
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="BuenosDias13">
               <div id="ContenedorCarta">
                   <h3 id="titleCarta">Buenos Dias: 13 Meses</h3>
                   <p id="carta">
@@ -273,7 +329,7 @@
               <p class="fechaCarta">18/06/2023</p>
             </div>
 
-              <div id="contenedorElementosCartas">
+              <div class="contenedorElementosCartas" id="seEscapa">
                 <div id="ContenedorCarta">
                     <h3 id="titleCarta">¿Y si el amor se escapa?</h3>
                     <p id="carta">
@@ -290,7 +346,7 @@
                 <!-- <a id="botonDescargar" href="#" download>Descargar esta Carta</a> -->
             </div>
 
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="12Meses">
               <div id="ContenedorCarta">
                   <h3 id="titleCarta">12 Meses</h3>
                   <p id="carta">
@@ -312,7 +368,7 @@
               <a id="botonDescargar" href="../Multimedia/Descargas/Carta 12 Meses JCP.pdf" download>Descargar esta Carta</a>
           </div>
 
-          <div id="contenedorElementosCartas">
+          <div class="contenedorElementosCartas" id="NotitaAmor">
             <div id="ContenedorCarta">
                 <h3 id="titleCarta">Una Notita de Amor</h3>
                 <p id="carta">
@@ -324,7 +380,7 @@
             <!-- <a id="botonDescargar" href="../Multimedia/Descargas/Carta 12 Meses JCP.pdf" download>Descargar esta Carta</a> -->
         </div>
 
-          <div id="contenedorElementosCartas">
+          <div class="contenedorElementosCartas" id="Volvere">
             <div id="ContenedorCarta">
                 <h3 id="titleCarta">Volveré...</h3>
                 <p id="carta">
@@ -355,9 +411,9 @@
             </div>
 
 
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="Tuprimeranota">
 
-              <div id="ContenedorCarta">
+              <div id="ContenedorCarta" >
                 <h3 id="titleCarta">Tu primera nota</h3>
                 <p id="carta" >
 
@@ -369,7 +425,7 @@
             <p class="fechaCarta">En nuestro comienzo</p>
           </div>
           
-          <div id="contenedorElementosCartas">
+          <div class="contenedorElementosCartas" id="Portadademicuaderno">
 
             <div id="ContenedorCarta">
               <h3 id="titleCarta">Portada de mi cuaderno (JCP)</h3>
@@ -386,7 +442,7 @@
         </div>
 
           
-        <div id="contenedorElementosCartas">
+        <div class="contenedorElementosCartas" id="Merayastelacamisa">
 
           <div id="ContenedorCarta">
             <h3 id="titleCarta">Me rayaste la camisa (JCP)</h3>
@@ -401,7 +457,7 @@
         <p class="fechaCarta">En nuestro comienzo</p>
       </div>
 
-          <div id="contenedorElementosCartas">
+          <div class="contenedorElementosCartas" id="TeAmo">
               <div id="ContenedorCarta">
                   <h3 id="titleCarta">Te Amo</h3>
                   <p id="carta" >
@@ -422,7 +478,7 @@
             
 
 
-          <div id="contenedorElementosCartas">
+          <div class="contenedorElementosCartas" id="14 MesesElla">
             <div id="ContenedorCarta">
                 <h3 id="titleCarta">14 Meses</h3>
                 <p id="carta" >
@@ -456,9 +512,9 @@
             <p class="fechaCarta">18/07/2023</p>
         </div>
           
-            <div id="contenedorElementosCartas">
+            <div class="contenedorElementosCartas" id="BuenasNoche">
               <div id="ContenedorCarta">
-                  <h3 id="titleCarta">Buenas Noche <br> y <br>Feliz Viaje</h3>
+                  <h3 id="titleCarta">Buenas Noches <br> y <br>Feliz Viaje</h3>
                   <p id="carta" style="text-align: start;">
                     Bueno 😮‍💨<br>
                     Aunque no se cuando veas este mensaje 🥰<br>
@@ -484,7 +540,7 @@
 
 
             
-          <!-- <div id="contenedorElementosCartas">
+          <!-- <div class="contenedorElementosCartas" id="FelizViajeCartaLarga">
             <div id="ContenedorCarta">
                 <h3 id="titleCarta">Feliz Viaje💕</h3>
                 <p id="carta" style="text-align: start;">
@@ -495,7 +551,7 @@
             <a id="botonDescargar" href="#" download>Descargar esta Carta</a>
         </div> -->
 
-        <div id="contenedorElementosCartas">
+        <div class="contenedorElementosCartas" id="9Meses">
             <div id="ContenedorCarta">
                 <h3 id="titleCarta">9 Meses</h3>
                 <p id="carta" >

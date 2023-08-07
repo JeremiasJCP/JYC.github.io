@@ -19,9 +19,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #d4006a9d;
+    background: #0051959d;
     margin-top: 10px;
     width: 30%;
+    margin-bottom: 30px;
 }
 
 #actualizarNotaBoton{
