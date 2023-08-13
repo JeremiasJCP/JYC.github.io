@@ -1,9 +1,22 @@
 var salidaCancion;
  var canciones = [
     `"Tu y yo brillamos en el cielo como estrellas".` ,
-    `"Mas canciones 1".` ,
+
+    
+    `"Por ti daría todo en el mundo
+    Por solo un segundo
+    Por volverte a ver
+    Todavía no paras de doler
+    Y no sé si algún día vida vas a volver".` ,
+
+    
+
     `"Mas canciones 2".` ,
+
+    
     `"Mas canciones 3".` ,
+
+    
     `"Mas canciones 4".` 
 ]
 
