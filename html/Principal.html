@@ -53,34 +53,36 @@
     </section>
 
     <section class="Iconos">
+
+
         <!-- Icono Distancia -->
-        <div class="contenedorDistancia efectoentrada">
-            <h3>Distancia que nos separa...</h3>
-            <img src="https://i.ibb.co/YT4VGdy/Distancia.gif" alt="ImagenDeDistancia">
-            <p>7.369 km </p>
+        <div class="contenedorDistancia efectoentrada " onclick="VerDistancia()">
+            <h3 class="title-icono" >Distancia que nos separa...</h3>
+            <p id="elementos-contenedor-Distancia">7.369 km </p>
         </div>
 
-        <!-- Icono Dias -->
-        <section class="diasJuntos efectoentrada">
-            <div class="numJuntos">    
-                <h3>Dias <br> Juntos</h3>
+        <section class="diasJuntos efectoEntrada">
+            <div class="diasJuntos-container--element efectoEntrada movimientoSuave" onclick="activarDiasQueLlevamosSinVernos()">
+                <h3>Tiempo Juntos</h3>
                 <p id="diferencia-dias"></p>
             </div>
 
-            <div class="SinVernos">
-                <h3>Dias <br> Sin Vernos</h3>
+            <div class="SinVernos efectoEntrada movimientoSuave" onclick="activarDiasSinVernos()">
+                <h3>Sin Vernos</h3>
                 <p id="diasSinVernos"></p>
             </div>
+
         </section>
+    </section>
 
     </section>
 
-    <!-- <section class="frasesCanciones">
+    <section class="frasesCanciones">
         <article id="frase-Cancion">
 
         </article>
         <button class="botonFrasesCanciones" onclick="enviarCancion()">Cambiar Frase</button>
-    </section> -->
+    </section>
 
 
     <section class="mensajePrincipal efectoentrada">
@@ -182,7 +184,8 @@ function diasSinVernos(){
     var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
     
     // Actualiza el contenido del elemento p con el resultado
-    console.log("Dias Sin Vernos" + fechaUno + " y " + fechaDos + " es: " + cantidadDias);
+    cantidadDias = cantidadDias + " Días";
+    console.log(cantidadDias);
     document.getElementById("diasSinVernos").textContent = cantidadDias;
 
 }
@@ -199,7 +202,8 @@ function actualizarFecha(){
     var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
 
     // Actualiza el contenido del elemento p con el resultado
-    console.log("Dias Juntos" + fecha1 + " y " + fecha2 + " es: " + cantidadDias);
+    cantidadDias = cantidadDias + " Días"
+    console.log(cantidadDias);
     document.getElementById("diferencia-dias").textContent = cantidadDias;
     diasSinVernos()
 }
@@ -210,4 +214,5 @@ window.addEventListener('load', actualizarFecha)
 <script src="../Js/efectoEntrada.js"></script>
 <script src="../Js/Principal.js"></script>
 <script src="../Js/Frases de canciones.js"></script>
+<script src="../Js/contenedor-Distancia y Dias.js"></script>
 </html>
