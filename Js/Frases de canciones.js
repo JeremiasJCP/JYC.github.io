@@ -11,7 +11,7 @@ var salidaCancion;
 
     
 
-    `"Y aunque se pase toda mi vida yo te esperaré. Sé que en tus ojos todavía hay amor. Y tu mirada dice volveré." <br> (Yo t esperare - Cali y el Dandee)` ,
+    `"Y aunque se pase toda mi vida yo te esperaré. Sé que en tus ojos todavía hay amor. Y tu mirada dice volveré." <br> (Yo te esperare - Cali y el Dandee)` ,
 
     
     `"Y no volverte a ver es mi promesa por romper, prefiero ser quien llora si eso te obliga a volver" <br>(La ultima Vez - Morat).` ,
