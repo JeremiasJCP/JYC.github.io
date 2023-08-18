@@ -37,10 +37,18 @@
         </header>
 
         <div class="haicendoEspacio" style="width: 100%; background-color: transparent; height: 60px;"></div>
-        <div class="contenedorImagenInicioPagina"> 
-            <img id="imagenInicioPagina" src="https://i.ibb.co/m0ywhJ9/Principal.png" alt="Imagen Principal">
-            
-        </div>
+
+        <span class="Imagen-Principal-Pagina">
+
+            <div class="miformaimparcticaprarlograrelresultadodeseado"></div>
+            <article class="Texto-Imagen-Principal">
+                <h1>Feliz aniversario</h1>
+                <p>15 Meses a tu lado preciosa </p>
+                <p><b>TE AMO</b></p>
+                <a href="./cartas.html#CartasDeEl">Ver la carta</a>
+            </article>
+        </span>
+
 
     <!-- Fin de Encabezado -->
     <section class="SeccionDespuesEncabezado">
@@ -58,10 +66,13 @@
         <!-- Icono Distancia -->
         <div class="contenedorDistancia efectoentrada " onclick="VerDistancia()">
             <h3 class="title-icono" >Distancia que nos separa...</h3>
-            <p id="elementos-contenedor-Distancia">7.369 km </p>
+            <div id="elementos-contenedor-Distancia">
+                <p id="Distancia"></p>
+                <span class="avionVolando"></span>
+            </div>
         </div>
 
-        <section class="diasJuntos efectoEntrada">
+        <section class="diasJuntos efectoentrada">
             <div class="diasJuntos-container--element efectoEntrada movimientoSuave" onclick="activarDiasQueLlevamosSinVernos()">
                 <h3>Tiempo Juntos</h3>
                 <p id="diferencia-dias"></p>
@@ -77,7 +88,7 @@
 
     </section>
 
-    <section class="frasesCanciones">
+    <section class="frasesCanciones efectoentrada movimientoSuave">
         <blockquote id="frase-Cancion">
 
         </blockquote>

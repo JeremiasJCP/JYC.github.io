@@ -23,6 +23,8 @@ body{
 }
 
 .contenedorPrincipal{
+  width: 100%;
+  min-width: 320px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,86 +34,60 @@ body{
   font-family: 'Dancing Script', cursive;
 }
 
-#imagenInicioPagina {
-    filter: grayscale(100%);
-    animation: grayscaleAnimation 5s infinite;
-  }
-  
-  @keyframes grayscaleAnimation {
-    0% {
-        filter: grayscale(0%);
-      }
-    10% {
-        filter: grayscale(10%);
-      }
-    18% {
-        filter: grayscale(18%);
-    }
+.Imagen-Principal-Pagina{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  height: 250px;
+  background-image: url("https://i.ibb.co/W0ndkdB/Whats-App-Image-2023-08-18-at-13-51-43.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 
-    24% {
-      filter: grayscale(24%);
-    }
-    30% {
-        filter: grayscale(30%);
-    }
-    40% {
-        filter: grayscale(4%);
-      }
-    50% {
-        filter: grayscale(50%);
-    }
+.miformaimparcticaprarlograrelresultadodeseado{
+  height: 50%;
+}
 
-    80% {
-      filter: grayscale(80%);
-    }
+.Texto-Imagen-Principal{
+  position: relative;
+  top: 60px;
+  height: 50%;
+  color: white;
+  background-color: #00000096;
+  min-width: max-content;
+  width: 45%;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
 
-    100% {
-      filter: grayscale(100%);
-    }
+.Texto-Imagen-Principal a{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.753);
+  border-radius: 20px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  margin-top: 5px;
+}
 
-    90% {
-        filter: grayscale(90%);
-      }
-    80% {
-        filter: grayscale(80%);
-      }
-    78% {
-        filter: grayscale(78%);
-    }
-
-    64% {
-      filter: grayscale(64%);
-    }
-    50% {
-        filter: grayscale(50%);
-    }
-    40% {
-        filter: grayscale(4%);
-      }
-    30% {
-        filter: grayscale(30%);
-    }
-
-    10% {
-      filter: grayscale(10%);
-    }
-
-    0% {
-      filter: grayscale(0%);
-    }
-    0% {
-        filter: grayscale(0%);
-      }
-    0% {
-        filter: grayscale(0%);
-      }  
-  }
-  
-
+.Texto-Imagen-Principal a:hover{
+  color: white;
+  background-color: black;
+}
 /* Contenido */
 
 .SeccionDespuesEncabezado{
-    text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.521);
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 #Titulo{
@@ -146,8 +122,14 @@ body{
 }
 
 
-.contenedorDistancia img{
+.avionVolando{
+  display: inline-block;
   width: 100%;
+  height: 100px;
+  background-image: url("https://i.ibb.co/NF1j5VW/avion-unscreen-1.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -172,7 +154,7 @@ body{
   border-radius: 15px;
   text-align: center;
   color: aliceblue;
-  background-color: rgba(0, 0, 0, 0.752);
+  background-color: rgba(0, 0, 0, 0.379);
 }
 
 .diasJuntos-container--element p , .SinVernos p{
@@ -361,12 +343,6 @@ body{
     /* Contenido */
     
 
-    .SeccionDespuesEncabezado{
-      background-color: rgba(0, 0, 0, 0.656);
-      width: 90%;
-      margin: 0% auto;
-      border-radius: 20px;
-    }
 
     #Titulo{
       text-align: center;
