@@ -6,7 +6,9 @@ footer {
     padding: 20px;
     text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
   }
   
   .contenidoPiePagina {
@@ -45,16 +47,16 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 80%;
+  font-size: 1.4rem;
 }
 
 .DerechosReservados{
-  font-size: 52%;
+  font-size: 1.4rem
 }
 
 .elementos-Mi-todo{
   color: rgba(255, 255, 255, 0.792);
-  font-size: 60%;
+  font-size: 1.4rem;
   width: 20%;
   margin: 10px;
 }

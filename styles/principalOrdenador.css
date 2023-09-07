@@ -1,0 +1,76 @@
+.contenedorPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Imagen-Principal-Pagina {
+    height: 600px;
+}
+
+.Texto-Imagen-Principal {
+    height: 35%;
+    font-size: 1.8rem;
+}
+
+.SeccionDespuesEncabezado {
+    width: 30%;
+}
+
+.Iconos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contenedorDistancia{
+    width: 25%;
+}
+
+.avionVolando{
+    width: 100%;
+}
+
+.diasJuntos{
+    width: 40%;
+}
+
+.frasesCanciones{
+    width: 30%;
+}
+
+.mensajePrincipal{
+    font-size: 2rem;
+}
+
+.loNuevo{
+    font-size: 1.8rem;
+}
+
+.loNuevo h3{
+    font-size: 1.9rem;
+}
+
+.mastext{
+    font-size: 1.6rem;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.linksPiePagina {
+    font-size: 1.6rem;
+}
+
+#texMiTodo{
+    font-size: 1.8rem;
+}
+
+.elementos-Mi-todo{
+    position: relative;
+    font-size: 1.6rem;
+}
