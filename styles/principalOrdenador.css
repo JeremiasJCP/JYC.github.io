@@ -1,6 +1,8 @@
 .contenedorPrincipal{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .Imagen-Principal-Pagina {
@@ -40,6 +42,7 @@
 
 .mensajePrincipal{
     font-size: 2rem;
+    width: 70%;
 }
 
 .loNuevo{
