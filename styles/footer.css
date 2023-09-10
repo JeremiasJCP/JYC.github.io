@@ -1,62 +1,69 @@
 /* Pie de Pagina */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
 footer {
-  margin-top: 30px;
-    background-color: #1c1b1b63;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 1.4rem;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  background-color: #1c1b1b99;
+  padding: 20px;
+  text-align: center;
+  color: white;
   display: flex;
   flex-direction: column;
-  }
-  
-  .contenidoPiePagina {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .contenidoPiePagina p {
-    margin-bottom: 10px;
-  }
-  
-  .linksPiePagina {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .linksPiePagina li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  .linksPiePagina li:last-child {
-    margin-right: 0;
-  }
-  
-  .linksPiePagina a {
-    text-decoration: none;
-    color: #a09f9f;
-  }
-  
-  .linksPiePagina a:hover {
-    text-decoration: underline;
-  }
+}
+
+.contenidoPiePagina {
+  margin: 0 auto;
+}
+
+.contenidoPiePagina p {
+  margin-bottom: 10px;
+}
+
+.linksPiePagina {
+  list-style: none;
+  padding: 0;
+}
+
+.linksPiePagina li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.linksPiePagina li:last-child {
+  margin-right: 0;
+}
+
+.linksPiePagina a {
+  text-decoration: none;
+  color: #a09f9f;
+}
 
 #textMiTodo{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
 }
 
 .DerechosReservados{
-  font-size: 1.4rem
+  font-size: 1rem
 }
 
 .elementos-Mi-todo{
   color: rgba(255, 255, 255, 0.792);
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   width: 20%;
   margin: 10px;
-}
+} 

@@ -13,6 +13,12 @@ font-family: 'Noto Serif', serif; body
 font-family: 'Goudy Bookletter 1911', serif; #Notas*/
 /* font-family: 'Sofia Sans Condensed', sans-serif; otros */
    
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 html{
   font-size: 62.5%;
@@ -46,14 +52,10 @@ body{
   background-repeat: no-repeat;
 }
 
-.miformaimparcticaprarlograrelresultadodeseado{
-  height: 50%;
-}
-
 .Texto-Imagen-Principal{
   position: relative;
-  top: 60px;
-  height: 50%;
+  top: 58%;
+  height: 40%;
   color: white;
   background-color: #21262dbe;
   min-width: max-content;
@@ -113,6 +115,7 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 
@@ -208,10 +211,12 @@ body{
 }
 
 .mensajePrincipal{
+  width: 98%;
   color: white;
   background: rgba(0, 0, 0, 0.683);
   padding: 7%;
   border-radius: 15px;
+  margin: 0 auto;
 }
 
 .imagenes-Mensaje-Principal-imagenuno{
@@ -275,7 +280,7 @@ body{
     height: max-content;
     text-align:inherit;
     color: white;
-    font-size: 80%;
+    font-size: 1.4rem;
     box-sizing: border-box;
     /* width: 10%;X */
 }
@@ -320,6 +325,14 @@ body{
 }
 
 
+#footer{
+  width: 100%;
+  height: 35vh;
+  border: none;
+  overflow: hidden;
+}
+
+
 @media (max-width: 700px) {
     
     #contenedorLogo{
@@ -355,10 +368,6 @@ body{
     
 
 
-    #Titulo{
-      text-align: center;
-    }
-
     /* Iconos */
     
         .Iconos{
@@ -368,47 +377,4 @@ body{
             justify-content: center;
         }
     
-
-
-
-    /* Pie de Pagina */
-    
-    footer {
-        background-color: #000000;
-        padding: 10px;
-        text-align: center;
-        color: white;
-      }
-      
-      .contenidoPiePagina {
-        width: 100%;
-        margin: 0 auto;
-      }
-      
-      .contenidoPiePagina p {
-        margin-bottom: 6px;
-      }
-      
-      .linksPiePagina {
-        list-style: none;
-        padding: 0;
-      }
-      
-      .linksPiePagina li {
-        display: inline;
-        margin-right: 15px;
-      }
-      
-      .linksPiePagina li:last-child {
-        margin-right: 0;
-      }
-      
-      .linksPiePagina a {
-        text-decoration: none;
-        color: #a09f9f;
-      }
-      
-      .linksPiePagina a:hover {
-        text-decoration: underline;
-      }  
   }

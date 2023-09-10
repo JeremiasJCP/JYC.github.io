@@ -1,7 +1,7 @@
 .contenedorPrincipal{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -15,21 +15,23 @@
 }
 
 .SeccionDespuesEncabezado {
-    width: 30%;
+    order: 1;
 }
 
 .Iconos{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    order: 2;
+    width: 50%;
 }
 
 .contenedorDistancia{
-    width: 25%;
+    width: 90%;
 }
 
 .avionVolando{
-    width: 100%;
+    width: 60%;
 }
 
 .diasJuntos{
@@ -37,32 +39,38 @@
 }
 
 .frasesCanciones{
-    width: 30%;
+    width: 100%;
 }
 
 .mensajePrincipal{
     font-size: 2rem;
     width: 70%;
+    order: 4;
 }
 
 .loNuevo{
-    font-size: 1.8rem;
+    order: 3;
+    width: 50%;
+    font-size: 1.5rem;
 }
 
 .loNuevo h3{
-    font-size: 1.9rem;
-}
-
-.mastext{
     font-size: 1.6rem;
 }
 
-footer{
+.mastext{
+    width: 100%;
+    font-size: 1.6rem;
+    order: 5;
+}
+
+#footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
+    order: 6;
 }
 
 .linksPiePagina {
