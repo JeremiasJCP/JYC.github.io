@@ -9,7 +9,7 @@
   
   .carousel-images {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s cubic-bezier(1, -0.3, 0.49, 0.76);
   }
   
   .carousel-image {
