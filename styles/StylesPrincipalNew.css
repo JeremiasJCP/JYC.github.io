@@ -1,0 +1,80 @@
+:root{
+    --azul-50: #e8f1ff;
+    --azul-100: #d5e4ff;
+    --azul-200: #b3ccff;
+    --azul-300: #86aaff;
+    --azul-400: #5777ff;
+    --azul-500: #3146ff;
+    --azul-600: #0e12ff;
+    --azul-700: #0405fe;
+    --azul-800: #080ce2;
+    --azul-900: #11179e;
+    --azul-950: #0a0b5c;    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--azul-50);
+    height: 100vh;
+}
+
+/* Header */
+
+.header--barra-inferior{
+    width: 100%;
+    min-width: 320px;
+    min-height: 10vh;
+    border: none;
+}
+
+.header--encabezado{
+    width: 100%;
+    min-width: 320px;
+    min-height: 30vh;
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("https://i.ibb.co/W0ndkdB/Whats-App-Image-2023-08-18-at-13-51-43.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.header--card-action{
+    position: relative;
+    width: max-content;
+    min-width: 100px;
+    height: max-content;
+    padding: 20px;
+    top: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--azul-100);
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.header--card-action a{
+    display: block;
+    width: 70%;
+    max-width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    color: var(--azul-50);
+    text-decoration: none;
+    border-radius: 9px;
+    background-color: var(--azul-500);
+}
