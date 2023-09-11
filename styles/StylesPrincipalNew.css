@@ -30,6 +30,10 @@ body{
 
 /* Header */
 
+header{
+    background: transparent;
+}
+
 .header--barra-inferior{
     width: 100%;
     min-width: 320px;
@@ -77,4 +81,30 @@ body{
     text-decoration: none;
     border-radius: 9px;
     background-color: var(--azul-500);
+}
+
+.header--bienvenida{
+    width: 70%;
+    max-width: 400px;
+    height: max-content;
+    font-size: 1.2rem;
+    color: var(--azul-50);
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 9px;
+    background-color: var(--azul-900);
+}
+
+.header--bienvenida span{
+    display: block;
+    width: 150px;
+    height: 75px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: url("https://i.ibb.co/fXnc5Vm/Sentados-en-una-banca.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
