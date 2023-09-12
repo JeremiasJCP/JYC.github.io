@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: auto;
 }
 
 html{
@@ -25,7 +26,6 @@ html{
 
 body{
     background-color: var(--azul-50);
-    height: 100vh;
 }
 
 /* Header */
@@ -94,6 +94,7 @@ header{
     padding: 20px;
     border-radius: 9px;
     background-color: var(--azul-900);
+    box-shadow: 13px 12px 20px 0px black;
 }
 
 .header--bienvenida span{
@@ -107,4 +108,83 @@ header{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+/* Main */
+
+
+.mensajePrincipal{
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 9px;
+    background: var(--azul-500);
+    box-shadow: 13px 12px 10px 0px var(--azul-400);
+}
+
+.mensajePrincipal article{
+    width: 100%;
+    padding: 15px;
+    font-size: 1.4rem;
+    color: var(--azul-50);
+}
+
+.mensajePrincipal img{
+    width: 60%;
+}
+.imagenes-Mensaje-Principal:nth-child(8){
+    position: relative;
+    left: 60%;
+    width: 40%;
+}
+
+
+
+/*          aside        */
+
+.aside--container-recuerdos-img {
+    width: 100%;
+    min-width: 320px;
+    margin: 30px 0px 30px 0px;
+    min-height: 28vh;
+    max-height: 30vh;
+    padding: 10px;
+    border: white 1px solid;
+    background-color: var(--azul-100);
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    overflow: scroll;
+}
+
+.aside--container-recuerdos-img  img{
+    width: 90px;
+    border-radius: 15px;
+    margin-left: 10px;
+    border: var(--azul-200) 5px solid;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+}
+
+.aside--container-recuerdos-img  img:hover{
+    width: 120px;
+    max-height: 80%;
+    object-fit: fill;
+}
+
+.container-recuerdo-tex{
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+.container-recuerdo-tex h2:nth-child(1){
+    color: var(--azul-500);
+}
+
+.container-recuerdo-tex h2:nth-child(2){
+    color: var(--azul-800);
 }
