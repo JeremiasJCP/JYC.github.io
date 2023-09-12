@@ -73,5 +73,7 @@ function activarDiasSinVernos() {
         });
 }
 
+activarDiasSinVernos()
+
 
 

@@ -21,7 +21,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0a0b5c;
+    background-color: #083049;
     top: 0;
     position: fixed;
     z-index: 999;
@@ -99,7 +99,7 @@ header{
     }
 
     .dropdown-content a:active{
-        background: #011c4095;
+        background: #083049;
         color: rgb(192, 225, 255);
     }
 
