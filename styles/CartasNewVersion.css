@@ -125,6 +125,50 @@ aside{
     border: var(--azul-300);
 }
 
+
+        /* tablas con listado de cartas */
+.container-list-cartas{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: var(--azul-600);
+}
+
+.container-list-cartas .container--title-date{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.tables-lista-cartas{
+    width: 40%;
+    font-size: 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;;
+}
+
+.tables-lista-cartas tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.tables-lista-cartas a, .tables-lista-cartas th{
+    width: 100%;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--azul-950);
+}
+
 /*      footer      */
 
 footer{
