@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas Princess</title>
+    <link rel="stylesheet" href="../styles/CartasNewVersion.css">
+    <link rel="stylesheet" href="..//styles/carruselNotas.css">
+    <link rel="stylesheet" href="../styles/notas-Dinamicas.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/encabezadoPagina.css">
+</head>
+<body>
+    <header>
+        <section id="encabezado" class="border-gradient content">
+            <div id="contenedorLogo">
+                <a class="Logo" href="Principal.html"><h2 class="Logo" >JYC</h2></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">&#9776</button>
+                <div class="dropdown-content">
+                    <a  href="./Principal.html">Inicio</a>
+                    <a  href="./cartas.html">Cartas</a>
+                    <a  href="./Historia.html">Historia</a>
+                    <!-- <a  href="./Linea de Tiempo.html">Linea de Tiempo</a> -->
+                    <!-- <a  href="./Descargas.html">Descargas</a> -->
+                    <!-- <a  href="./Cuenas.html">Cuentas</a> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="header--encabezado">
+            <div class="header--card-action">
+                <h2>Cartas</h2>
+                <p>Bienvenida a esta preciada sección</p>
+                <p><b>"TE AMO MÁS"</b></p>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+
+        <aside>
+            <!-- Botones de acceso directo a los perfiles -->
+            <section class="aside--botones-El-Ella">
+                <a id="botonElla" class="botones-el-ella" href="#CartasDeElla">Cartas de Ella</a>
+                
+                <a id="botonEl" class="botones-el-ella" href="#CartasDeEl"> Cartas de El</a>
+            </section>
+            
+            <!--Carrusel de Notas-->
+            <section class="carousel-container ">
+                <div class="carousel-images efectoEntrada">
+                  <img class="carousel-image active" src="../Multimedia/Notitas/1.webp" alt="Imagen 1">
+                  <img class="carousel-image" src="../Multimedia/Notitas/2.webp"  alt="Imagen 2">
+                  <img class="carousel-image" src="../Multimedia/Notitas/3.webp"  alt="Imagen 3">
+                  <img class="carousel-image" src="../Multimedia/Notitas/4.webp"  alt="Imagen 4">
+                  <img class="carousel-image" src="../Multimedia/Notitas/5.webp"  alt="Imagen 5">
+                  <img class="carousel-image" src="../Multimedia/Notitas/6.webp"  alt="Imagen 6">
+                  <img class="carousel-image" src="../Multimedia/Notitas/7.webp"  alt="Imagen 7">
+                  <img class="carousel-image" src="../Multimedia/Notitas/8.webp"  alt="Imagen 8">
+                  <img class="carousel-image" src="../Multimedia/Notitas/9.webp"  alt="Imagen 9">
+                  <img class="carousel-image" src="../Multimedia/Notitas/10.webp"  alt="Imagen 10">
+                  <img class="carousel-image" src="../Multimedia/Notitas/11.webp"  alt="Imagen 11">
+                  <img class="carousel-image" src="../Multimedia/Notitas/12.webp"  alt="Imagen 12">
+                  <img class="carousel-image" src="../Multimedia/Notitas/13.webp"  alt="Imagen 13">
+                  <img class="carousel-image" src="../Multimedia/Notitas/14.webp"  alt="Imagen 14">
+                  <img class="carousel-image" src="../Multimedia/Notitas/15.webp"  alt="Imagen 15">
+                  <img class="carousel-image" src="../Multimedia/Notitas/16.webp"  alt="Imagen 16">
+                  <img class="carousel-image" src="../Multimedia/Notitas/17.webp"  alt="Imagen 17">
+                  <img class="carousel-image" src="../Multimedia/Notitas/18.webp"  alt="Imagen 18">
+                  <img class="carousel-image" src="../Multimedia/Notitas/19.webp"  alt="Imagen 19">
+                  <img class="carousel-image" src="../Multimedia/Notitas/20.webp"  alt="Imagen 20">
+                  <img class="carousel-image" src="../Multimedia/Notitas/21.webp"  alt="Imagen 21">
+                  <img class="carousel-image" src="../Multimedia/Notitas/22.webp"  alt="Imagen 22">
+                  <img class="carousel-image" src="../Multimedia/Notitas/23.webp"  alt="Imagen 23">
+                  <img class="carousel-image" src="../Multimedia/Notitas/24.webp"  alt="Imagen 24">
+                  <img class="carousel-image" src="../Multimedia/Notitas/25.webp"  alt="Imagen 25">
+                  <img class="carousel-image" src="../Multimedia/Notitas/26.webp"  alt="Imagen 26">
+                </div>
+                <button class="carousel-button prev-button" onclick="prevImage()">&#8249;</button>
+                <button class="carousel-button next-button" onclick="nextImage()">&#8250;</button>
+            </section>
+            
+            <!-- Icono Notas -->
+            <div id="notasDinamicas" class="notasDinamicas efectoentrada">
+                <div>
+                <p id="Nota" class="Nota"></p>
+                </div>
+                <button onclick="actualizarNota()" id="actualizarNotaBoton">Actualizar</button>
+            </div>
+
+            <!-- Lista de cartas -->
+            <section class="listadecartas">
+                <p>Presiona una de las cartas de la lista para leerla</p>
+                <ul>
+                  <h1>Cartas de El</h1>
+                  <ul class="list">
+                    <li><a href="#15Mesess">15 Meses</a></li>
+      
+                    <li><a href="#BuenasTardes">Buenas Tardes</a></li>
+      
+                    <li><a href="#UnMensajeenviado">Un Mensaje enviado...</a></li>
+      
+                    <li><a href="#14Meses">14 Meses</a></li>
+      
+                    <li><a href="#13Meses">13 Meses</a></li>
+      
+                    <li><a href="#Léelacuantasveces">Léela las veces que necesites</a></li>
+      
+                    <li><a href="#nota13Meses">Nota 13 Meses</a></li>
+      
+                    <li><a href="#BuenosDias13">Buenos Dias: 13 meses</a></li>
+      
+                    <li><a href="#seEscapa">¿Y si el amor se escapa?</a></li>
+      
+                    <li><a href="#12Meses">12 Meses</a></li>
+      
+                    <li><a href="#NotitaAmor">Una notita de amor</a></li>
+                    
+                    <li><a href="#Volvere">Volvere</a></li>
+                  </ul>
+                  
+                  <h1>Cartas de Ella</h1>
+                  <ul class="list">
+      
+                    <li><a href="#Tuprimeranota">Tu primera nota</a></li>
+      
+                    <li><a href="#Portadademicuaderno">Portada de mi cuaderno (JCP)</a></li>
+      
+                    <li><a href="#Merayastelacamisa">Me rayaste la camisa (JCP)</a></li>
+      
+                    <li><a href="#TeAmo">Te Amo</a></li>
+      
+                    <li><a href="#14 MesesElla">14 Meses</a></li>
+      
+                    <li><a href="#BuenasNoche">Buenas Noches</a></li>
+      
+                    <!-- <li><a href="#FelizViajeCartaLarga">Feliz Viaje (Carta de despedida)</a></li> -->
+      
+                    <li><a href="#9Meses">9 Meses</a></li>
+      
+                  </ul>
+                </ul>
+              </section>
+
+                      <!-- Listado de cartas -->
+        </aside>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="contenidoPiePagina">
+            
+            <ul class="linksPiePagina">
+                <li><a href="./Principal.html">Inicio</a></li>
+                <li><a  href="./cartas.html">Cartas</a></li>
+                <li><a href="./Historia.html">Historia</a></li>
+                <li><a href="./JuegoPreguntas.html">Juego-JYC</a></li>
+                <!-- <li><a href="#">Videos</a></li> -->
+            </ul>
+            <section id="textMiTodo">
+                <p class="elementos-Mi-todo">Mi Novia</p>
+                <p class="elementos-Mi-todo">Mi Princesa</p>
+                <p class="elementos-Mi-todo">Mi Amor  </p>
+                <p class="elementos-Mi-todo">Mi Corazón </p>
+                <p class="elementos-Mi-todo">Mi Vida </p>
+                <p class="elementos-Mi-todo">Mi Amorcito </p>
+                <p class="elementos-Mi-todo">Mi Princesita </p>
+                <p class="elementos-Mi-todo">Mi Mejor Amiga </p>
+                <p class="elementos-Mi-todo">Mi Compañera </p>
+                <p class="elementos-Mi-todo">Mi Coqueta</p>
+                <p class="elementos-Mi-todo">Mi Chica Sexy </p>
+                <p class="elementos-Mi-todo">Amor de mi vida </p>
+                <p class="elementos-Mi-todo">Mi Todo</p>
+            </section>
+            <p>"Has llegado al final de la página. Espero que te haya gustado. Te amo con todo mi corazón. Eres la mejor, mi princesa (Yeethanny Martinez)."</p>
+            <p class="DerechosReservados">© 2023 Pagina para mi princesa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="../Js/menuDesplegable.js"></script>
+<script src="../Js/notasDinamicas.js"></script>
+<script src="../Js/carruselNotas.js"></script>
+</html>

@@ -1,0 +1,137 @@
+:root{
+    --azul-50: #f0f9ff;
+    --azul-100: #e0f3fe;
+    --azul-200: #bae8fd;
+    --azul-300: #7ed6fb;;
+    --azul-400: #39c1f7;;
+    --azul-500: #0faae8;;
+    --azul-600: #0391d3;;
+    --azul-700: #046da0;;
+    --azul-800: #085c84;;
+    --azul-900: #0c4c6e;;
+    --azul-950: #083049;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*      header      */
+
+.header--encabezado{
+    width: 100%;
+    min-width: 320px;
+    height: 32vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    filter: brightness(130%);
+    background-image: url("https://i.ibb.co/ZY15ZMx/video1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header--card-action{
+    position: relative;
+    top: 20%;
+    color: var(--azul-50);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px 6px;
+    font-size: 1.4rem;
+    background-color: var(--azul-950);
+}
+
+
+/*          aside         */
+
+aside{
+    width: 100%;
+    min-width: 320px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.aside--botones-El-Ella{
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botones-el-ella{
+    width: 40%;
+    max-width: 366px;
+    margin: 5%;
+    padding: 2%;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;  
+    text-decoration: none; 
+    border-radius: 15px;
+    color: var(--azul-50);
+    background-color: var(--azul-800); 
+}
+
+
+/* notas dinamicas del aside */
+
+.notasDinamicas{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 3%;
+    border-radius: 12px;
+    background-color: var(--azul-800);
+    box-shadow: 3px 12px 15px 4px var(--azul-950);
+}
+
+.Nota{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--azul-100);
+}
+
+
+#actualizarNotaBoton{
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    color: var(--azul-50);
+    background-color: var(--azul-900);
+    border: var(--azul-500);
+}
+
+#actualizarNotaBoton:active{
+    color: var(--azul-900);
+    background-color: var(--azul-50);
+    border: var(--azul-300);
+}
+
+/*      footer      */
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    min-width: 320px;
+    height: 35dvh;
+    margin-bottom: none;
+    background-color: var(--azul-950)
+}
