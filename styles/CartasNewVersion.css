@@ -169,7 +169,107 @@ aside{
     color: var(--azul-950);
 }
 
+/* Encabezados El/Ella */
+
+.Encabezado-cartas{
+    width: 99%;
+    min-width: 318px;
+    height: 80%;
+    position: sticky;
+    top: 0;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 12px 66px;
+    background: rgb(8,48,73);
+    background: linear-gradient(90deg, rgba(8,48,73,1) 0%, rgba(12,76,110,1) 49%, rgba(4,109,160,1) 100%);
+    box-shadow: 6px 8px 10px 8px var(--azul-950);
+}
+
+.contenedorTextoTargeta{
+    width: 60%;
+    padding: 14px;
+    font-size: 1.3vh;
+    color: var(--azul-100);
+}
+
+.imagen-encabezado-cartas{
+    width: 40%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px 70px;
+}
+
+/* Mensaje de informacion */
+
+.Mensaje-Visualizar-carta{
+    display: block;
+    width: 80%;
+    font-size: 1vh;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+/* Estilos de cartas */
+
+.Contenedor-Cartas-principal{
+    width: 100%;
+    min-width: 320px;
+    height: calc(100%  + 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-carta-individual{
+    width: 100%;
+    min-width: 320px;
+    height: 80vh;
+    margin: 30px;
+    padding: 60px;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    overflow: auto;
+    border-radius: 15%;
+    color: var(--azul-50);
+    font-weight: 100;
+    background-color: var(--azul-950);
+}
+
+.container-carta-individual:hover{
+    color: aquamarine;
+    aspect-ratio: 9/16;
+    position: absolute;
+    max-width: 80%;
+
+}
+
+.title-carta{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3vh;
+}
+
+.fecha-carta{
+    width: 100%;
+    font-size: 1.6vh;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.Carta{
+    width: 100%;
+    font-size: 1.6vh;
+    text-align: center;
+}
+
 /*      footer      */
+
 
 footer{
     width: 100%;
