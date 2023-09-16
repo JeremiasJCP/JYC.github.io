@@ -121,7 +121,8 @@ header{
 
 .mensajePrincipal{
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-top: 20px;
     background: var(--azul-500);
 }
 
@@ -140,10 +141,12 @@ header{
 /*          aside        */
 
 aside{
-    width: 100%;
+    width: 60%;
     min-width: 320px;
-    height: auto;
-    min-height: 400px;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 14px;
+    background-color: var(--azul-400);
 }
 
 .container-recuerdo-tex{
@@ -153,31 +156,41 @@ aside{
 }
 
 .container-recuerdo-tex h2:nth-child(1){
-    color: var(--azul-500);
+    color: var(--azul-900);
 }
 
 .container-recuerdo-tex h2:nth-child(2){
-    color: var(--azul-700);
+    color: var(--azul-950);
 }
 
-.continer-Recuerdos-img{
-    width: 100%;
-    height: 30vh;
+.carousel {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel__track {
     display: flex;
-    align-items: center;
-    overflow-x: hidden;
+    transition: transform 0.5s cubic-bezier(0.82, -0.35, 0.96, 0.61);
 }
 
-.continer-Recuerdos-img img{
-    width: 70%;
-    height: 70%;
-    margin: 0 30px;
+.carousel__slide {
+    width: 100%;
+    flex: 0 0 auto;
+    opacity: 0.5;
+    transition: opacity 0.5s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
-.continer-Recuerdos-img img:hover{
-    transform: scale(1.4);
+.carousel__slide.current-slide {
+    opacity: 1;
 }
 
+.carousel__image {
+    width: 100%;
+    height: 85%;
+    border-radius: 20px;
+}
 
 /* Tabla de Datos */
 

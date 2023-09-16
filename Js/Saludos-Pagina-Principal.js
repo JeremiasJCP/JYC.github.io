@@ -25,8 +25,8 @@ function mostrarSaludo_imagenFondo() {
   var contenedorSaludo = document.getElementById("Titulo");
    contenedorSaludo.textContent = mensaje;
   
-  var contenedorImagen = document.getElementById("contenedorPrincipal");
-   contenedorImagen.style.backgroundImage = "url('" + imagenFondo + "')"; 
+  // var contenedorImagen = document.getElementById("contenedorPrincipal");
+  //  contenedorImagen.style.backgroundImage = "url('" + imagenFondo + "')"; 
 }
 
 mostrarSaludo_imagenFondo()

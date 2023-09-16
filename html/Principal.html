@@ -61,20 +61,56 @@
             </article>
         </section>
 
-        <aside class="aside--container-recuerdos-img" id="carousel">
+        <!-- <aside class="aside--container-recuerdos-img" id="carousel">
+            <figure class="continer-Recuerdos-img" id="imageContainer">
+                
+            </figure>
+        </aside> -->
+        
+        
+        <aside>
             <article class="container-recuerdo-tex">
                 <h2>Algunos Recuerdos</h2>
                 <h2>Juntos</h2>
             </article>
-            <figure class="continer-Recuerdos-img">
-                <img src="https://i.ibb.co/52V10Kj/IMG-20230313-WA0039.webp" alt="Imagen de nosotros">
-                <img src="https://i.ibb.co/fQ49jzX/Snapchat-1978285306.webp" alt="Imagen de nosotros">
-                <img src="https://i.ibb.co/0rk6LQ2/20211102-103331.webp" alt="Imagen de nosotros">
-                <img src="https://i.ibb.co/DVyrhD6/20230126-092833.webp" alt="Imagen de nosotros">
-                <img src="https://i.ibb.co/dJTTrFM/20230130-114735.webp" alt="Imagen de nosotros">
-                <img src="https://i.ibb.co/pLPvPpm/IMG-20220808-213640-501.webp" alt="Imagen de nosotros">
-                <img src="https://i.ibb.co/YTgksW5/IMG-20230313-030133.webp" alt="Imagen de nosotros">
-            </figure>
+            <div class="carousel">
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/52V10Kj/IMG-20230313-WA0039.webp" alt="Imagen de nosotros">
+                        </li>                        
+                        
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/fQ49jzX/Snapchat-1978285306.webp" alt="Imagen de nosotros">
+                        </li>
+
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/0rk6LQ2/20211102-103331.webp" alt="Imagen de nosotros">
+                        </li>
+
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/DVyrhD6/20230126-092833.webp" alt="Imagen de nosotros">
+                        </li>
+
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/dJTTrFM/20230130-114735.webp" alt="Imagen de nosotros">
+                        </li>
+                        
+
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/pLPvPpm/IMG-20220808-213640-501.webp" alt="Imagen de nosotros">
+                        </li>
+                        
+
+                        <li class="carousel__slide current-slide">
+                            <img class="carousel__image" src="https://i.ibb.co/YTgksW5/IMG-20230313-030133.webp" alt="Imagen de nosotros">
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
         </aside>
 
         <section class="main-sobre-nosotros">
@@ -149,4 +185,73 @@
 <script src="../Js/Saludos-Pagina-Principal.js"></script>
 <script src="../Js/Dias-Juntos-SinVernos-edades.js"></script>
 <script src="../Js/menuDesplegable.js"></script>
+<!-- <script>
+    // Lista de tus imágenes
+var images = [
+    "https://i.ibb.co/52V10Kj/IMG-20230313-WA0039.webp"
+    "https://i.ibb.co/fQ49jzX/Snapchat-1978285306.webp"
+    "https://i.ibb.co/0rk6LQ2/20211102-103331.webp"
+    "https://i.ibb.co/DVyrhD6/20230126-092833.webp"
+    "https://i.ibb.co/dJTTrFM/20230130-114735.webp"
+    "https://i.ibb.co/pLPvPpm/IMG-20220808-213640-501.webp"
+    "https://i.ibb.co/YTgksW5/IMG-20230313-030133.webp"
+    // Agrega todas tus imágenes aquí
+];
+
+// Obtén el contenedor de imágenes
+var imageContainer = document.getElementById('imageContainer');
+
+// Índice de la imagen actual
+var currentIndex = 0;
+
+// Crea y añade la primera imagen al contenedor
+var img = document.createElement('img');
+img.src = images[currentIndex];
+img.alt = "Imagen de nosotros";
+img.style.width = "20vw";
+img.style.height = "70%";
+img.style.margin = "0 30px";
+imageContainer.appendChild(img);
+
+// Función para cambiar a la siguiente imagen
+function nextImage() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    img.src = images[currentIndex];
+}
+
+// Cambia a la siguiente imagen cada 3 segundos
+setInterval(nextImage, 3000);
+</script> -->
+
+<script>
+var track = document.querySelector('.carousel__track');
+var slides = Array.from(track.children);
+var currentSlide = track.querySelector('.current-slide');
+
+// Función para mover al siguiente slide
+function nextSlide() {
+    var nextSlide = currentSlide.nextElementSibling;
+    if (!nextSlide) {
+        nextSlide = slides[0];
+    }
+    
+    track.style.transform = 'translateX(-' + nextSlide.style.left + ')';
+    currentSlide.classList.remove('current-slide');
+    nextSlide.classList.add('current-slide');
+    
+    currentSlide = nextSlide;
+}
+
+// Inicializa la posición de los slides
+slides.forEach(function(slide, index) {
+    slide.style.left = slide.offsetWidth * index + 'px';
+});
+
+// Cambia al siguiente slide cada 3 segundos
+setInterval(nextSlide, 3000);
+
+</script>
 </html>
