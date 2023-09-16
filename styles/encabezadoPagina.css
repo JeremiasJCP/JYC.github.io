@@ -14,9 +14,8 @@ font-family: 'Lobster', cursive; */
 #encabezado {
     width: 100%;
     min-width: 300px;
-    height: 40px;
+    height: 10vh;
     padding: 30px;
-    font-size: 13px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +34,7 @@ font-family: 'Lobster', cursive; */
 .Logo{
     color: #e8f1ff;
     font-family: 'Dancing Script', cursive;
-    font-size: 120%;
+    font-size: 4vw;
     text-decoration: none;
 }
 
@@ -57,6 +56,7 @@ font-family: 'Lobster', cursive; */
     color: #e8f1ff;;
     margin-bottom: 5px; 
     padding: 10px;
+    font-size: 2vw;
 }
 
 
@@ -78,6 +78,7 @@ font-family: 'Lobster', cursive; */
         flex-direction: row-reverse;
         border-bottom: 1px solid rgb(0, 157, 255);
         padding: 20px;
+        font-size: 3vw;
     }
     
     .dropdown-content a:hover{

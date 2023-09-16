@@ -22,12 +22,16 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    background: var(--azul-100);
+}
+
 /*      header      */
 
 .header--encabezado{
     width: 100%;
     min-width: 320px;
-    height: 32vh;
+    height: 46vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,12 +45,12 @@ html{
 
 .header--card-action{
     position: relative;
-    top: 20%;
+    top: calc(20% - 50px);
     color: var(--azul-50);
     text-align: center;
     padding: 10px;
     border-radius: 20px 6px;
-    font-size: 1.4rem;
+    font-size: 3vw;
     background-color: var(--azul-950);
 }
 
@@ -75,7 +79,7 @@ aside{
     max-width: 366px;
     margin: 5%;
     padding: 2%;
-    font-size: 1.4rem;
+    font-size: 3vw;
     text-align: center;
     font-weight: 500;  
     text-decoration: none; 
@@ -104,7 +108,7 @@ aside{
     width: 100%;
     padding: 5px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3vw;
     color: var(--azul-100);
 }
 
@@ -112,7 +116,7 @@ aside{
 #actualizarNotaBoton{
     margin: 10px auto;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 3vw;
     border-radius: 15px;
     color: var(--azul-50);
     background-color: var(--azul-900);
@@ -135,38 +139,52 @@ aside{
     align-items: start;
     justify-content: center;
     border-radius: 16px;
-    background-color: var(--azul-600);
+    background-color: var(--azul-950);
 }
 
 .container-list-cartas .container--title-date{
-    width: 100%;
+    width: 80%;
     margin: 20px auto;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 4vw;
+    color: var(--azul-100);
+    border-bottom: 2px solid var(--azul-300);
 }
 
-.tables-lista-cartas{
-    width: 40%;
-    font-size: 1.3rem;
-    text-align: center;
-    display: flex;
-    flex-direction: row;;
+
+
+.tables-lista-cartas tr{
+    height: 100%;
 }
 
 .tables-lista-cartas tbody{
     width: 100%;
+    height: 5%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
-.tables-lista-cartas a, .tables-lista-cartas th{
+.tables-lista-cartas th{
+    border-bottom: 2px var(--azul-400) solid;
     width: 100%;
-    font-size: 1.6rem;
+    height: 4vh;
+    margin-top: 10px;
+    font-size: 3vw;
+    font-weight: bold;
     text-decoration: none;
-    color: var(--azul-950);
+    color: var(--azul-50);
+}
+
+.tables-lista-cartas a{
+    display: block;
+    width: 100%;
+    height: 3vh;
+    margin-top: 10px;
+    font-size: 3vw;
+    text-decoration: none;
+    color: var(--azul-100);
 }
 
 /* Encabezados El/Ella */
@@ -174,7 +192,7 @@ aside{
 .Encabezado-cartas{
     width: 80%;
     min-width: 318px;
-    height: 11vh;
+    height: 100%;
     position: sticky;
     top: -20px;
     margin: 40px auto;
@@ -189,16 +207,17 @@ aside{
 
 .contenedorTextoTargeta{
     width: 60%;
+    margin-left: 10%;
     padding: 14px;
-    font-size: 1.3vh;
+    font-size: 3vw;
     color: var(--azul-100);
 }
 
 .imagen-encabezado-cartas{
     width: 40%;
-    height: 100%;
+    height: 15vh;
     object-fit: contain;
-    border-radius: 10px 70px;
+    border-radius: 100%;
 }
 
 /* Mensaje de informacion */
@@ -207,12 +226,11 @@ aside{
     display: flex;
     justify-content: center;
     width: 80%;
-    font-size: 1.6vh;
+    font-size: 2vw;
     font-style: oblique;
     font-weight: bold;
     margin: 20px auto;
     text-align: center;
-    background-color: #0391d3;
 }
 
 
@@ -248,19 +266,19 @@ aside{
 .title-carta{
     width: 100%;
     text-align: center;
-    font-size: 2.3vh;
+    font-size: 4vw;
 }
 
 .fecha-carta{
     width: 100%;
-    font-size: 1.6vh;
+    font-size: 3vw;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .Carta{
     width: 100%;
-    font-size: 1.6vh;
+    font-size: 3.4vw;
     text-align: center;
 }
 
