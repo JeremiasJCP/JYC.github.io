@@ -32,6 +32,7 @@ body{
 
 header{
     background: transparent;
+    height: auto;
 }
 
 .header--barra-inferior{
@@ -44,15 +45,15 @@ header{
 .header--encabezado{
     width: 100%;
     min-width: 320px;
-    min-height: 30vh;
+    height: 46vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    background-image: url("https://i.ibb.co/5jL42KB/Imagen-Principal.webp");
+    background-image: url("https://i.ibb.co/nRRp0fQ/Principal-Telefono.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
 }
 
 .header--card-action{
@@ -62,7 +63,7 @@ header{
     height: max-content;
     padding: 20px;
     top: 40px;
-    font-size: 1.2rem;
+    font-size: 3vw;
     text-align: center;
     color: var(--azul-100);
     border-radius: 16px;
@@ -72,10 +73,10 @@ header{
 .header--card-action a{
     display: block;
     width: 70%;
-    max-width: 100px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
+    font-size: 2.8vw;
     color: var(--azul-50);
     text-decoration: none;
     border-radius: 9px;
@@ -88,9 +89,9 @@ header{
 
 .header--bienvenida{
     width: 70%;
-    max-width: 400px;
+    max-width: 800px;
     height: max-content;
-    font-size: 1.2rem;
+    font-size: 3vw;
     color: var(--azul-50);
     margin: 0 auto;
     margin-top: 60px;
@@ -104,108 +105,94 @@ header{
 
 .header--bienvenida span{
     display: block;
-    width: 150px;
-    height: 75px;
+    width: 25vw;
+    height: 12vh;
     margin: 0 auto;
-    margin-top: 5px;
     margin-bottom: 5px;
     background-image: url("https://i.ibb.co/fXnc5Vm/Sentados-en-una-banca.png");
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 /* Main */
 
 
 .mensajePrincipal{
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
-    border-radius: 9px;
     background: var(--azul-500);
-    box-shadow: 13px 12px 10px 0px var(--azul-400);
 }
 
 .mensajePrincipal article{
     width: 100%;
-    padding: 15px;
-    font-size: 1.4rem;
+    padding: 5vw;
+    font-size: 3vw;
     color: var(--azul-50);
 }
 
 .mensajePrincipal img{
-    width: 60%;
-    max-width: 250px;
+    width: 25vw;
+    max-width: 350px;
 }
-
-
-
 
 /*          aside        */
 
-.aside--container-recuerdos-img {
+aside{
     width: 100%;
     min-width: 320px;
-    margin: 30px 0px 30px 0px;
-    min-height: 30vh;
-    max-height: 40vh;
-    padding: 10px;
-    border: white 1px solid;
-    background-color: var(--azul-100);
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-    justify-content: start;
-    overflow: scroll;
-}
-
-.aside--container-recuerdos-img  img{
-    width: 90px;
-    border-radius: 15px;
-    margin-left: 10px;
-    border: var(--azul-200) 5px solid;
-    aspect-ratio: 9/16;
-    object-fit: cover;
-}
-
-.aside--container-recuerdos-img  img:hover{
-    width: 120px;
-    max-height: 80%;
-    object-fit: fill;
+    height: auto;
+    min-height: 400px;
 }
 
 .container-recuerdo-tex{
-    height: 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    text-align: start;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
 }
 
 .container-recuerdo-tex h2:nth-child(1){
-    color: var(--azul-400);
+    color: var(--azul-500);
 }
 
 .container-recuerdo-tex h2:nth-child(2){
-    color: var(--azul-800);
+    color: var(--azul-700);
+}
+
+.continer-Recuerdos-img{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.continer-Recuerdos-img img{
+    width: 70%;
+    height: 70%;
+    margin: 0 30px;
+}
+
+.continer-Recuerdos-img img:hover{
+    transform: scale(1.4);
 }
 
 
 /* Tabla de Datos */
 
 .main-sobre-nosotros{
-    width: 96%;
+    width: 70%;
     min-width: 320px;
     margin: 0 auto;
-    border: 3px solid var(--azul-400);
     border-radius: 16px;
-    background: var(--azul-500);
+    background: linear-gradient(90deg, rgba(8,48,73,1) 0%, rgba(12,76,110,1) 49%, rgba(4,109,160,1) 100%);
     box-shadow: 13px 12px 20px 0px var(--azul-950);
 }
 
 .main-sobre-nosotros h2{
     width: 100%;
+    font-size: 3vw;
     text-align: center;
     margin: 10px;
     color: var(--azul-50);
@@ -214,7 +201,7 @@ header{
 .main-sobre-nosotros table{
     width: 100%;
     table-layout:fixed; 
-    font-size: 1.3rem;
+    font-size: 2vw;
 }
 
 .main-sobre-nosotros tr{
@@ -222,11 +209,9 @@ header{
     width: 60px;
     height: 40px;
     text-align: center;
-    background-color: var(--azul-800);
 }
 
 .main-sobre-nosotros th{
-    border: 1px solid var(--azul-50);
     border-radius: 12px;
     color: var(--azul-50);
 }
@@ -241,7 +226,7 @@ header{
     width: 90%;
     margin: 40px auto;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 3vw;
 }
 
 .main-parrafo h3{
