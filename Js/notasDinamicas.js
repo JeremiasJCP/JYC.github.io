@@ -86,7 +86,6 @@ function actualizarNota() {
         document.getElementById("Nota").innerHTML = nota;
         },1000);
     },1000);
-    actualizarFecha()
 }
 
 window.addEventListener('load', actualizarNota)

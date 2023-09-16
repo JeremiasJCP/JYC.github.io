@@ -172,11 +172,11 @@ aside{
 /* Encabezados El/Ella */
 
 .Encabezado-cartas{
-    width: 99%;
+    width: 80%;
     min-width: 318px;
-    height: 80%;
+    height: 11vh;
     position: sticky;
-    top: 0;
+    top: -20px;
     margin: 40px auto;
     display: flex;
     flex-direction: row;
@@ -196,7 +196,7 @@ aside{
 
 .imagen-encabezado-cartas{
     width: 40%;
-    height: 200px;
+    height: 100%;
     object-fit: contain;
     border-radius: 10px 70px;
 }
@@ -204,11 +204,15 @@ aside{
 /* Mensaje de informacion */
 
 .Mensaje-Visualizar-carta{
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 80%;
-    font-size: 1vh;
+    font-size: 1.6vh;
+    font-style: oblique;
+    font-weight: bold;
     margin: 20px auto;
     text-align: center;
+    background-color: #0391d3;
 }
 
 
@@ -225,9 +229,9 @@ aside{
 }
 
 .container-carta-individual{
-    width: 100%;
+    width: 60%;
     min-width: 320px;
-    height: 80vh;
+    height: 60vh;
     margin: 30px;
     padding: 60px;
     display: none;
@@ -239,14 +243,6 @@ aside{
     color: var(--azul-50);
     font-weight: 100;
     background-color: var(--azul-950);
-}
-
-.container-carta-individual:hover{
-    color: aquamarine;
-    aspect-ratio: 9/16;
-    position: absolute;
-    max-width: 80%;
-
 }
 
 .title-carta{
