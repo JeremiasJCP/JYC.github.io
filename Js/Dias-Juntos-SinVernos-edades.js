@@ -12,7 +12,7 @@ function diasSinVernos(){
     // Actualiza el contenido del elemento p con el resultado
     cantidadDias = cantidadDias + " Días";
 
-    document.getElementById("diasSinVernos").textContent = cantidadDias;
+    document.getElementById("tiempoSinVernos").textContent = cantidadDias;
 
 }
 
@@ -30,7 +30,7 @@ function DiasJuntos(){
     // Actualiza el contenido del elemento p con el resultado
     cantidadDias = cantidadDias + " Días"
 
-    document.getElementById("diferencia-dias").textContent = cantidadDias;
+    document.getElementById("DiasJuntos").textContent = cantidadDias;
     diasSinVernos()
     calcularEdadYMostrar('2005-02-17'); // Reemplaza '1990-01-01' con tu fecha de nacimiento
 }
