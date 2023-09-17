@@ -146,7 +146,6 @@ aside{
     padding: 30px;
     margin: 40px auto;
     border-radius: 14px;
-    background-color: var(--azul-400);
 }
 
 .container-recuerdo-tex{
@@ -156,11 +155,11 @@ aside{
 }
 
 .container-recuerdo-tex h2:nth-child(1){
-    color: var(--azul-900);
+    color: var(--azul-400);
 }
 
 .container-recuerdo-tex h2:nth-child(2){
-    color: var(--azul-950);
+    color: var(--azul-700);
 }
 
 .carousel {
@@ -188,7 +187,7 @@ aside{
 
 .carousel__image {
     width: 100%;
-    height: 85%;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -197,7 +196,8 @@ aside{
 .main-sobre-nosotros{
     width: 70%;
     min-width: 320px;
-    margin: 0 auto;
+    margin: 15px auto;
+    padding: 15px;
     border-radius: 16px;
     background: linear-gradient(90deg, rgba(8,48,73,1) 0%, rgba(12,76,110,1) 49%, rgba(4,109,160,1) 100%);
     box-shadow: 13px 12px 20px 0px var(--azul-950);

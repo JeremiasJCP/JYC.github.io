@@ -9,7 +9,6 @@
     transform: translateY(0);
 }
 
-
 .efectoentradados {
     opacity: 0;
     transition: opacity 1s;
@@ -18,4 +17,3 @@
 .efectoentradados.active {
     opacity: 1;
 }
-  
