@@ -1,0 +1,72 @@
+:root{
+    --azul-50: #f0f9ff;
+    --azul-100: #e0f3fe;
+    --azul-200: #bae8fd;
+    --azul-300: #7ed6fb;;
+    --azul-400: #39c1f7;;
+    --azul-500: #0faae8;;
+    --azul-600: #0391d3;;
+    --azul-700: #046da0;;
+    --azul-800: #085c84;;
+    --azul-900: #0c4c6e;;
+    --azul-950: #083049;;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: var(--azul-100);
+}
+
+.header--encabezado{
+    width: 100%;
+    min-width: 320px;
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("https://i.ibb.co/Bq6qDqp/sd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main--container-Master-Historia{
+    padding-top: 30px;
+    background-color: var(--azul-300);
+    color: var(--azul-950);
+}
+
+.main--container-Master-Historia h2{
+    width: 100%;
+    color: var(--azul-900);
+    text-align: center;
+    font-size: 3.8vw;
+}
+
+.HistoriaText{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+.HistoriaText p{
+    margin-top: 20px;
+    font-size: 3.2vw;
+    text-align: justify;
+}
+
+footer{
+    background-color: var(--azul-950);
+}
