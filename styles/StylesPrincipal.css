@@ -138,6 +138,31 @@ header{
     max-width: 350px;
 }
 
+/* Video de aniversario disponible */
+.container-Video-Aniversario{
+    width: 100%;
+    min-width: 320px;
+    padding: 2vh;
+    font-size: 6vw;
+    text-align: center;
+    color: white;
+    background: var(--azul-800);
+}
+
+.container-Video-Aniversario a{
+    width: 80%;
+    display: inline-block;
+    background: var(--azul-900);
+    padding: 8px;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--azul-200);
+}
+
+
+
 /*          aside        */
 
 aside{
