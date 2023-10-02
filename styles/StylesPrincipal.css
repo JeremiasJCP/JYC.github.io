@@ -144,13 +144,23 @@ header{
     min-width: 320px;
     padding: 2vh;
     font-size: 6vw;
+    font-family: 'Pacifico', cursive;
     text-align: center;
     color: white;
     background: var(--azul-800);
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-abstracto-textura_1258-30496.jpg?w=740&t=st=1696277185~exp=1696277785~hmac=e0c52d7ee50399e2006cd674d648ca5f8f11ae20c0c14263911a821882a2d9dd");
+    background-position: center;
+    background-size: cover;
 }
 
+.container-Video-Aniversario h4 {
+    font-size: 4vw;
+    font-weight: lighter;
+    color: rgb(213, 213, 213);
+} 
+
 .container-Video-Aniversario a{
-    width: 80%;
+    width: 40%;
     display: inline-block;
     background: var(--azul-900);
     padding: 8px;
@@ -158,9 +168,15 @@ header{
     margin: 20px;
     text-align: center;
     text-decoration: none;
-    color: var(--azul-200);
+    color: white;
+    
 }
 
+.container-Video-Aniversario a:hover{   
+    background-color: #f0f9ff; 
+    color: var(--azul-950);
+    border: 2px solid var(--azul-700);
+}
 
 
 /*          aside        */
