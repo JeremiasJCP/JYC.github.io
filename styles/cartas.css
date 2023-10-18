@@ -286,6 +286,15 @@ aside{
     margin-bottom: 10%;
 }
 
+#Ella-17Meses .Carta{
+    text-align: start;
+}
+
+#Ella-17Meses .Carta b{
+    margin: -2px;
+    color: var(--azul-200);
+}
+
 /*      footer      */
 
 
