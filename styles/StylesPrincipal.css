@@ -91,11 +91,11 @@ header{
     width: 100%;
     height: max-content;
     font-size: 3vw;
-    color: var(--azul-50);
+    color: var(--azul-700);
     margin: 0 auto;
     padding: 20px;
     padding-top: 15%;
-    background-color: var(--azul-900);
+    background-color: #ebf5fa;
 }
 
 
@@ -110,10 +110,28 @@ header{
     background-size: contain;
     background-repeat: no-repeat;
     object-fit: cover;
+    filter: contrast(80%);
+}
+
+.header--bienvenida p {
+    text-align: center;
 }
 
 /* Main */
 
+.main--container-info-proximoAniversario {
+    width: 100%;
+    min-width: 320px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    color: var(--azul-100);
+    background: var(--azul-900);
+    box-sizing: border-box;
+}
 .mensajePrincipal{
     width: 100%;
     margin: 0 auto;
@@ -229,7 +247,7 @@ aside{
 /* Tabla de Datos */
 
 .main-sobre-nosotros{
-    width: 70%;
+    width: 100%;
     min-width: 320px;
     margin: 15px auto;
     padding: 15px;
