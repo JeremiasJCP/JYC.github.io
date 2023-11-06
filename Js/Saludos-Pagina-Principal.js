@@ -33,26 +33,23 @@ function mostrarSaludo_imagenFondo() {
 mostrarSaludo_imagenFondo()
 
 function proximoAniversario() {
+  let spanProximoAniversario = document.getElementById('numeroProximoAniversario')
+  const fechaActual = new Date();
+  const diaActual = fechaActual.getDate();
+  const diasRestantes = 18 - diaActual;
 
-    var spanProximoAniversario = document.getElementById('numeroProximoAniversario')
-    const hoy = new Date();
-    const mesActual = hoy.getMonth();
-    const añoActual = hoy.getFullYear();
-    let mesProximo18 = mesActual;
-    let añoProximo18 = añoActual;
-  
-    if (mesActual === 11) {
-      mesProximo18 = 0;
-      añoProximo18++;
-    } else {
-      mesProximo18++;
-    }
-  
-    const fechaProximo18 = new Date(añoProximo18, mesProximo18, 18);
-    const diferenciaTiempo = fechaProximo18.getTime() - hoy.getTime();
-    const diasFaltantes = Math.ceil(diferenciaTiempo / (1000 * 60 * 60 * 24));
-  
-    spanProximoAniversario.innerHTML = `En ${diasFaltantes} días.`;
-  
+  if (diasRestantes < 0) {
+    // Si ya pasó el 18 de este mes, calculamos para el próximo mes
+    const fechaProximoMes = new Date(fechaActual);
+    fechaProximoMes.setMonth(fechaProximoMes.getMonth() + 1);
+    fechaProximoMes.setDate(18);
+    const diasEnProximoMes = (fechaProximoMes - fechaActual) / (1000 * 60 * 60 * 24);
+
+    return diasEnProximoMes;
+  }
+
+  const diasFaltantes = diasRestantes;
+
+  spanProximoAniversario.innerHTML = `En ${diasFaltantes} días.`;
 }
 proximoAniversario()
