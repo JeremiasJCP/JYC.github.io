@@ -52,4 +52,16 @@ function proximoAniversario() {
 
   spanProximoAniversario.innerHTML = `En ${diasFaltantes} días.`;
 }
+
+function diasQueFaltanParaVernos() {
+  let fechaEstimadaParaVernos = new Date('2025-07-01');
+  let fechaActual = new Date();
+  let diferenciaMilisegundos = fechaEstimadaParaVernos - fechaActual;
+  let diasRestantes = diferenciaMilisegundos / (1000 * 60 * 60 * 24);
+
+  let diasRestantesRedondeados = Math.floor(diasRestantes);
+  console.log(diasRestantesRedondeados) //Esta va a hacer la salida al HTML
+}
+
+diasQueFaltanParaVernos();
 proximoAniversario()
