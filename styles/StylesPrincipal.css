@@ -119,29 +119,63 @@ header{
 
 /* Main */
 
-.main--container-info-proximoAniversario {
+.main--containerGeneral-Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     min-width: 320px;
+    background: var(--azul-950);
+    padding-top: 10vh;
+    padding-bottom:10vh;
+}
+
+
+.main--container-info-proximoAniversario {
+    width: 50%;
     height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 4vw;
     color: var(--azul-100);
-    background: var(--azul-900);
+    font-weight: bold;
     box-sizing: border-box;
 }
+
+.main--container-info-diasParaVernos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: bold;
+    color: var(--azul-100);
+
+}
+
+.main--container-info-diasParaVernos #numeoroDiasParaVernos, #numeroProximoAniversario{
+    font-size: 10vw;
+    font-weight: bold;
+    letter-spacing: 1vw;
+    color: var(--azul-500);
+    text-shadow: 7px 4px 50px var(--azul-50);
+}
+
+
 .mensajePrincipal{
     width: 100%;
     margin: 0 auto;
-    background: var(--azul-500);
+    background: var(--azul-700);
 }
 
 .mensajePrincipal article{
     width: 100%;
     padding: 5vw;
-    font-size: 3vw;
+    font-size: 4vw;
     color: var(--azul-50);
 }
 
@@ -159,22 +193,23 @@ header{
     font-family: 'Pacifico', cursive;
     text-align: center;
     color: white;
-    background: var(--azul-800);
-    background-image: url("https://img.freepik.com/foto-gratis/fondo-abstracto-textura_1258-30496.jpg?w=740&t=st=1696277185~exp=1696277785~hmac=e0c52d7ee50399e2006cd674d648ca5f8f11ae20c0c14263911a821882a2d9dd");
+    background-image: url("https://i.ibb.co/qMTZ5Q7/1699392985704.jpg");
     background-position: center;
     background-size: cover;
+    filter: opacity(90%);
+    filter: contrast(120%);
 }
 
 .container-Video-Aniversario h4 {
     font-size: 4vw;
     font-weight: lighter;
-    color: rgb(213, 213, 213);
+    color: rgb(243, 239, 239);
 } 
 
 .container-Video-Aniversario a{
     width: 40%;
     display: inline-block;
-    background: var(--azul-900);
+    background:#083049c0;
     padding: 8px;
     border-radius: 15px;
     margin: 20px;
@@ -244,53 +279,11 @@ aside{
     border-radius: 20px;
 }
 
-/* Tabla de Datos */
-
-.main-sobre-nosotros{
-    width: 100%;
-    min-width: 320px;
-    margin: 15px auto;
-    padding: 15px;
-    background: linear-gradient(90deg, rgba(8,48,73,1) 0%, rgba(12,76,110,1) 49%, rgba(4,109,160,1) 100%);
-}
-
-.main-sobre-nosotros h2{
-    width: 100%;
-    font-size: 3vw;
-    text-align: center;
-    margin: 10px;
-    color: var(--azul-50);
-}
-
-.main-sobre-nosotros table{
-    width: 100%;
-    table-layout:fixed; 
-    font-size: 2vw;
-}
-
-.main-sobre-nosotros tr{
-    padding: 10px;
-    width: 60px;
-    height: 40px;
-    text-align: center;
-}
-
-.main-sobre-nosotros th{
-    border-radius: 12px;
-    color: var(--azul-50);
-}
-
-.main-sobre-nosotros td{
-    border-radius: 4px;
-    color: var(--azul-100);
-}
-
-
 .main-parrafo{
     width: 90%;
     margin: 40px auto;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .main-parrafo h3{
@@ -302,6 +295,43 @@ aside{
 }
 .main-parrafo i{
     color: var(--azul-600);
+}
+
+/* Tabla de Datos */
+
+.main-sobre-nosotros{
+    width: 100%;
+    min-width: 320px;
+    padding: 15px;
+    font-size: 4vw;
+    background: var(--azul-50);
+    color: var(--azul-950);
+}
+
+.main-sobre-nosotros h2{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+
+.main-sobre-nosotros table{
+    width: 100%;
+    table-layout:fixed; 
+}
+
+.main-sobre-nosotros tr{
+    padding: 10px;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+}
+
+.main-sobre-nosotros th{
+    border-radius: 12px;
+}
+
+.main-sobre-nosotros td{
+    border-radius: 4px;
 }
 
 footer{
