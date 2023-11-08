@@ -1,0 +1,218 @@
+:root{
+    --azul-50: #f0f9ff;
+    --azul-100: #e0f3fe;
+    --azul-200: #bae8fd;
+    --azul-300: #7ed6fb;;
+    --azul-400: #39c1f7;;
+    --azul-500: #0faae8;;
+    --azul-600: #0391d3;;
+    --azul-700: #000001;;
+    --azul-800: #085c84;;
+    --azul-900: #0c4c6e;;
+    --azul-950: #083049;;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header--encabezado{
+    width: 100%;
+    min-width: 320px;
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-image: url("https://i.ibb.co/Bq6qDqp/sd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* main */
+
+.Main--contenedor-Principal-Introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main--contenedor-Principal-Introduccion h2{
+    width: 90%;
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+    text-decoration:underline;
+    color: var(--azul-950);
+}
+
+.Main--contenedor-Principal-Introduccion article{
+    width: 90%;
+    margin-top: 2vh;
+}
+
+.Main--contenedor-Principal-Introduccion p{
+    text-align: start;
+    font-size: 4vw;
+    color:#042539;
+}
+
+.main--contenedorPrincipal-Reglas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    text-align: start;
+    font-size: 5vw;
+    font-weight: bold;
+    color: var(--azul-950);
+    background-color: var(--azul-400);
+}
+
+.main--contenedorPrincipal-Reglas p{
+    font-size: 3.5vw;
+    font-style: italic;
+    margin-bottom: 3vh;
+}
+
+.main--contenedorPrincipal-Reglas ul{
+    width: 80%;
+    background:#f0f9ffd4;
+    border-radius: 1.8rem;
+    padding: 1rem;
+    margin-bottom: 5vh;
+    box-shadow: 23px 13px 54px black;
+}
+
+.main--contenedorPrincipal-Reglas ul li a{
+    color: #42484b;
+    text-decoration: none;
+}
+
+.main--contenedorPrincipal-Reglas li{
+    font-size: 4vw;
+    margin-left: 4vw;
+    margin-bottom: 4vh;
+    list-style: none;
+    color: #031b2b;
+}
+
+
+.main--seccion-explicacion-de-conceptos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+
+}
+
+.main--seccion-explicacion-de-conceptos article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explicacion-de-conceptos--Elementos-De-Explicacion {
+    width: 80%;
+    margin: 3vh 0;
+    padding: 2rem;
+    color: #031b2b;
+    font-size: 4.5vw;
+    text-align: center;
+    border-radius: 1.8rem;
+    background: var(--azul-200);
+    box-shadow: 11px 15px 40px #000001;
+}
+
+.explicacion-de-conceptos--Elementos-De-Explicacion p{
+    font-size: 4vw;
+    text-align: start;
+    margin-top: 1.2rem;
+}
+
+
+/* Pie de Pagina */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  footer {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    text-align: center;
+    border: none;
+    color: var(--azul-950);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contenidoPiePagina {
+    margin: 0 auto;
+    background-color: var(--azul-600);
+  }
+  
+  .contenidoPiePagina p {
+    margin-bottom: 10px;
+    font-size: 3vw;
+  }
+  
+  .linksPiePagina {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linksPiePagina li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .linksPiePagina li:last-child {
+    margin-right: 0;
+  }
+  
+  .linksPiePagina a {
+    text-decoration: none;
+    color: var(--azul-800);
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  
+  #textMiTodo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .DerechosReservados{
+    font-size: 2vw;
+  }
+  
+  .elementos-Mi-todo{
+    color: rgba(255, 255, 255, 0.792);
+    font-size: 0.8rem;
+    width: 20%;
+    margin: 10px;
+  } 
+  
