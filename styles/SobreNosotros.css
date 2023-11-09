@@ -31,10 +31,6 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    background-image: url("https://i.ibb.co/Bq6qDqp/sd.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
@@ -56,38 +52,161 @@ html{
     color: var(--azul-950);
 }
 
+.contenedor--Nuestras-Fotos {
+  width: 100%;
+  height: 14vh;
+  min-width: 320px;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.imagenDeNosotros {
+  width: 30%;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 15px 10px 55px black;
+}
+
+#img1{
+  background-image: url(https://i.ibb.co/nMp60C3/yo.webp);
+}
+
+#img2{
+  background-image: url(https://i.ibb.co/5sZKwkb/ella.webp);
+  
+}
+
 .Main--contenedor-Principal-Introduccion article{
     width: 90%;
     margin-top: 2vh;
 }
 
 .Main--contenedor-Principal-Introduccion p{
-    text-align: start;
-    font-size: 4vw;
-    color:#042539;
+  margin: 2vh 0;
+  text-align: start;
+  font-size: 4vw;
+  color:#042539;
 }
+
+.main-contenedorPrincipal-mensajesDeAnimo {
+  width: 100%;
+  min-width: 320px;
+  margin: 4vh 0;
+}
+
+.contendor-MensajeAnimo {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3.5vh auto;
+  padding: 4vw;
+  color: var(--azul-500);
+  background: #e1dbd2e3;
+  box-shadow: 10px 12px 25px  black;
+  border-radius: 10px 30px;
+}
+.mensajeAnimo {
+  font-size: 4vw;
+  margin-top: 2vh;
+  text-align: center;
+  color: var(--azul-900);
+}
+
+.main-contenedorPrincipal-estudioBiblia {
+  width: 100%;
+  min-width: 320px;
+}
+.contenedor-Estudio-De-la-biblia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--azul-800);
+}
+.Partes-del-contenedor-Estudio-blbilia {
+  width: 100%;
+  margin: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vw;
+  color: var(--azul-50);
+}
+
+.Partes-del-contenedor-Estudio-blbilia hr{
+  width: 12vw;
+  height: 100%;
+  transform: rotate(90deg);
+  color: #000000;
+
+}
+.Parte1-ContenedorEstudioBiblia {
+  width: 45%;
+
+}
+.title-Estudio {
+  color: var(--azul-100);
+  font-size: 4vw;
+
+}
+.Descripcion-Estudio {
+  margin-top: 1.6vh;
+  color: var(--azul-200);
+  font-size: 3vw;
+}
+.Parte2-ContenedorEstudioBiblia {
+  width: 45%;
+}
+
+.Comentario-estudio-biblico {
+  font-size: 3vw;
+  color: var(--azul-200);
+  margin-bottom: 2vh;
+}
+
+
 
 .main--contenedorPrincipal-Reglas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3vh;
     padding-top: 2vh;
     text-align: start;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: bold;
     color: var(--azul-950);
     background-color: var(--azul-400);
 }
 
 .main--contenedorPrincipal-Reglas p{
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-style: italic;
     margin-bottom: 3vh;
 }
 
+.main--contenedorPrincipal-Reglas .ContenedorReglas-botonDescargarReglas{
+  text-decoration: none;
+  font-size: 3vw;
+  margin-bottom: 2vh;
+  padding: 2vw;
+  color: var(--azul-100);
+  border-radius: 15px;
+  background-color: var(--azul-950);
+}
+
+
+
 .main--contenedorPrincipal-Reglas ul{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
     width: 80%;
     background:#f0f9ffd4;
     border-radius: 1.8rem;
@@ -97,18 +216,72 @@ html{
 }
 
 .main--contenedorPrincipal-Reglas ul li a{
-    color: #42484b;
+    color: #53585b;
     text-decoration: none;
 }
 
 .main--contenedorPrincipal-Reglas li{
-    font-size: 4vw;
-    margin-left: 4vw;
-    margin-bottom: 4vh;
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
     list-style: none;
     color: #031b2b;
 }
 
+.main--contenedorPricipal-ComentarioFOtos {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: row;
+  background: var(--azul-800);
+}
+.comentarioContenedorFotos {
+  width: 100%;
+  margin-right: -1vw;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  padding-left: 14vw;
+  padding-right: 38vw;
+  background-image: url(../Multimedia/FotosMandaPrincess.gif);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  filter: contrast(90%);
+}
+.comentarioFotosGrande {
+  color: white;
+  font-size: 5vw;
+}
+.comentarioFotosMediano {
+  color: var(--azul-200);
+  margin-top: 2vh;
+  font-size: 4vw;
+}
+.comentarioFotospequeño {
+  color: var(--azul-400);
+  margin-top: 2vh;
+  font-size: 3vw;
+}
+
+.main--contenedorPrinpal-DiasJuntos {
+  width: 100%;
+  min-width: 320px;
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--azul-950);
+}
+
+.main--contenedorPrinpal-DiasJuntos h3{
+  font-size: 20vw;
+}
+
+.main--contenedorPrinpal-DiasJuntos p{
+  font-size: 5vw;
+}
 
 .main--seccion-explicacion-de-conceptos {
     display: flex;
@@ -142,6 +315,10 @@ html{
     font-size: 4vw;
     text-align: start;
     margin-top: 1.2rem;
+}
+
+#regla15Minutos {
+  display: none;
 }
 
 

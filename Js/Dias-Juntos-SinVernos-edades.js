@@ -28,7 +28,7 @@ function DiasJuntos(){
     var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
 
     // Actualiza el contenido del elemento p con el resultado
-    cantidadDias = cantidadDias + " Días"
+    cantidadDias = cantidadDias + " "
 
     document.getElementById("DiasJuntos").textContent = cantidadDias;
     diasSinVernos()
