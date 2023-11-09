@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,8 @@
             </div>
         </section>
 
-        <section class="header--encabezado">
+        <video class="header--encabezado" muted loop autoplay src="../Multimedia/portada-sobre-nosotros.mp4">
+        <section >
             <!-- Aca se puede colocar contenido para la llamada a la accion -->
         </section>
     </header>
@@ -45,10 +46,16 @@
     <main>
         <section class="Main--contenedor-Principal-Introduccion">
             <h2>Nuestra Relación</h2>
+
+            <div class="contenedor--Nuestras-Fotos">
+                <div class="imagenDeNosotros" id="img1"><!--Aca van las fotos de nosotros--></div>
+                <div class="imagenDeNosotros" id="img2"><!--Aca van las fotos de nosotros--></div>
+            </div>
             <article>
                 <p>Somos una gran pareja, y de eso no me cabe duda. Me alegro de lo que fuimos, y de lo que llegamos a
                     ser. Agradezco todo lo que me has enseñado, cuando me has corregido, esas palabras de consuelo,
-                    apoyo y ánimo</p>
+                    apoyo y ánimo.
+                </p>
 
                 <p>Esta sección de la página nos muestra de forma más personal, lo que implica tener una relación como
                     la nuestra. Es un recurso para los días malos. Cuando tengamos algún desacuerdo, y necesitemos un
@@ -56,17 +63,47 @@
                     recordar cuánto nos amamos y lo mucho que hemos crecido como pareja.</p>
 
                 <p>Estoy seguro de que nos será muy útil. Nos ayudará a calmarnos y pensar con claridad. Todo tiene
-                    solución, sin importar quién haya cometido el error.</p>
+                    solución, sin importar quién haya cometido el error.
+                </p>
             </article>
         </section>
 
+        
         <section class="main-contenedorPrincipal-mensajesDeAnimo">
-
+            <div class="contendor-MensajeAnimo">
+                <hr>
+                <p id="mensajeParaArreglarElDia" class="mensajeAnimo"></p>
+            </div>
         </section>
+        
+        
+        <section class="main-contenedorPrincipal-estudioBiblia">
+            <div class="contenedor-Estudio-De-la-biblia">
+                <div class="Partes-del-contenedor-Estudio-blbilia">
+                    <div class="Parte1-ContenedorEstudioBiblia">
+                        <h4>Martes</h4>
+                        <p class="title-Estudio">Estudio bíblico</p>
+                        <p class="Descripcion-Estudio">Estudiaremos la lección que nos corresponde de la publicación</p>
+                    </div>
 
+                    <hr>
+
+                    <div class="Parte2-ContenedorEstudioBiblia">
+                        <h4>Viernes</h4>
+                        <p class="title-Estudio">Lectura Biblia</p>
+                        <p class="Descripcion-Estudio">Vamos a seleccionar un capítulo de la biblia para leerlo juntos, y luego lo comentamos.</p>
+                    </div>
+                    
+                </div>
+                <p class="Comentario-estudio-biblico">*En caso de no poder este día, se cambiará el día del estudio</p>
+            </div>
+        </section>
+        
+        
         <section class="main--contenedorPrincipal-Reglas">
             <h2>Reglas de pareja</h2>
             <p>Aun no esta completa, ayudame a agregar mas.</p>
+            <a class="ContenedorReglas-botonDescargarReglas" download href="../Multimedia/Reglas V01.jpg">Descargar reglas</a>
             <ul>
                 <li>Siempre estar para el otro, sin importar que estemos cansados.</li>
                 <li>Normalizar que en ocasiones vamos a tener un mal día.</li>
@@ -79,7 +116,7 @@
                 <li>Celebrar todos nuestros logros, por pequeños que parezcan.</li>
                 <li>Notificar si ese día no podrán hablar, Lo antes posible.</li>
                 <li>No agrandar más los problemas, siempre hay que buscar una solución.</li>
-                <li>Aplicar la <a href="#regla15Minutos">regla de los 15 minutos</a>.</li>
+                <li>Aplicar la <a onclick="mostrarDescripciones('regla15Minutos')">regla de los 15 minutos</a>.</li>
                 <li>Nunca terminar una llamada sin un “Te Amo”.</li>
                 <li>No irnos a dormir enojados.</li>
                 <li>Nunca estará de más un “¿Cómo va tu día mi amor?”.</li>
@@ -92,24 +129,34 @@
                 <li>Respetar el espacio y el tiempo del otro.</li>
                 <li>No asumir que sabemos lo que cree el otro.</li>
                 <li>No guardar rencor con temas del pasado.</li>
+                <li>Si vamos a salir, notificar si llegamos bien</li>
                 <li>Siempre hacer cosas nuevas.</li>
                 <li>No rendirse nunca.</li>
                 <li>No temer al pedir perdón.</li>
-                <li>Cero indigencia, así estemos enojados.</li>
+                <li>Cero indifencia, así estemos enojados.</li>
                 <li>No compararnos con nadie más.</li>
             </ul>
         </section>
+        
+        <section class="main--contenedorPricipal-ComentarioFOtos">
+            <article class="comentarioContenedorFotos">
+                <p class="comentarioFotosGrande">Amo cada fotografía que tengo de ti</p>
+                <p class="comentarioFotosMediano">Nunca tendré suficientes</p>
+                <p class="comentarioFotospequeño">En todas estás guapísima</p>
+            </article>
+        </section>
 
+        <section class="main--contenedorPrinpal-DiasJuntos">
+            <h3 id="DiasJuntos"></h3>
+            <p>Días Juntos</p>
+        </section>
+        
         <section class="main--seccion-explicacion-de-conceptos">
 
             <article>
                 <div class="explicacion-de-conceptos--Elementos-De-Explicacion" id="regla15Minutos">
                     <h4>Reglas de los 15 minutos</h4>
-                    <p>Si llegamos al punto de abrumarnos en algun desacuerdo, podemos hacer uso de la regla de los 15
-                        minutos. Ya sea que terminemos la conversacion por esos 15 minutos y despues de ese tiempo se
-                        tendra que retomar la conversacion. La persona que pida lso 15 minutos debe decidir si quiere
-                        estar solo para pensar  en eso 15 minutos, o si quiere que simplemente por ese tiempo dejen de
-                        hablar del tema principal. <b>Al Acabar el tiempo deben volver a la conversacion.</b></p>
+                    <p>Si llegamos al punto de abrumarnos en algún desacuerdo, podemos hacer uso de la regla de los 15 minutos. Ya sea que terminemos la conversación por esos 15 minutos y después de ese tiempo se tendrá que retomar la conversación. La persona que pida los 15 minutos debe decidir si quiere estar solo para pensar en eso 15 minutos, o si quiere que simplemente por ese tiempo dejen de hablar del tema principal. <b> Al Acabar el tiempo deben volver a la conversación.</b></p>
                 </div>
             </article>
         </section>
@@ -154,5 +201,30 @@
 
 </body>
 <script src="../Js/menuDesplegable.js"></script>
+<script>
+    function mostrarDescripciones(Id) {
+        let elementoMostrar = document.getElementById(Id);
+        elementoMostrar.style.display = "block";
+        console.log(Id)
+        window.scrollTo(elementoMostrar.offsetLeft, elementoMostrar.offsetTop);
+    }
 
+    function mensajeAnimo() {
+        let listaMensajes = [
+            "Eres una persona increíble, y estoy orgulloso de ti. No dejes que nada ni nadie te haga dudar de tu valor.",
+            "Siempre puedes contar conmigo, en las buenas y en las malas. Te Amo mucho, y te agradezco por ser parte de mi vida.",
+            "No estás sola, afrontaremos cada desafio, juntos. No pierdas la esperanza, todo va a mejorar.",
+            "Te admiro por tu fortaleza y tu coraje. Sé que has pasado por momentos difíciles, pero también sé que eres capaz de superarlos. Somos un gran equipo mi amor.",
+            "Sin importar nada, siempre estaré para ti, y sé que tu estarás para mí."
+        ];
+        let seleccionCartaAleatoria = Math.floor(Math.random() * listaMensajes.length);
+        console.log(listaMensajes[seleccionCartaAleatoria]);
+
+        let contenedorMensajeAnimo = document.getElementById('mensajeParaArreglarElDia');
+        contenedorMensajeAnimo.innerHTML = listaMensajes[seleccionCartaAleatoria];
+    }
+
+    window.addEventListener('load', mensajeAnimo())
+</script>
+<script src="../Js/Dias-Juntos-SinVernos-edades.js"></script>
 </html>
