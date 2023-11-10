@@ -98,8 +98,7 @@
                 <p class="Comentario-estudio-biblico">*En caso de no poder este día, se cambiará el día del estudio</p>
             </div>
         </section>
-        
-        
+
         <section class="main--contenedorPrincipal-Reglas">
             <h2>Reglas de pareja</h2>
             <p>Aun no esta completa, ayudame a agregar mas.</p>
@@ -135,6 +134,7 @@
                 <li>No temer al pedir perdón.</li>
                 <li>Cero indifencia, así estemos enojados.</li>
                 <li>No compararnos con nadie más.</li>
+                <li>Mismo nivel de confianza</li>
             </ul>
         </section>
         
@@ -149,6 +149,15 @@
         <section class="main--contenedorPrinpal-DiasJuntos">
             <h3 id="DiasJuntos"></h3>
             <p>Días Juntos</p>
+        </section>
+
+        <section class="main-contenedorPrincipal-conversaciones">
+            <video id="videoMensajes" autoplay muted src="../Multimedia/Video Mensajes.mp4"></video>
+            <article class="contenedorTextoConversaciones">
+                <h3>Nuestras conversaciones son únicas</h3>
+                <p>Hablamos de todo un poco</p>
+                <p>Me encantan nuestras ocurrencias</p>
+            </article>
         </section>
         
         <section class="main--seccion-explicacion-de-conceptos">
@@ -205,7 +214,6 @@
     function mostrarDescripciones(Id) {
         let elementoMostrar = document.getElementById(Id);
         elementoMostrar.style.display = "block";
-        console.log(Id)
         window.scrollTo(elementoMostrar.offsetLeft, elementoMostrar.offsetTop);
     }
 
@@ -218,13 +226,39 @@
             "Sin importar nada, siempre estaré para ti, y sé que tu estarás para mí."
         ];
         let seleccionCartaAleatoria = Math.floor(Math.random() * listaMensajes.length);
-        console.log(listaMensajes[seleccionCartaAleatoria]);
 
         let contenedorMensajeAnimo = document.getElementById('mensajeParaArreglarElDia');
         contenedorMensajeAnimo.innerHTML = listaMensajes[seleccionCartaAleatoria];
+        DiasJuntos()
+    }
+    
+    function DiasJuntos(){
+        // Define la primera fecha como 18 de mayo de 2022
+        var fecha1 = new Date(2022, 4, 18); // El mes se indica desde 0 (enero) hasta 11 (diciembre)
+        
+        // Obtiene la fecha actual
+        var fecha2 = new Date();
+
+        // Calcula la cantidad de días entre las dos fechas
+        var diferencia = fecha2.getTime() - fecha1.getTime(); // getTime() devuelve la cantidad de milisegundos desde el 1 de enero de 1970
+        var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
+
+        // Actualiza el contenido del elemento p con el resultado
+        cantidadDias = cantidadDias + " "
+
+        document.getElementById("DiasJuntos").textContent = cantidadDias;
     }
 
+ 
+    let video = document.getElementById("videoMensajes");
+    
+    video.addEventListener("ended", () => {
+        video.pause();
+        
+        setTimeout(() => {
+            video.play();
+        }, 5000);
+    });
     window.addEventListener('load', mensajeAnimo())
 </script>
-<script src="../Js/Dias-Juntos-SinVernos-edades.js"></script>
 </html>
