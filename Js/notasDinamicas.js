@@ -1,6 +1,8 @@
 
 var nota 
 var notas = [
+    `"Cada momento a tu lado es único, cada instante es maravilloso.  Nuestra historia aún no acaba, y es lo mejor de todo, ya que podemos  hacer que crezca más este amor."`,
+
     `"Aunque no puedo abrazarte en este momento,<br>
     quiero que sepas que siempre estás en mi corazón.<br>
     Eres la persona más importante de mi vida y te <br>
