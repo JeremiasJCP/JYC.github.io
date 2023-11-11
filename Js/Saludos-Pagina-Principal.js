@@ -67,7 +67,6 @@ function diasQueFaltanParaVernos() {
   
   contenedorHTMLDiasVernos.innerHTML = diasRestantesRedondeados;
   parrafo.innerHTML = listaParrafoContenedor[posicionObjetoLista]
-  console.log(posicionObjetoLista) //Esta va a hacer la salida al HTML
 }
 
 mostrarSaludo()
