@@ -184,6 +184,22 @@ header{
     max-width: 350px;
 }
 
+.contenedorYeethaIgualPrincess{
+    width: 100%;
+    min-width: 320px;
+}
+
+.contenedorYeethaIgualPrincess article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+    font-size: 4vw;
+    color: var(--azul-950);
+    font-weight: bold;
+}
+
 /* Video de aniversario disponible */
 .container-Video-Aniversario{
     width: 100%;
