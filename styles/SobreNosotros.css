@@ -283,6 +283,36 @@ html{
   font-size: 5vw;
 }
 
+.main-contenedorPrincipal-conversaciones {
+  width: 100%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-contenedorPrincipal-conversaciones video{
+  width: 80%;
+}
+
+.contenedorTextoConversaciones {
+  width: 90%;
+  text-align: center;
+}
+
+.contenedorTextoConversaciones h3{
+  font-size: 5vw;
+  font-weight: bold;
+  color: var(--azul-900);
+}
+
+.contenedorTextoConversaciones p{
+  font-size: 4vw;
+  color: var(--azul-950);
+}
+
+
 .main--seccion-explicacion-de-conceptos {
     display: flex;
     flex-direction: column;

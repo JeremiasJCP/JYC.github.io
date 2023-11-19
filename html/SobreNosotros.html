@@ -98,8 +98,7 @@
                 <p class="Comentario-estudio-biblico">*En caso de no poder este día, se cambiará el día del estudio</p>
             </div>
         </section>
-        
-        
+
         <section class="main--contenedorPrincipal-Reglas">
             <h2>Reglas de pareja</h2>
             <p>Aun no esta completa, ayudame a agregar mas.</p>
@@ -136,6 +135,7 @@
                 <li>Cero indifencia, así estemos enojados.</li>
                 <li>No compararnos con nadie más.</li>
                 <li><a onclick="mostrarDescripciones('noAlejarnos')">No alejarnos más de lo que esta distancia nos separa</a></li>
+                <li>Mismo nivel de confianza</li>
             </ul>
         </section>
         
@@ -150,6 +150,15 @@
         <section class="main--contenedorPrinpal-DiasJuntos">
             <h3 id="DiasJuntos"></h3>
             <p>Días Juntos</p>
+        </section>
+
+        <section class="main-contenedorPrincipal-conversaciones">
+            <video id="videoMensajes" autoplay muted src="../Multimedia/Video Mensajes.mp4"></video>
+            <article class="contenedorTextoConversaciones">
+                <h3>Nuestras conversaciones son únicas</h3>
+                <p>Hablamos de todo un poco</p>
+                <p>Me encantan nuestras ocurrencias</p>
+            </article>
         </section>
         
         <section class="main--seccion-explicacion-de-conceptos">
@@ -211,7 +220,6 @@
     function mostrarDescripciones(Id) {
         let elementoMostrar = document.getElementById(Id);
         elementoMostrar.style.display = "block";
-        console.log(Id)
         window.scrollTo(elementoMostrar.offsetLeft, elementoMostrar.offsetTop);
     }
 
@@ -224,7 +232,6 @@
             "Sin importar nada, siempre estaré para ti, y sé que tu estarás para mí."
         ];
         let seleccionCartaAleatoria = Math.floor(Math.random() * listaMensajes.length);
-        console.log(listaMensajes[seleccionCartaAleatoria]);
 
         let contenedorMensajeAnimo = document.getElementById('mensajeParaArreglarElDia');
         contenedorMensajeAnimo.innerHTML = listaMensajes[seleccionCartaAleatoria];
@@ -250,7 +257,16 @@
         calcularEdadYMostrar('2005-02-17'); // Reemplaza '1990-01-01' con tu fecha de nacimiento
     }
 
+ 
+    let video = document.getElementById("videoMensajes");
+    
+    video.addEventListener("ended", () => {
+        video.pause();
+        
+        setTimeout(() => {
+            video.play();
+        }, 5000);
+    });
     window.addEventListener('load', mensajeAnimo())
 </script>
-<script src="../Js/Dias-Juntos-SinVernos-edades.js"></script>
 </html>
