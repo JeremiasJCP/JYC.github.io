@@ -359,6 +359,15 @@ aside{
 
 }
 
+.mensajeOtro{
+    width: 100%;
+    min-width: 320px;
+    padding: 3vh;
+    text-align: center;
+    color: var(--azul-900);
+    font-size: 4vw;
+}
+
 
 /* Tabla de Datos */
 

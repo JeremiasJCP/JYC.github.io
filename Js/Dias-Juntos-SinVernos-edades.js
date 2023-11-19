@@ -95,7 +95,7 @@ function mesesDesde() {
     // Actualizamos el contenido del objeto
     
     // Devolvemos la diferencia
-    console.log(diferencia);
+    // console.log(diferencia);
 }
 
   function compararFechas() {

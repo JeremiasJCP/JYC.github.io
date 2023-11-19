@@ -32,7 +32,7 @@ function proximoAniversario() {
   const fechaActual = new Date();
   const diaActual = fechaActual.getDate();
   const diasRestantes = 18 - diaActual;
-  console.log(diasRestantes);
+  // console.log(diasRestantes);
   if (diasRestantes < 0) {
     // Si ya pasó el 18 de este mes, calculamos para el próximo mes
     const fechaProximoMes = new Date(fechaActual);
