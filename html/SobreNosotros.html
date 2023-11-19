@@ -90,7 +90,7 @@
 
                     <div class="Parte2-ContenedorEstudioBiblia">
                         <h4>Viernes</h4>
-                        <p class="title-Estudio">Lectura Biblia</p>
+                        <p class="title-Estudio">Análisis bíblico</p>
                         <p class="Descripcion-Estudio">Vamos a seleccionar un capítulo de la biblia para leerlo juntos, y luego lo comentamos.</p>
                     </div>
                     
@@ -135,6 +135,7 @@
                 <li>No temer al pedir perdón.</li>
                 <li>Cero indifencia, así estemos enojados.</li>
                 <li>No compararnos con nadie más.</li>
+                <li><a onclick="mostrarDescripciones('noAlejarnos')">No alejarnos más de lo que esta distancia nos separa</a></li>
             </ul>
         </section>
         
@@ -157,6 +158,11 @@
                 <div class="explicacion-de-conceptos--Elementos-De-Explicacion" id="regla15Minutos">
                     <h4>Reglas de los 15 minutos</h4>
                     <p>Si llegamos al punto de abrumarnos en algún desacuerdo, podemos hacer uso de la regla de los 15 minutos. Ya sea que terminemos la conversación por esos 15 minutos y después de ese tiempo se tendrá que retomar la conversación. La persona que pida los 15 minutos debe decidir si quiere estar solo para pensar en eso 15 minutos, o si quiere que simplemente por ese tiempo dejen de hablar del tema principal. <b> Al Acabar el tiempo deben volver a la conversación.</b></p>
+                </div>
+
+                <div class="explicacion-de-conceptos--Elementos-De-Explicacion" id="noAlejarnos">
+                    <h4>No alejarnos más de lo que esta distancia nos separa</h4>
+                    <p>Ya estamos lo suficientemente lejos como para permitirnos alejarnos más de lo que estamos, estar pendientes del otro es una de las formas de mantenernos juntos estando separados. Hacer planes juntos y concentrarnos en disfrutar el momento. </p>
                 </div>
             </article>
         </section>
@@ -222,6 +228,26 @@
 
         let contenedorMensajeAnimo = document.getElementById('mensajeParaArreglarElDia');
         contenedorMensajeAnimo.innerHTML = listaMensajes[seleccionCartaAleatoria];
+        DiasJuntos();
+    }
+
+    function DiasJuntos(){
+        // Define la primera fecha como 18 de mayo de 2022
+        var fecha1 = new Date(2022, 4, 18); // El mes se indica desde 0 (enero) hasta 11 (diciembre)
+
+        // Obtiene la fecha actual
+        var fecha2 = new Date();
+
+        // Calcula la cantidad de días entre las dos fechas
+        var diferencia = fecha2.getTime() - fecha1.getTime(); // getTime() devuelve la cantidad de milisegundos desde el 1 de enero de 1970
+        var cantidadDias = Math.floor(diferencia / (1000 * 3600 * 24)); // Convierte los milisegundos a días
+
+        // Actualiza el contenido del elemento p con el resultado
+        cantidadDias = cantidadDias + " "
+
+        document.getElementById("DiasJuntos").textContent = cantidadDias;
+        diasSinVernos()
+        calcularEdadYMostrar('2005-02-17'); // Reemplaza '1990-01-01' con tu fecha de nacimiento
     }
 
     window.addEventListener('load', mensajeAnimo())
