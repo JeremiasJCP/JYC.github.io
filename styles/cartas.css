@@ -142,6 +142,13 @@ aside{
     background-color: var(--azul-950);
 }
 
+.contenedorTablaCartas{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
 .container-list-cartas .container--title-date{
     width: 80%;
     margin: 20px auto;
@@ -291,7 +298,6 @@ aside{
 }
 
 #Ella-17Meses .Carta b{
-    margin: -2px;
     color: var(--azul-200);
 }
 

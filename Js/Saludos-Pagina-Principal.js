@@ -27,24 +27,26 @@ function mostrarSaludo() {
 }
 
 function proximoAniversario() {
+
   let spanProximoAniversario = document.getElementById('numeroProximoAniversario')
   const fechaActual = new Date();
   const diaActual = fechaActual.getDate();
   const diasRestantes = 18 - diaActual;
-
+  // console.log(diasRestantes);
   if (diasRestantes < 0) {
     // Si ya pasó el 18 de este mes, calculamos para el próximo mes
     const fechaProximoMes = new Date(fechaActual);
     fechaProximoMes.setMonth(fechaProximoMes.getMonth() + 1);
     fechaProximoMes.setDate(18);
-    const diasEnProximoMes = (fechaProximoMes - fechaActual) / (1000 * 60 * 60 * 24);
+    const diasEnProximoMes = Math.ceil((fechaProximoMes - fechaActual) / (1000 * 60 * 60 * 24));
 
-    return diasEnProximoMes;
+    spanProximoAniversario.innerHTML = diasEnProximoMes;
+  } else {
+    const diasFaltantes = diasRestantes;
+
+    spanProximoAniversario.innerHTML = diasFaltantes;
   }
-
-  const diasFaltantes = diasRestantes;
-
-  spanProximoAniversario.innerHTML = diasFaltantes;
+  
 }
 
 function diasQueFaltanParaVernos() {
@@ -67,9 +69,8 @@ function diasQueFaltanParaVernos() {
   
   contenedorHTMLDiasVernos.innerHTML = diasRestantesRedondeados;
   parrafo.innerHTML = listaParrafoContenedor[posicionObjetoLista]
-  console.log(posicionObjetoLista) //Esta va a hacer la salida al HTML
 }
 
+proximoAniversario()
 mostrarSaludo()
 diasQueFaltanParaVernos();
-proximoAniversario()
