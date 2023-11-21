@@ -32,10 +32,11 @@ font-family: 'Lobster', cursive; */
 }
 
 .Logo{
-    color: #e8f1ff;
+    /* color: #e8f1ff;
     font-family: 'Dancing Script', cursive;
     font-size: 4vw;
-    text-decoration: none;
+    text-decoration: none; */
+    width: 50%;
 }
 
 .dropdown-btn{
