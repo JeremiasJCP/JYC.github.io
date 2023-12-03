@@ -98,7 +98,7 @@ function mesesDesde() {
     // console.log(diferencia);
 }
 
-  function compararFechas() {
+function compararFechas() {
     // Crear objeto de fecha para la fecha actual
     var fechaActual = new Date();
     
@@ -108,6 +108,11 @@ function mesesDesde() {
     // Calcular la diferencia en meses
     var meses = fechaActual.getMonth() - fechaDeterminada.getMonth() 
                 + (12 * (fechaActual.getFullYear() - fechaDeterminada.getFullYear()));
+
+    // Ajustar si el día del mes en la fecha actual es menor que el día del mes en la fecha determinada
+    if (fechaActual.getDate() < fechaDeterminada.getDate()) {
+        meses--;
+    }
 
     document.getElementById("mesesJuntosPrincipal").textContent = meses;
     DiasJuntos()
