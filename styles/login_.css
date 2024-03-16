@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedorMaster {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    background-image: url(https://media.istockphoto.com/id/670026216/es/foto/puesta-de-sol-sobre-el-muelle-de-pesca-en-el-lago-en-finlandia.jpg?s=612x612&w=0&k=20&c=-jgG2qfFlFBoiT_eXKgb570qxHdYHiA8qt7Rnkka5Sk=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedorGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 255, 255, 0.53); */
+}
+
+.contenedorLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenedorLogo h1{
+    font-size: 15vw;
+    color: white;
+}
+
+.contenedorLogo h3 {
+    font-size: 6vw;
+    color: white;
+}
+
+.contenedorBotones1 {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.botonIrPassContenedorBotones1 {
+    height: 8vh;
+    background-color: white;
+    padding: 8vw;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.textoContenedorBotones1 {
+    font-size: 12vw;
+    color: white;
+}
+
+.contenedorGeneralBotonesPass {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.contenedorElementosPass {
+    width: 90%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0px 0px;
+    background-color: blue;
+
+}
