@@ -2,7 +2,8 @@
   font-family: "Cherry Cream Soda", system-ui;
   font-family: "Edu SA Beginner", cursive;
 */
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -16,7 +17,6 @@
     align-items: center;
     /* justify-content: center; */
     background-color: white;
-
 }
 
 .contenedorGeneral {
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.contenedorLogo .contenedorLogoLogo{
+.contenedorLogo .contenedorLogoLogo {
     margin-top: 3vh;
     font-size: 15vw;
     color: white;
@@ -86,7 +86,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .contenedorElementosPass {
@@ -108,7 +107,7 @@
     font-weight: bold
 }
 
-.contenedorElementosPass input{
+.contenedorElementosPass input {
     border-radius: 9px;
     font-size: 4vw;
     width: 70%;
@@ -117,10 +116,9 @@
     text-align: center;
     border: none;
     background-color: #F2C5BB;
-    
 }
 
-.contenedorElementosPass button{
+.contenedorElementosPass button {
     border-radius: 9px;
     font-size: 4vw;
     width: 40%;
@@ -128,5 +126,4 @@
     color: white;
     background-color: #2D2F59;
     border: none;
-    
 }

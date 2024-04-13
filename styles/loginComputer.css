@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .contenedorGeneral {
+        display: grid;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://media.istockphoto.com/id/1185382671/es/vector/fondo-colorido-borroso-abstracto.jpg?s=1024x1024&w=is&k=20&c=mu3cSfcQnTdEnWKvt52vVV8-HpM6B_-PesFlqKBoiRQ=);
+    }
+    .contenedorLogo {
+        width: 100vw;
+        height: 10vh;
+    }
+    .contenedorLogo .contenedorLogoLogo {
+        margin-top: 10vh;
+        font-size: 6vw;
+    }
+    .contenedorLogo .contenedorLogoSlogan {
+        font-size: 2vw;
+    }
+    .contenedorBotones1 {
+        width: 30vw;
+        height: 60vh;
+    }
+    .botonIrPassContenedorBotones1 {
+        width: 15vw;
+        padding: 3%;
+        font-size: 1.3vw;
+    }
+    .textoContenedorBotones1 {
+        font-size: 2vw;
+        color: white;
+    }
+    .contenedorGeneralBotonesPass {
+        width: 70vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
