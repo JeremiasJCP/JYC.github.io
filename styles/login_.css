@@ -60,7 +60,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* display: none; */
 }
 
 .botonIrPassContenedorBotones1 {
@@ -95,14 +94,13 @@
     height: 76%;
     position: relative;
     top: -10vh;
-    display: none;
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 30px;
-    color: white;
-    background-color: #0460d99f;
+    color: #ffffff;
+    background-color: #0460d921;
 }
 
 .contenedorElementosPass label {
