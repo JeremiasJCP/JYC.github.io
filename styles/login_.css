@@ -54,8 +54,14 @@
     font-family: "Edu SA Beginner", cursive;
 }
 
+main {
+    width: 100vw;
+    height: 55vh;
+    border-radius: 16% 16% 0 0;
+}
+
 .contenedorBotones1 {
-    height: 800%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,9 +69,9 @@
 }
 
 .botonIrPassContenedorBotones1 {
-    width: 50vw;
-    padding: 10%;
-    font-size: 5vw;
+    width: 30%;
+    padding: 1.6vh;
+    font-size: 4vw;
     text-decoration: none;
     font-weight: bold;
     border-radius: 16px;
@@ -86,20 +92,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #ffffffb9;
 }
 
 .contenedorElementosPass {
     width: 80%;
     height: 76%;
-    position: relative;
-    top: -10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 30px;
-    color: #ffffff;
-    background-color: #0460d921;
+    color: #2D2F59;
 }
 
 .contenedorElementosPass label {
@@ -116,6 +120,14 @@
     text-align: center;
     border: none;
     background-color: #F2C5BB;
+}
+
+.textPassIncorrecto {
+    width: 60%;
+    color: red;
+    display: none;
+    text-align: start;
+    font-size: 3vw;
 }
 
 .contenedorElementosPass button {

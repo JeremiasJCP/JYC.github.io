@@ -8,6 +8,7 @@
     <title>Página princess</title>
     <link rel="stylesheet" href="./styles/login_.css">
     <link rel="stylesheet" href="./styles/loginComputer.css">
+    <link rel="stylesheet" href="./styles/animaciones.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/VwshKRN/Screenshot-2023-11-19-20-23-18-452-com-google-android-apps-photos.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,18 +25,21 @@
                 <!-- Corazones conectados, sin importar la distancia. -->
             </section>
 
-            <section class="contenedorBotones1">
-                <p class="textoContenedorBotones1">Welcome</p>
-                <a href="#" class="botonIrPassContenedorBotones1" id="botonIrPassContenedorBotones1">GO!</a>
-            </section>
+            <main id="contenedorMainIdex">
+                <section class="contenedorBotones1">
+                    <p class="textoContenedorBotones1">Welcome</p>
+                    <a href="#" class="botonIrPassContenedorBotones1" id="botonIrPassContenedorBotones1">GO!</a>
+                </section>
 
-            <section class="contenedorGeneralBotonesPass">
-                <div class="contenedorElementosPass">
-                    <label for="accessCode">Código de Acceso</label>
-                    <input type="tel" id="accessCode" class="code" name="accessCode">
-                    <button type="submit" class="botonVerificar">Iniciar sesión</button>
-                </div>
-            </section>
+                <section class="contenedorGeneralBotonesPass fade-in">
+                    <div class="contenedorElementosPass">
+                        <label for="accessCode">Código de Acceso</label>
+                        <input type="tel">
+                        <p class="textPassIncorrecto">*El codigo es incorrecto</p>
+                        <button class="botonVerificar">Iniciar sesión</button>
+                    </div>
+                </section>
+            </main>
         </section>
     </section>
 </body>
