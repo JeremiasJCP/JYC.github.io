@@ -1,5 +1,4 @@
 let contenedorGeneralBotonesPass = document.querySelector(".contenedorGeneralBotonesPass");
-
 let contenedorBotones1 = document.querySelector(".contenedorBotones1");
 
 function ejecutarSiPantallaGrande() {
