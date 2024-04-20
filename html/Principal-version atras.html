@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Princess</title>
     <link rel="stylesheet" href="../styles/principal.css">
-    <link rel="stylesheet" href="../styles/principalOrdenador.css" media="(min-width: 768px)" >
+    <link rel="stylesheet" href="../styles/principalOrdenador.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="../styles/efectoEntrada.css">
-        <link rel="icon" type="image/png" href="https://i.ibb.co/VwshKRN/Screenshot-2023-11-19-20-23-18-452-com-google-android-apps-photos.jpg">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/VwshKRN/Screenshot-2023-11-19-20-23-18-452-com-google-android-apps-photos.jpg">
     <link rel="stylesheet" href="../styles/encabezadoPagina.css">
     <link rel="stylesheet" href="../styles/animaciones.css">
 </head>
+
 <body>
 
     <!-- Encabezado -->
     <div class="contenedorPrincipal" id="contenedorPrincipal">
-        
+
         <header class="alinearEncabezado">
             <section id="encabezado" class="border-gradient content">
                 <div id="contenedorLogo">
-                                    <a class="Logo" href="Principal.html">
-                    <img class="Logo" src="https://i.ibb.co/NN7H1cj/Screenshot-2023-11-19-20-23-18-452-com-google-android-apps-photos-copia-removebg-preview.png" alt="lOGO NUEVO">
-                </a>
+                    <a class="Logo" href="Principal.html">
+                        <img class="Logo" src="https://i.ibb.co/NN7H1cj/Screenshot-2023-11-19-20-23-18-452-com-google-android-apps-photos-copia-removebg-preview.png" alt="lOGO NUEVO">
+                    </a>
                 </div>
                 <div class="dropdown">
                     <button class="dropdown-btn">&#9776</button>
                     <div class="dropdown-content">
-                        <a  href="./Principal.html">Inicio</a>
-                        <a  href="./cartas.html">Cartas</a>
-                        <a  href="./Historia.html">Historia</a>
+                        <a href="./Principal.html">Inicio</a>
+                        <a href="./cartas.html">Cartas</a>
+                        <a href="./Historia.html">Historia</a>
                         <!-- <a  href="./Linea de Tiempo.html">Linea de Tiempo</a> -->
                         <!-- <a  href="./Descargas.html">Descargas</a> -->
-                        <!-- <a  href="./Cuenas.html">Cuentas</a> -->
+                        <!-- <a  href="./Cuentas.html">Cuentas</a> -->
                     </div>
                 </div>
             </section>
@@ -51,123 +53,127 @@
         </span>
 
 
-    <!-- Fin de Encabezado -->
-    <section class="SeccionDespuesEncabezado">
-        <h1 id="Titulo"></h1>
-        <center>
-            <img class="svgEnamorados movimientoSuave" src="https://i.ibb.co/fXnc5Vm/Sentados-en-una-banca.png" alt="Imagen de pareja enamorada">
-        </center>
-        <p id="info">Te Amo</p>
-
-    </section>
-
-    <section class="Iconos">
-
-
-        <!-- Icono Distancia -->
-        <div class="contenedorDistancia efectoentrada " onclick="VerDistancia()">
-            <h3 class="title-icono" >Distancia que nos separa...</h3>
-            <div id="elementos-contenedor-Distancia">
-                <p id="Distancia"></p>
-                <span class="avionVolando"></span>
-            </div>
-        </div>
-
-        <section class="diasJuntos efectoentrada">
-            <div class="diasJuntos-container--element efectoEntrada movimientoSuave" onclick="activarDiasQueLlevamosSinVernos()">
-                <h3>Tiempo Juntos</h3>
-                <p id="diferencia-dias"></p>
-            </div>
-
-            <div class="SinVernos efectoEntrada movimientoSuave" onclick="activarDiasSinVernos()">
-                <h3>Sin Vernos</h3>
-                <p id="diasSinVernos"></p>
-            </div>
+        <!-- Fin de Encabezado -->
+        <section class="SeccionDespuesEncabezado">
+            <h1 id="Titulo"></h1>
+            <center>
+                <img class="svgEnamorados movimientoSuave" src="https://i.ibb.co/fXnc5Vm/Sentados-en-una-banca.png" alt="Imagen de pareja enamorada">
+            </center>
+            <p id="info">Te Amo</p>
 
         </section>
-        
-        
-        <section class="frasesCanciones efectoentrada movimientoSuave">
-            <blockquote id="frase-Cancion">
-                
-            </blockquote>
-            <button class="botonFrasesCanciones" onclick="enviarCancion()">Cambiar Frase</button>
+
+        <section class="Iconos">
+
+
+            <!-- Icono Distancia -->
+            <div class="contenedorDistancia efectoentrada " onclick="VerDistancia()">
+                <h3 class="title-icono">Distancia que nos separa...</h3>
+                <div id="elementos-contenedor-Distancia">
+                    <p id="Distancia"></p>
+                    <span class="avionVolando"></span>
+                </div>
+            </div>
+
+            <section class="diasJuntos efectoentrada">
+                <div class="diasJuntos-container--element efectoEntrada movimientoSuave" onclick="activarDiasQueLlevamosSinVernos()">
+                    <h3>Tiempo Juntos</h3>
+                    <p id="diferencia-dias"></p>
+                </div>
+
+                <div class="SinVernos efectoEntrada movimientoSuave" onclick="activarDiasSinVernos()">
+                    <h3>Sin Vernos</h3>
+                    <p id="diasSinVernos"></p>
+                </div>
+
+            </section>
+
+
+            <section class="frasesCanciones efectoentrada movimientoSuave">
+                <blockquote id="frase-Cancion">
+
+                </blockquote>
+                <button class="botonFrasesCanciones" onclick="enviarCancion()">Cambiar Frase</button>
+            </section>
         </section>
-    </section>
-    
-    
-</section>
-    <section class="mensajePrincipal efectoentrada">
-        <article> <h1>Mi Amor...</h1><img class="imagenes-Mensaje-Principal-imagenuno" src="https://i.ibb.co/yB7fvPh/Caminando-por-unos-arboles-tomados-de-la-mano.png" alt="Imagen que refleja el amor">Esta página fue creada como regalo de aniversario por los 12 meses que cumplimos el 18 de mayo de 2023. Con el paso de los meses hemos ido actualizando la página, pero sin perder su enfoque inicial: tener un espacio siempre disponible para nuestros recuerdos y vivencias. <br> <br> <img class="imagenes-Mensaje-Principal" src="https://i.ibb.co/c88X4gC/Compartiendo-juntos-el-sentando-en-un-banca.png" alt="imagen que refleja el Amor de pareja "> <br>Me comentas que has sido uno de los mejores regalos que te he dado, un regalo que durará mucho tiempo contigo, y que sin importar que algo falle, siempre haré todo lo que esté en mi alcance para arreglarlo y que esté en línea otra vez. En cada sección de la página siempre traté de expresar cuánto te amo, y lo mucho que significas para mí, por eso es que en lo personal me gusta la sección de cartas. <center> <img class="imagenes-Mensaje-Principal" src="https://i.ibb.co/2Mp4R2D/Se-toman-de-la-mano-saliendo-de-un-telefono.png" alt="imagen que refleja el amor en pareja"> </center> <br>Espero que sigas disfrutando de la experiencia de esta página y si hay algo que quieras ver o cambiar eres libre de comunicármelo. Te amo por siempre, tu príncipe azul.</article>
-    </section>
-    
 
-    <section class="loNuevo efectoentrada">
-        <h3 >Actualizaciones</h3>
 
-        <div class="loNuevoo efectoentrada efectoentrada">
-            <h3>Juego de Preguntas</h3>
-            <div id="ajusteDescripcionLoNuevo">
-                <p>
-                    Juego de Preguntas
-                </p>
+        </section>
+        <section class="mensajePrincipal efectoentrada">
+            <article>
+                <h1>Mi Amor...</h1><img class="imagenes-Mensaje-Principal-imagenuno" src="https://i.ibb.co/yB7fvPh/Caminando-por-unos-arboles-tomados-de-la-mano.png" alt="Imagen que refleja el amor">Esta página fue creada como regalo de aniversario por los
+                12 meses que cumplimos el 18 de mayo de 2023. Con el paso de los meses hemos ido actualizando la página, pero sin perder su enfoque inicial: tener un espacio siempre disponible para nuestros recuerdos y vivencias. <br> <br> <img class="imagenes-Mensaje-Principal"
+                    src="https://i.ibb.co/c88X4gC/Compartiendo-juntos-el-sentando-en-un-banca.png" alt="imagen que refleja el Amor de pareja "> <br>Me comentas que has sido uno de los mejores regalos que te he dado, un regalo que durará mucho tiempo contigo,
+                y que sin importar que algo falle, siempre haré todo lo que esté en mi alcance para arreglarlo y que esté en línea otra vez. En cada sección de la página siempre traté de expresar cuánto te amo, y lo mucho que significas para mí, por eso
+                es que en lo personal me gusta la sección de cartas.
+                <center> <img class="imagenes-Mensaje-Principal" src="https://i.ibb.co/2Mp4R2D/Se-toman-de-la-mano-saliendo-de-un-telefono.png" alt="imagen que refleja el amor en pareja"> </center> <br>Espero que sigas disfrutando de la experiencia de esta página
+                y si hay algo que quieras ver o cambiar eres libre de comunicármelo. Te amo por siempre, tu príncipe azul.</article>
+        </section>
 
-                <a href="./JuegoPreguntas.html">Ir al Juego</a>
+
+        <section class="loNuevo efectoentrada">
+            <h3>Actualizaciones</h3>
+
+            <div class="loNuevoo efectoentrada efectoentrada">
+                <h3>Juego de Preguntas</h3>
+                <div id="ajusteDescripcionLoNuevo">
+                    <p>
+                        Juego de Preguntas
+                    </p>
+
+                    <a href="./JuegoPreguntas.html">Ir al Juego</a>
+                </div>
             </div>
-        </div>
 
-        <div class="loNuevoo efectoentrada">
-            <h3>Tu Código</h3>
-            <div id="ajusteDescripcionLoNuevo">
-                <p>
-                   171702 
-                </p>
+            <div class="loNuevoo efectoentrada">
+                <h3>Tu Código</h3>
+                <div id="ajusteDescripcionLoNuevo">
+                    <p>
+                        171702
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="loNuevoo efectoentrada">
-            <h3>Notificación</h3>
-            <div id="ajusteDescripcionLoNuevo">
-                <p>
-                Algunas secciones de la página están en mantenimiento y por ende cerradas
-                </p>
+            <div class="loNuevoo efectoentrada">
+                <h3>Notificación</h3>
+                <div id="ajusteDescripcionLoNuevo">
+                    <p>
+                        Algunas secciones de la página están en mantenimiento y por ende cerradas
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- <div class="mastext">
+        <!-- <div class="mastext">
         JYC <br><br>
         Es una combinación de nuestros nombres en una nueva función. Esta función se usa de la misma manera que las funciones anteriores, pero se refiere a los dos en lugar de solo uno de nosotros.
     <video class="videoJYC" src="../Multimedia/Video, Explicacion JYC.mp4" controls></video>
     </div> -->
 
-    <div class="mastext">
-        Princesa<br><br>
-        Gracias por cada momento, eres muy especial. Te amo tanto, que disfrutes de este día. Feliz aniversario mi amor. Eres lo mejor que tengo
-    <!-- <video class="videoJYC" src="../Multimedia/Video, Explicacion JYC.mp4" controls></video> -->
-    </div>
-    <!-- Pie de pagina -->
-    
-    <center>
-        <a href="./PrincipalRespaldo.html">Ir a la segunda version</a>
-        <a href="./Encabezado.html">Encabezado de la pagina</a>
-    </center>
+        <div class="mastext">
+            Princesa<br><br> Gracias por cada momento, eres muy especial. Te amo tanto, que disfrutes de este día. Feliz aniversario mi amor. Eres lo mejor que tengo
+            <!-- <video class="videoJYC" src="../Multimedia/Video, Explicacion JYC.mp4" controls></video> -->
+        </div>
+        <!-- Pie de pagina -->
 
-    <!-- Footer -->
-    <iframe id="footer" src="./footer.html"></iframe>        
+        <center>
+            <a href="./PrincipalRespaldo.html">Ir a la segunda version</a>
+            <a href="./Encabezado.html">Encabezado de la pagina</a>
+        </center>
 
-      
-        
+        <!-- Footer -->
+        <iframe id="footer" src="./footer.html"></iframe>
+
+
+
     </div>
 </body>
 <script src="../Js/menuDesplegable.js"></script>
 <script>
-
-
-
 </script>
 <script src="../Js/efectoEntrada.js"></script>
 <script src="../Js/Principal.js"></script>
 <script src="../Js/Frases de canciones.js"></script>
 <script src="../Js/contenedor-Distancia y Dias.js"></script>
+
 </html>
