@@ -1,48 +1,56 @@
-:root{
+:root {
     --azul-50: #f0f9ff;
     --azul-100: #e0f3fe;
     --azul-200: #bae8fd;
-    --azul-300: #7ed6fb;;
-    --azul-400: #39c1f7;;
-    --azul-500: #0faae8;;
-    --azul-600: #0391d3;;
-    --azul-700: #046da0;;
-    --azul-800: #085c84;;
-    --azul-900: #0c4c6e;;
-    --azul-950: #083049;;
+    --azul-300: #7ed6fb;
+    ;
+    --azul-400: #39c1f7;
+    ;
+    --azul-500: #0faae8;
+    ;
+    --azul-600: #0391d3;
+    ;
+    --azul-700: #046da0;
+    ;
+    --azul-800: #085c84;
+    ;
+    --azul-900: #0c4c6e;
+    ;
+    --azul-950: #083049;
+    ;
 }
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: auto;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
+body {
     background-color: var(--azul-50);
 }
 
+
 /* Header */
 
-header{
+header {
     background: transparent;
     height: auto;
 }
 
-.header--barra-inferior{
+.header--barra-inferior {
     width: 100%;
     min-width: 320px;
     min-height: 10vh;
     border: none;
 }
 
-.header--encabezado{
+.header--encabezado {
     width: 100%;
     min-width: 320px;
     height: 46vh;
@@ -56,7 +64,7 @@ header{
     background-size: cover;
 }
 
-.header--card-action{
+.header--card-action {
     position: relative;
     width: max-content;
     min-width: 100px;
@@ -70,7 +78,7 @@ header{
     background-color: rgba(0, 0, 0, 0.411);
 }
 
-.header--card-action a{
+.header--card-action a {
     display: block;
     width: 70%;
     margin: 0 auto;
@@ -82,12 +90,14 @@ header{
     border-radius: 9px;
     background-color: var(--azul-500);
 }
+
+
 /* 
 .header--card{
 
 } */
 
-.header--bienvenida{
+.header--bienvenida {
     width: 100%;
     height: max-content;
     font-size: 3vw;
@@ -98,8 +108,7 @@ header{
     background-color: #ebf5fa;
 }
 
-
-.header--bienvenida span{
+.header--bienvenida span {
     display: block;
     width: 25vw;
     height: 12vh;
@@ -117,6 +126,7 @@ header{
     text-align: center;
 }
 
+
 /* Main */
 
 .main--containerGeneral-Info {
@@ -127,10 +137,7 @@ header{
     width: 100%;
     min-width: 320px;
     background: var(--azul-950);
-    padding-top: 3vh;
-    padding-bottom: 3vh;
 }
-
 
 .main--container-info-proximoAniversario {
     width: 50%;
@@ -147,17 +154,34 @@ header{
 
 .main--container-info-diasParaVernos {
     width: 50%;
+    height: 18vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     color: var(--azul-100);
-
+    text-align: right;
+    background-image: url(https://i.ibb.co/qMTZ5Q7/1699392985704.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.main--container-info-diasParaVernos #numeoroDiasParaVernos, #numeroProximoAniversario{
+.main--container-info-diasParaVernos p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #08304962;
+    padding-right: 8px;
+}
+
+.main--container-info-diasParaVernos #numeoroDiasParaVernos,
+#numeroProximoAniversario {
     font-size: 15vw;
     font-weight: bold;
     letter-spacing: 1vw;
@@ -165,31 +189,30 @@ header{
     text-shadow: 0px 0px 50px var(--azul-50);
 }
 
-
-.mensajePrincipal{
+.mensajePrincipal {
     width: 100%;
     margin: 0 auto;
     background: var(--azul-700);
 }
 
-.mensajePrincipal article{
+.mensajePrincipal article {
     width: 100%;
     padding: 5vw;
     font-size: 4vw;
     color: var(--azul-50);
 }
 
-.mensajePrincipal img{
+.mensajePrincipal img {
     width: 25vw;
     max-width: 350px;
 }
 
-.contenedorYeethaIgualPrincess{
+.contenedorYeethaIgualPrincess {
     width: 100%;
     min-width: 320px;
 }
 
-.contenedorYeethaIgualPrincess article{
+.contenedorYeethaIgualPrincess article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,8 +223,10 @@ header{
     font-weight: bold;
 }
 
+
 /* Video de aniversario disponible */
-.container-Video-Aniversario{
+
+.container-Video-Aniversario {
     width: 100%;
     min-width: 320px;
     padding: 2vh;
@@ -220,23 +245,22 @@ header{
     font-size: 4vw;
     font-weight: lighter;
     color: rgb(243, 239, 239);
-} 
+}
 
-.container-Video-Aniversario a{
+.container-Video-Aniversario a {
     width: 40%;
     display: inline-block;
-    background:#083049c0;
+    background: #083049c0;
     padding: 8px;
     border-radius: 15px;
     margin: 20px;
     text-align: center;
     text-decoration: none;
     color: white;
-    
 }
 
-.container-Video-Aniversario a:hover{   
-    background-color: #f0f9ff; 
+.container-Video-Aniversario a:hover {
+    background-color: #f0f9ff;
     color: var(--azul-950);
     border: 2px solid var(--azul-700);
 }
@@ -244,7 +268,7 @@ header{
 
 /*          aside        */
 
-aside{
+aside {
     width: 60%;
     min-width: 320px;
     padding: 30px;
@@ -252,17 +276,17 @@ aside{
     border-radius: 14px;
 }
 
-.container-recuerdo-tex{
+.container-recuerdo-tex {
     width: 100%;
     font-size: 3vw;
     text-align: center;
 }
 
-.container-recuerdo-tex h2:nth-child(1){
+.container-recuerdo-tex h2:nth-child(1) {
     color: var(--azul-400);
 }
 
-.container-recuerdo-tex h2:nth-child(2){
+.container-recuerdo-tex h2:nth-child(2) {
     color: var(--azul-700);
 }
 
@@ -295,21 +319,22 @@ aside{
     border-radius: 20px;
 }
 
-.main-parrafo{
+.main-parrafo {
     width: 90%;
     margin: 40px auto;
     text-align: center;
     font-size: 4vw;
 }
 
-.main-parrafo h3{
+.main-parrafo h3 {
     color: var(--azul-900);
 }
 
-.main-parrafo p{
+.main-parrafo p {
     margin-bottom: 10px;
 }
-.main-parrafo i{
+
+.main-parrafo i {
     color: var(--azul-600);
 }
 
@@ -322,6 +347,7 @@ aside{
     align-items: center;
     justify-content: center;
 }
+
 .contenedor-general-MasEnlaces--enlaceSobreNosotros {
     width: 80%;
     min-width: 260px;
@@ -335,31 +361,31 @@ aside{
     text-decoration: none;
     box-shadow: 13px 10px 17px black;
 }
+
 .Enlace-sobreNosotros--contenedor-miniImagen {
     width: 30%;
     background-image: url("https://i.ibb.co/pLsRNtX/Pareja-con-rosas.png");
     background-position: center;
     background-size: cover;
 }
+
 .contenidoEnlaceSobreNosotros {
     width: 70%;
 }
 
-.contenidoEnlaceSobreNosotros h3{
+.contenidoEnlaceSobreNosotros h3 {
     font-size: 6vw;
     color: var(--azul-50);
-
 }
 
-.contenidoEnlaceSobreNosotros p{
+.contenidoEnlaceSobreNosotros p {
     margin-top: 10%;
     font-size: 4vw;
     font-style: italic;
     color: var(--azul-200);
-
 }
 
-.mensajeOtro{
+.mensajeOtro {
     width: 100%;
     min-width: 320px;
     padding: 3vh;
@@ -371,8 +397,15 @@ aside{
 
 /* Tabla de Datos */
 
-.main-sobre-nosotros{
+.main-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+}
+
+.contenedor-Elementos-Sobrenosotros {
+    width: 70%;
     min-width: 320px;
     padding: 15px;
     font-size: 4vw;
@@ -380,33 +413,33 @@ aside{
     color: var(--azul-950);
 }
 
-.main-sobre-nosotros h2{
+.main-sobre-nosotros h2 {
     width: 100%;
     text-align: center;
     margin: 10px;
 }
 
-.main-sobre-nosotros table{
+.main-sobre-nosotros table {
     width: 100%;
-    table-layout:fixed; 
+    table-layout: fixed;
 }
 
-.main-sobre-nosotros tr{
+.main-sobre-nosotros tr {
     padding: 10px;
     width: 60px;
     height: 40px;
     text-align: center;
 }
 
-.main-sobre-nosotros th{
+.main-sobre-nosotros th {
     border-radius: 12px;
 }
 
-.main-sobre-nosotros td{
+.main-sobre-nosotros td {
     border-radius: 4px;
 }
 
-footer{
+footer {
     width: 100%;
     min-width: 320px;
     height: 35dvh;
