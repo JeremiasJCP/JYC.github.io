@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-width: 320px;
+    height: 45vh;
+    background-image: url(https://i.ibb.co/NLdSJQR/portada-Feliz-Aniversario.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#encabezado {
+    width: 100%;
+    min-width: 300px;
+    height: 10vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #0830490a;
+}
+
+#contenedorLogo {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Logo {
+    /* color: #e8f1ff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4vw;
+    text-decoration: none; */
+    width: 50%;
+}
+
+.dropdown-btn {
+    display: none;
+}
+
+.dropdown-content {
+    display: flex;
+    color: #e8f1ff;
+    ;
+}
+
+.dropdown-content a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #e8f1ff;
+    ;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 2vw;
+}
+
+.headerTexImgInicio {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.contenedorElementosTexImagenPrincipalHeader {
+    width: 50%;
+    text-align: start;
+    font-size: 4vw;
+    margin-left: 1vw;
+    color: white;
+    /* text-shadow: #333 2px 3px 5px; */
+    text-shadow: #000000 2px 3px 5px, #3b3535 5px 6px 10px;
+}
+
+@media (max-width: 700px) {
+    /* Menu */
+    .dropdown {
+        position: relative;
+        z-index: 999;
+    }
+    .dropdown-btn {
+        display: block;
+        color: #e8f1ff;
+        ;
+        background: rgba(0, 0, 0, 0);
+        border: none;
+    }
+    .dropdown-content a {
+        flex-direction: row-reverse;
+        border-bottom: 1px solid rgb(0, 157, 255);
+        padding: 20px;
+        font-size: 3vw;
+    }
+    .dropdown-content a:hover {
+        background: #011C40;
+        color: rgb(192, 225, 255);
+    }
+    .dropdown-content a:active {
+        background: #083049;
+        color: rgb(192, 225, 255);
+    }
+    .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: -200%;
+        background-color: rgba(0, 0, 0, 0.874);
+    }
+    .dropdown-content.active {
+        height: 100vh;
+        width: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
