@@ -1,29 +1,36 @@
-:root{
+:root {
     --azul-50: #f0f9ff;
     --azul-100: #e0f3fe;
     --azul-200: #bae8fd;
-    --azul-300: #7ed6fb;;
-    --azul-400: #39c1f7;;
-    --azul-500: #0faae8;;
-    --azul-600: #0391d3;;
-    --azul-700: #000001;;
-    --azul-800: #085c84;;
-    --azul-900: #0c4c6e;;
-    --azul-950: #083049;;
+    --azul-300: #7ed6fb;
+    ;
+    --azul-400: #39c1f7;
+    ;
+    --azul-500: #0faae8;
+    ;
+    --azul-600: #0391d3;
+    ;
+    --azul-700: #000001;
+    ;
+    --azul-800: #085c84;
+    ;
+    --azul-900: #0c4c6e;
+    ;
+    --azul-950: #083049;
+    ;
 }
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-.header--encabezado{
+.header--encabezado {
     width: 100%;
     min-width: 320px;
     height: 46vh;
@@ -43,168 +50,169 @@ html{
     justify-content: center;
 }
 
-.Main--contenedor-Principal-Introduccion h2{
+.Main--contenedor-Principal-Introduccion h2 {
     width: 90%;
     text-align: center;
     font-size: 6vw;
     font-weight: bold;
-    text-decoration:underline;
+    text-decoration: underline;
     color: var(--azul-950);
 }
 
 .contenedor--Nuestras-Fotos {
-  width: 100%;
-  height: 14vh;
-  min-width: 320px;
-  margin-top: 2vh;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
+    width: 100%;
+    height: 14vh;
+    min-width: 320px;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
 }
+
 .imagenDeNosotros {
-  width: 30%;
-  border-radius: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 15px 10px 55px black;
+    width: 30%;
+    border-radius: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 15px 10px 55px black;
 }
 
-#img1{
-  background-image: url(https://i.ibb.co/nMp60C3/yo.webp);
+#img1 {
+    background-image: url(https://i.ibb.co/nMp60C3/yo.webp);
 }
 
-#img2{
-  background-image: url(https://i.ibb.co/5sZKwkb/ella.webp);
-  
+#img2 {
+    background-image: url(https://i.ibb.co/5sZKwkb/ella.webp);
 }
 
-.Main--contenedor-Principal-Introduccion article{
+.Main--contenedor-Principal-Introduccion article {
     width: 90%;
     margin-top: 2vh;
 }
 
-.Main--contenedor-Principal-Introduccion p{
-  margin: 2vh 0;
-  text-align: start;
-  font-size: 4vw;
-  color:#042539;
+.Main--contenedor-Principal-Introduccion p {
+    margin: 2vh 0;
+    text-align: start;
+    font-size: 4vw;
+    color: #042539;
 }
 
 .regaloPrincesa {
-  width: 100%;
-  min-width: 320px;
+    width: 100%;
+    min-width: 320px;
 }
 
 .regaloPrincesa .ImagenRegalos {
-  width: 100%;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 4vw;
-  color: var(--azul-800);
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: var(--azul-800);
 }
 
 .regaloPrincesa img {
-  width: 70%;
-  margin-top: 5vh;
+    width: 70%;
+    margin-top: 5vh;
 }
 
-
 .regaloPrincesa a {
-  min-width: 20%;
-  border-radius: 20px;
-  margin-top: 3vh;
-  padding: 2vh;
-  font-size: 4vw;
-  text-decoration: none;
-  color: var(--azul-50);
-  background: var(--azul-950);
+    min-width: 20%;
+    border-radius: 20px;
+    margin-top: 3vh;
+    padding: 2vh;
+    font-size: 4vw;
+    text-decoration: none;
+    color: var(--azul-50);
+    background: var(--azul-950);
 }
 
 .main-contenedorPrincipal-mensajesDeAnimo {
-  width: 100%;
-  min-width: 320px;
-  margin: 4vh 0;
+    width: 100%;
+    min-width: 320px;
+    margin: 4vh 0;
 }
 
 .contendor-MensajeAnimo {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 3.5vh auto;
-  padding: 4vw;
-  color: var(--azul-500);
-  background: #e1dbd2e3;
-  box-shadow: 10px 12px 25px  black;
-  border-radius: 10px 30px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5vh auto;
+    padding: 4vw;
+    color: var(--azul-500);
+    background: #e1dbd2e3;
+    box-shadow: 10px 12px 25px black;
+    border-radius: 10px 30px;
 }
+
 .mensajeAnimo {
-  font-size: 4vw;
-  margin-top: 2vh;
-  text-align: center;
-  color: var(--azul-900);
+    font-size: 4vw;
+    margin-top: 2vh;
+    text-align: center;
+    color: var(--azul-900);
 }
 
 .main-contenedorPrincipal-estudioBiblia {
-  width: 100%;
-  min-width: 320px;
+    width: 100%;
+    min-width: 320px;
 }
+
 .contenedor-Estudio-De-la-biblia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--azul-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--azul-800);
 }
+
 .Partes-del-contenedor-Estudio-blbilia {
-  width: 100%;
-  margin: 6vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 5vw;
-  color: var(--azul-50);
+    width: 100%;
+    margin: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
+    color: var(--azul-50);
 }
 
-.Partes-del-contenedor-Estudio-blbilia hr{
-  width: 12vw;
-  height: 100%;
-  transform: rotate(90deg);
-  color: #000000;
-
+.Partes-del-contenedor-Estudio-blbilia hr {
+    width: 12vw;
+    height: 100%;
+    transform: rotate(90deg);
+    color: #000000;
 }
+
 .Parte1-ContenedorEstudioBiblia {
-  width: 45%;
-
+    width: 70%;
 }
+
 .title-Estudio {
-  color: var(--azul-100);
-  font-size: 4vw;
+    color: var(--azul-100);
+    font-size: 4vw;
+}
 
-}
 .Descripcion-Estudio {
-  margin-top: 1.6vh;
-  color: var(--azul-200);
-  font-size: 3vw;
+    margin-top: 1.6vh;
+    color: var(--azul-200);
+    font-size: 3vw;
 }
+
 .Parte2-ContenedorEstudioBiblia {
-  width: 45%;
+    width: 45%;
 }
 
 .Comentario-estudio-biblico {
-  font-size: 3vw;
-  color: var(--azul-200);
-  margin-bottom: 2vh;
+    font-size: 3vw;
+    color: var(--azul-200);
+    margin-bottom: 2vh;
 }
-
-
 
 .main--contenedorPrincipal-Reglas {
     display: flex;
@@ -219,41 +227,39 @@ html{
     background-color: var(--azul-400);
 }
 
-.main--contenedorPrincipal-Reglas p{
+.main--contenedorPrincipal-Reglas p {
     font-size: 3vw;
     font-style: italic;
     margin-bottom: 3vh;
 }
 
-.main--contenedorPrincipal-Reglas .ContenedorReglas-botonDescargarReglas{
-  text-decoration: none;
-  font-size: 3vw;
-  margin-bottom: 2vh;
-  padding: 2vw;
-  color: var(--azul-100);
-  border-radius: 15px;
-  background-color: var(--azul-950);
+.main--contenedorPrincipal-Reglas .ContenedorReglas-botonDescargarReglas {
+    text-decoration: none;
+    font-size: 3vw;
+    margin-bottom: 2vh;
+    padding: 2vw;
+    color: var(--azul-100);
+    border-radius: 15px;
+    background-color: var(--azul-950);
 }
 
-
-
-.main--contenedorPrincipal-Reglas ul{
-    display: grid; 
+.main--contenedorPrincipal-Reglas ul {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
-    background:#f0f9ffd4;
+    background: #f0f9ffd4;
     border-radius: 1.8rem;
     padding: 1rem;
     margin-bottom: 5vh;
     box-shadow: 23px 13px 54px black;
 }
 
-.main--contenedorPrincipal-Reglas ul li a{
+.main--contenedorPrincipal-Reglas ul li a {
     color: #53585b;
     text-decoration: none;
 }
 
-.main--contenedorPrincipal-Reglas li{
+.main--contenedorPrincipal-Reglas li {
     font-size: 3vw;
     margin-left: 2vw;
     margin-bottom: 2vh;
@@ -262,116 +268,119 @@ html{
 }
 
 .main--contenedorPricipal-ComentarioFOtos {
-  width: 100%;
-  min-width: 320px;
-  display: flex;
-  flex-direction: row;
-  background: var(--azul-800);
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: row;
+    background: var(--azul-800);
 }
+
 .comentarioContenedorFotos {
-  width: 100%;
-  margin-right: -1vw;
-  padding-top: 8vw;
-  padding-bottom: 8vw;
-  padding-left: 14vw;
-  padding-right: 38vw;
-  background-image: url(../Multimedia/FotosMandaPrincess.gif);
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  filter: contrast(90%);
+    width: 100%;
+    margin-right: -1vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    padding-left: 14vw;
+    padding-right: 38vw;
+    background-image: url(../Multimedia/FotosMandaPrincess.gif);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    filter: contrast(90%);
 }
+
 .comentarioFotosGrande {
-  color: white;
-  font-size: 5vw;
+    color: white;
+    font-size: 5vw;
 }
+
 .comentarioFotosMediano {
-  color: var(--azul-200);
-  margin-top: 2vh;
-  font-size: 4vw;
+    color: var(--azul-200);
+    margin-top: 2vh;
+    font-size: 4vw;
 }
+
 .comentarioFotospequeño {
-  color: var(--azul-400);
-  margin-top: 2vh;
-  font-size: 3vw;
+    color: var(--azul-400);
+    margin-top: 2vh;
+    font-size: 3vw;
 }
 
 .main--contenedorPrinpal-DiasJuntos {
-  width: 100%;
-  min-width: 320px;
-  padding: 4vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--azul-950);
+    width: 100%;
+    min-width: 320px;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--azul-950);
 }
 
-.main--contenedorPrinpal-DiasJuntos h3{
-  font-size: 20vw;
+.main--contenedorPrinpal-DiasJuntos h3 {
+    font-size: 20vw;
 }
 
-.main--contenedorPrinpal-DiasJuntos p{
-  font-size: 5vw;
+.main--contenedorPrinpal-DiasJuntos p {
+    font-size: 5vw;
 }
 
 .main-contenedorPrincipal-conversaciones {
-  width: 100%;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-contenedorPrincipal-conversaciones video{
-  width: 80%;
+.main-contenedorPrincipal-conversaciones video {
+    width: 80%;
 }
 
 .contenedorTextoConversaciones {
-  width: 90%;
-  text-align: center;
+    width: 90%;
+    text-align: center;
 }
 
-.contenedorTextoConversaciones h3{
-  font-size: 5vw;
-  font-weight: bold;
-  color: var(--azul-900);
+.contenedorTextoConversaciones h3 {
+    font-size: 5vw;
+    font-weight: bold;
+    color: var(--azul-900);
 }
 
-.contenedorTextoConversaciones p{
-  font-size: 4vw;
-  color: var(--azul-950);
+.contenedorTextoConversaciones p {
+    font-size: 4vw;
+    color: var(--azul-950);
 }
 
 .secciónNuevoLogo {
-  width: 100%;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 4vw;
-  color: var(--azul-600);
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: var(--azul-600);
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
-.secciónNuevoLogo .contenedorImagenLogoNuevo{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 320px;
+.secciónNuevoLogo .contenedorImagenLogoNuevo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
 }
 
 .secciónNuevoLogo .contenedorImagenLogoNuevo img {
-  width: 80%;
-  margin-top: 4vh;
-  border-radius: 16px;
+    width: 80%;
+    margin-top: 4vh;
+    border-radius: 16px;
 }
-
 
 .main--seccion-explicacion-de-conceptos {
     display: flex;
@@ -380,10 +389,9 @@ html{
     justify-content: center;
     width: 100%;
     min-width: 320px;
-
 }
 
-.main--seccion-explicacion-de-conceptos article{
+.main--seccion-explicacion-de-conceptos article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,30 +409,30 @@ html{
     box-shadow: 11px 15px 40px #000001;
 }
 
-.explicacion-de-conceptos--Elementos-De-Explicacion p{
+.explicacion-de-conceptos--Elementos-De-Explicacion p {
     font-size: 4vw;
     text-align: start;
     margin-top: 1.2rem;
 }
 
-.explicacion-de-conceptos--Elementos-De-Explicacion{
-  display: none;
+.explicacion-de-conceptos--Elementos-De-Explicacion {
+    display: none;
 }
 
 
 /* Pie de Pagina */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html{
+}
+
+html {
     font-size: 62.5%;
-  }
-  
-  footer {
+}
+
+footer {
     width: 100%;
     height: 100%;
     min-width: 320px;
@@ -433,53 +441,52 @@ html{
     color: var(--azul-950);
     display: flex;
     flex-direction: column;
-  }
-  
-  .contenidoPiePagina {
+}
+
+.contenidoPiePagina {
     margin: 0 auto;
     background-color: var(--azul-600);
-  }
-  
-  .contenidoPiePagina p {
+}
+
+.contenidoPiePagina p {
     margin-bottom: 10px;
     font-size: 3vw;
-  }
-  
-  .linksPiePagina {
+}
+
+.linksPiePagina {
     list-style: none;
     padding: 0;
-  }
-  
-  .linksPiePagina li {
+}
+
+.linksPiePagina li {
     display: inline;
     margin-right: 15px;
-  }
-  
-  .linksPiePagina li:last-child {
+}
+
+.linksPiePagina li:last-child {
     margin-right: 0;
-  }
-  
-  .linksPiePagina a {
+}
+
+.linksPiePagina a {
     text-decoration: none;
     color: var(--azul-800);
     font-size: 3vw;
     font-weight: bold;
-  }
-  
-  #textMiTodo{
+}
+
+#textMiTodo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .DerechosReservados{
+}
+
+.DerechosReservados {
     font-size: 2vw;
-  }
-  
-  .elementos-Mi-todo{
+}
+
+.elementos-Mi-todo {
     color: rgba(255, 255, 255, 0.792);
     font-size: 0.8rem;
     width: 20%;
     margin: 10px;
-  } 
-  
+}
