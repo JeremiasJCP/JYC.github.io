@@ -34,7 +34,9 @@ font-family: 'Lobster', cursive; */
 header {
     width: 100%;
     min-width: 320px;
-    height: 45vh;
+    height: 50vh;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
     background-image: url(https://i.ibb.co/NLdSJQR/portada-Feliz-Aniversario.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -132,18 +134,49 @@ main {
     justify-content: center;
 }
 
-.tiempoJuntosMain {
-    width: 100%;
-    background-color: var(--azul-600);
+
+/* Texto de introduccion */
+
+.TextoIntroductorio {
+    background-image: url(https://i.ibb.co/2Mp4R2D/Se-toman-de-la-mano-saliendo-de-un-telefono.png);
+    background-size: 20%;
+    background-repeat: repeat;
 }
 
-.tiempoJuntosMain div {
+.TextoIntroductorio article {
+    width: 100%;
+    height: 100%;
+    padding: 5vh;
+    text-align: left;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgba(237, 237, 237, 0.801);
+}
+
+.TextoIntroductorio h4 {
+    font-size: 6vw;
+    margin-bottom: 3vh;
+}
+
+.tiempoJuntosMain {
+    width: 100%;
+    height: 25vh;
+    background-image: url(https://i.ibb.co/8jNzzPk/Video-de-a-os-juntos-de-la-seccion-de-aniversario.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tiempoJuntosMain .estructuraTiempoJuntos {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    background-color: #0391d355;
 }
 
 .tiempoJuntosMain h2 {
@@ -164,42 +197,48 @@ main {
 
 .contenedorMensajesBonitosAmigos {
     width: 100%;
-    height: 80vh;
+    max-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-color: cadetblue;
+    background-image: url(https://i.ibb.co/41N2M62/326218454-498402915748269-5207053959542511824-n-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .alineadorElementosMensajesBonitos {
     width: 100%;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    background-color: var(--azul-900);
+    background-color: rgba(255, 255, 255, 0.112);
+    overflow: auto;
 }
 
 .alineadorElementosMensajesBonitos .titleElementosMensajesBonitos {
     width: 100%;
     margin: 2vw;
-    font-size: 5vw;
-    color: white;
+    font-size: 6vw;
+    color: rgb(71, 71, 71);
     text-align: center;
+    /* text-shadow: #000000 2px 3px 5px; */
 }
 
 .EstructuraElementos {
-    width: 80%;
+    width: 90%;
     margin: 15px;
+    padding: 1.5vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: start;
-    border: 2px solid black;
-    border-radius: 13px;
-    color: white;
-    background-color: var(--azul-950);
+    border: 2px solid rgb(145, 145, 145);
+    border-radius: 0px 50px 6px 32px;
+    color: rgb(227, 227, 227);
+    background-color: var(--azul-900);
 }
 
 .imgNombre {
