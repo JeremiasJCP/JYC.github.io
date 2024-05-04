@@ -340,6 +340,65 @@ main {
     background-color: #bae8fdcd;
 }
 
+footer {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+    text-align: center;
+    border: none;
+    color: var(--azul-950);
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoPiePagina {
+    margin: 0 auto;
+    background-color: var(--azul-600);
+}
+
+.contenidoPiePagina p {
+    margin-bottom: 10px;
+    font-size: 3vw;
+}
+
+.linksPiePagina {
+    list-style: none;
+    padding: 0;
+}
+
+.linksPiePagina li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.linksPiePagina li:last-child {
+    margin-right: 0;
+}
+
+.linksPiePagina a {
+    text-decoration: none;
+    color: var(--azul-800);
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+#textMiTodo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.DerechosReservados {
+    font-size: 2vw;
+}
+
+.elementos-Mi-todo {
+    color: rgba(255, 255, 255, 0.792);
+    font-size: 0.8rem;
+    width: 20%;
+    margin: 10px;
+}
+
 @media (max-width: 700px) {
     /* Menu */
     .dropdown {
