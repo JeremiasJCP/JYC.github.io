@@ -151,7 +151,7 @@ main {
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: rgba(237, 237, 237, 0.801);
+    background-color: rgba(237, 237, 237, 0.892);
 }
 
 .TextoIntroductorio h4 {
@@ -197,25 +197,31 @@ main {
 
 .contenedorMensajesBonitosAmigos {
     width: 100%;
-    max-height: 80vh;
+    max-height: 65vh;
+    padding: 3vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    background-image: url(https://i.ibb.co/41N2M62/326218454-498402915748269-5207053959542511824-n-1.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .alineadorElementosMensajesBonitos {
-    width: 100%;
+    width: 70%;
     padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: rgba(255, 255, 255, 0.112);
+    border: 5px black solid;
+    border-top: 25px black solid;
+    border-bottom: 25px black solid;
+    border-radius: 12px;
+    /* background-color: rgba(255, 255, 255, 0.112); */
+    background-image: url(https://i.ibb.co/41N2M62/326218454-498402915748269-5207053959542511824-n-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 .alineadorElementosMensajesBonitos .titleElementosMensajesBonitos {
@@ -237,8 +243,8 @@ main {
     justify-content: start;
     border: 2px solid rgb(145, 145, 145);
     border-radius: 0px 50px 6px 32px;
-    color: rgb(227, 227, 227);
-    background-color: var(--azul-900);
+    color: rgb(0, 0, 0);
+    background-color: rgba(250, 250, 250, 0.538);
 }
 
 .imgNombre {
@@ -262,6 +268,76 @@ main {
     width: 70%;
     padding: 1vw;
     font-size: 4vw;
+}
+
+
+/* Carta Feliz Aniversario*/
+
+.contenedorCartaFelizAniversario {
+    width: 100%;
+    height: 80vh;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.articleCartaFelizAniversaro {
+    width: 88%;
+    height: 100%;
+    font-size: 2vh;
+    text-align: center;
+    overflow: scroll;
+}
+
+.articleCartaFelizAniversaro h2 {
+    font-size: 3vh;
+    text-align: start;
+    margin: 4vh;
+}
+
+.articleCartaFelizAniversaro p {
+    margin: 2vh;
+}
+
+
+/* video Feliz aniversario */
+
+.contenedorVideoFelizAniversario {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.ibb.co/X2dK1Fb/Portada-video-2-A-os-Juntos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.AlineadorElementodsFelizaniversarioVideo {
+    width: 90%;
+    height: 80%;
+    font-size: 6vw;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: #cfcfcf 4px 4px 8px, #797878 7px 8px 15px;
+    background-color: rgba(255, 255, 255, 0.543);
+}
+
+.AlineadorElementodsFelizaniversarioVideo a {
+    font-size: 4.4vw;
+    color: black;
+    text-decoration: none;
+    margin-top: 4vh;
+    padding: 2vw;
+    border-radius: 16px;
+    background-color: #bae8fdcd;
 }
 
 @media (max-width: 700px) {
