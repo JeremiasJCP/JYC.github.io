@@ -53,7 +53,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background: #0830490a;
+    background: #08304900;
 }
 
 #contenedorLogo {
@@ -203,6 +203,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    background-color: white;
 }
 
 .alineadorElementosMensajesBonitos {
@@ -280,6 +281,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .articleCartaFelizAniversaro {
@@ -288,6 +290,7 @@ main {
     font-size: 2vh;
     text-align: center;
     overflow: scroll;
+    background-color: white;
 }
 
 .articleCartaFelizAniversaro h2 {
