@@ -161,7 +161,7 @@ main {
 
 .tiempoJuntosMain {
     width: 100%;
-    height: 25vh;
+    height: 35vh;
     background-image: url(https://i.ibb.co/8jNzzPk/Video-de-a-os-juntos-de-la-seccion-de-aniversario.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -199,28 +199,28 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--azul-950);
 }
 
 .titleElementosMensajesBonitos {
     position: relative;
     float: left;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0);
     color: var(--azul-400);
     font-size: 16vw;
 }
 
 .titleElementosMensajesBonitos b {
-    color: var(--azul-900);
+    color: var(--azul-100);
 }
 
 .titleElementosMensajesBonitos span {
     position: absolute;
     right: 0;
     width: 0;
-    background: rgb(255, 255, 255);
+    background: var(--azul-950);
     border-left: 1px solid var(--azul-800);
-    animation: escribir 2s steps(14) infinite alternate;
+    animation: escribir 4s steps(14) infinite alternate;
 }
 
 @keyframes escribir {
@@ -237,6 +237,7 @@ main {
     flex-wrap: nowrap;
     overflow-x: auto;
     padding: 10px;
+    border-top: 1px var(--azul-200) solid;
 }
 
 .EstructuraElementos {
@@ -244,16 +245,16 @@ main {
     padding: 3vh;
     flex: 0 0 250px;
     margin: 10px;
-    background-color: var(--azul-300);
-    border: 3px solid var(--azul-950);
+    /* background-color: var(--azul-300);
+    border: 3px solid var(--azul-950); */
     text-align: center;
     overflow-x: auto;
     border-radius: 16%;
+    color: var(--azul-50);
 }
 
 .EstructuraElementos article {
     padding: 15px;
-    color: var(--azul-950);
 }
 
 .imgNombre {
