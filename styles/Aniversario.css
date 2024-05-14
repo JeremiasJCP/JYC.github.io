@@ -203,27 +203,39 @@ main {
 }
 
 .titleElementosMensajesBonitos {
-    width: 100%;
-    margin: 2vw;
-    font-size: 11vw;
-    color: rgb(71, 71, 71);
-    margin-right: -3vw;
-    text-align: start;
+    position: relative;
+    float: left;
+    background: rgb(255, 255, 255);
     color: var(--azul-400);
-    margin-bottom: 20px;
+    font-size: 16vw;
 }
 
 .titleElementosMensajesBonitos b {
     color: var(--azul-900);
 }
 
+.titleElementosMensajesBonitos span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid var(--azul-800);
+    animation: escribir 2s steps(14) infinite alternate;
+}
+
+@keyframes escribir {
+    from {
+        width: 100%
+    }
+    to {
+        width: 0
+    }
+}
+
 .alineadorElementosMensajesBonitos {
     display: flex;
-    /* Activa Flexbox */
     flex-wrap: nowrap;
-    /* Alinea las tarjetas una a la vez */
     overflow-x: auto;
-    /* Activa el scroll horizontal */
     padding: 10px;
 }
 
@@ -232,8 +244,8 @@ main {
     padding: 3vh;
     flex: 0 0 250px;
     margin: 10px;
-    background-color: #eee;
-    border: 1px solid #ccc;
+    background-color: var(--azul-300);
+    border: 3px solid var(--azul-950);
     text-align: center;
     overflow-x: auto;
     border-radius: 16%;
@@ -241,6 +253,7 @@ main {
 
 .EstructuraElementos article {
     padding: 15px;
+    color: var(--azul-950);
 }
 
 .imgNombre {
