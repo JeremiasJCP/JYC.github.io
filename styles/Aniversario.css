@@ -319,6 +319,7 @@ main {
     width: 100%;
     text-align: center;
     font-size: 8vw;
+    color: var(--azul-600);
 }
 
 .alineadorLineaDeTiempo {
@@ -338,15 +339,36 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: black solid 2px;
-}
-
-.TarjetasIndividaules:hover {
-    flex: 0 0 150px;
+    /* border: black solid 2px; */
+    border-radius: 13%;
+    color: var(--azul-300);
+    font-size: 4vw;
 }
 
 .TarjetasIndividaules img {
+    width: 78%;
+    border-radius: 14%;
+    aspect-ratio: 3/4;
+}
+
+.TarjetasIndividaules .fechas {
     width: 90%;
+    text-align: center;
+    padding: 1vh;
+    border-radius: 10%;
+    background-color: var(--azul-800);
+}
+
+.text {
+    text-align: center;
+    background: none;
+}
+
+.TarjetasIndividaules:hover {
+    font-size: 4vw;
+    flex: 0 0 170px;
+    color: white;
+    background-color: var(--azul-800);
 }
 
 
