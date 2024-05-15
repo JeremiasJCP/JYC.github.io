@@ -303,6 +303,53 @@ main {
 }
 
 
+/* Linea de tiempo */
+
+.contendeorLineaDeTiempo {
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.contendeorLineaDeTiempo h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 8vw;
+}
+
+.alineadorLineaDeTiempo {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--azul-400);
+    overflow-x: auto;
+}
+
+.TarjetasIndividaules {
+    width: 300px;
+    /* height: 300px; */
+    margin: 2vh 2vw;
+    flex: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black solid 2px;
+}
+
+.TarjetasIndividaules:hover {
+    flex: 0 0 150px;
+}
+
+.TarjetasIndividaules img {
+    width: 90%;
+}
+
+
 /* video Feliz aniversario */
 
 .contenedorVideoFelizAniversario {
@@ -443,4 +490,101 @@ footer {
         align-items: center;
         justify-content: center;
     }
+}
+
+
+/* animaciones de esta pagina */
+
+
+/* animacion de texto, centrarce y expandir */
+
+.focus-in-expand {
+    -webkit-animation: focus-in-expand 1s .3s;
+    animation: focus-in-expand 1s .3s
+}
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+    0% {
+        letter-spacing: -.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+    0% {
+        letter-spacing: -.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+    0% {
+        letter-spacing: -.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+    0% {
+        letter-spacing: -.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0
+    }
+    100% {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+
+/* Efecto Entrada */
+
+.efectoentrada {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 2s, transform 2s;
+}
+
+.efectoentrada.active {
+    opacity: 1;
+    transform: translateY(0);
 }
