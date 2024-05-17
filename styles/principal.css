@@ -1,115 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Noto+Serif:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@1,100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
-
 
 /* font-family: 'Dancing Script', cursive;
 font-family: 'Lobster', cursive; */
 
+
 /* font-family: 'Lovers Quarrel', cursive; logo
 font-family: 'Noto Serif', serif; body
 font-family: 'Goudy Bookletter 1911', serif; #Notas*/
+
+
 /* font-family: 'Sofia Sans Condensed', sans-serif; otros */
-   
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: black;
+}
+
+.contenedorPrincipal {
+    width: 100%;
+    min-width: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Logo {
+    font-family: 'Dancing Script', cursive;
+}
+
+.Imagen-Principal-Pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 250px;
+    background-image: url("https://i.ibb.co/W0ndkdB/Whats-App-Image-2023-08-18-at-13-51-43.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.Texto-Imagen-Principal {
+    position: relative;
+    top: 58%;
+    height: 40%;
+    color: white;
+    background-color: #21262dbe;
+    min-width: max-content;
+    width: 45%;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.Texto-Imagen-Principal a {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.Texto-Imagen-Principal a:hover {
+    color: #C5C5C5;
+    background-color: black;
 }
 
 
-html{
-  font-size: 62.5%;
-}
-
-body{
-  background: black;
-}
-
-.contenedorPrincipal{
-  width: 100%;
-  min-width: 320px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#Logo{
-  font-family: 'Dancing Script', cursive;
-}
-
-.Imagen-Principal-Pagina{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-width: 320px;
-  height: 250px;
-  background-image: url("https://i.ibb.co/W0ndkdB/Whats-App-Image-2023-08-18-at-13-51-43.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.Texto-Imagen-Principal{
-  position: relative;
-  top: 58%;
-  height: 40%;
-  color: white;
-  background-color: #21262dbe;
-  min-width: max-content;
-  width: 45%;
-  padding: 10px;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.Texto-Imagen-Principal a{
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.753);
-  border-radius: 20px;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-  margin-top: 5px;
-}
-
-.Texto-Imagen-Principal a:hover{
-  color: #C5C5C5;
-  background-color: black;
-}
 /* Contenido */
 
-.SeccionDespuesEncabezado{
-  display: block;
-  margin: 0 auto;
-  margin-top: 80px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.521);
-  width: 80%;
-  padding: 10px;
-  border-radius: 20px;
+.SeccionDespuesEncabezado {
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.521);
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-#Titulo{
+#Titulo {
     padding-left: 20px;
     font-size: 1.6rem;
     color: white;
     text-align: start;
 }
 
-.svgEnamorados{
+.svgEnamorados {
     width: 20%;
 }
 
-#info{
+#info {
     color: white;
 }
 
+
 /* Iconos */
 
-.Iconos{
+.Iconos {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -118,122 +121,119 @@ body{
     margin-bottom: 20px;
 }
 
-
-
 #elementos-contenedor-Distancia {
-  display: none;
+    display: none;
 }
 
-
-.contenedorDistancia{
-  width: 50%;
-  min-height: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.614);
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  color: aliceblue;
-  background-color: rgba(0, 0, 0, 0.379);
+.contenedorDistancia {
+    width: 50%;
+    min-height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.614);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.379);
 }
 
-.avionVolando{
-  display: inline-block;
-  width: 100%;
-  height: 100px;
-  background-image: url("https://i.ibb.co/Vp0k8CQ/Distancia.gif");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.avionVolando {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background-image: url("https://i.ibb.co/Vp0k8CQ/Distancia.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-
 
 .diasJuntos {
-  max-width: 100%;
-  min-width: 320px;
-  height: max-content;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+    max-width: 100%;
+    min-width: 320px;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-.diasJuntos-container--element, .SinVernos{
-  width: 30%;
-  min-height: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.614);
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  color: aliceblue;
-  background-color: rgba(0, 0, 0, 0.379);
+.diasJuntos-container--element,
+.SinVernos {
+    width: 30%;
+    min-height: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.614);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.379);
 }
 
-.diasJuntos-container--element p , .SinVernos p{
-  display: none;
+.diasJuntos-container--element p,
+.SinVernos p {
+    display: none;
 }
 
-
-.frasesCanciones{
-  font-size: 1.4rem;
-  margin: 0% auto;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 80%;
-  min-height: 100px;
-  max-height: max-content;
-  box-sizing: border-box;
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0.578);;
-  margin-bottom: 20px;
-  border-radius: 10px;
+.frasesCanciones {
+    font-size: 1.4rem;
+    margin: 0% auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    min-height: 100px;
+    max-height: max-content;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.578);
+    ;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-#frase-Cancion{
-  text-align: center;
-  color: white;
-  background-color: transparent;
-  width: 80%;
-  padding: 10px;
-  border-radius: 14px;
+#frase-Cancion {
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    width: 80%;
+    padding: 10px;
+    border-radius: 14px;
 }
 
-.botonFrasesCanciones{
-  background-color: transparent;
-  color: rgb(31, 123, 172);
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 10px;
+.botonFrasesCanciones {
+    background-color: transparent;
+    color: rgb(31, 123, 172);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.mensajePrincipal{
-  width: 98%;
-  color: white;
-  background: rgba(0, 0, 0, 0.683);
-  padding: 7%;
-  border-radius: 15px;
-  margin: 0 auto;
+.mensajePrincipal {
+    width: 98%;
+    color: white;
+    background: rgba(0, 0, 0, 0.683);
+    padding: 7%;
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
-.imagenes-Mensaje-Principal-imagenuno{
-  width: 30%;
-  margin-top: -5%;
-  margin-left: 68%;
+.imagenes-Mensaje-Principal-imagenuno {
+    width: 30%;
+    margin-top: -5%;
+    margin-left: 68%;
 }
 
-.imagenes-Mensaje-Principal{
-  margin: 5px;
-  width: 30%;
+.imagenes-Mensaje-Principal {
+    margin: 5px;
+    width: 30%;
 }
 
 
 /* Video Ani */
-.mastext{
-  margin: 0% auto;
+
+.mastext {
+    margin: 0% auto;
     padding: 10px;
     font-size: 80%;
     color: white;
@@ -247,18 +247,15 @@ body{
     box-sizing: border-box;
 }
 
-
-
-.loNuevo{
+.loNuevo {
     width: 100%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.loNuevoo{
+.loNuevoo {
     background: #0000006c;
     width: 75%;
     height: max-content;
@@ -275,44 +272,40 @@ body{
     margin-bottom: 10px;
 }
 
-.loNuevo h3{
+.loNuevo h3 {
     margin: 10px;
     height: max-content;
-    text-align:inherit;
+    text-align: inherit;
     color: white;
     font-size: 1.4rem;
     box-sizing: border-box;
     /* width: 10%;X */
 }
 
-
-#ajusteDescripcionLoNuevo{
+#ajusteDescripcionLoNuevo {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 60%;
 }
 
-
-
-.loNuevoo p{
+.loNuevoo p {
     text-align: center;
     box-sizing: border-box;
 }
 
-
-.loNuevoo a{
+.loNuevoo a {
     background: rgba(0, 157, 255, 0.422);
     color: white;
     text-decoration: none;
     padding: 10px;
     border-radius: 12px;
     transition: .5s, color .10s;
-        -webkit-transition: .5s, color .10s;
-        -moz-transition: .5s, color .10s;
-}            
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
 
-.loNuevoo a:hover{
+.loNuevoo a:hover {
     background: #000000;
     color: #7379ea;
     border: 1px solid white;
@@ -320,61 +313,42 @@ body{
     padding: 10px;
     border-radius: 12px;
     transform: scale3d(1.5, 1.5, 0.3);
-        -webkit-transform: scale3d(1.5, 1.5, 0.3);
-        -moz-transform: scale3d(1.5, 1.5, 0.3);
+    -webkit-transform: scale3d(1.5, 1.5, 0.3);
+    -moz-transform: scale3d(1.5, 1.5, 0.3);
 }
 
-
-#footer{
-  width: 100%;
-  height: 35vh;
-  border: none;
-  overflow: hidden;
+#footer {
+    width: 100%;
+    height: 35vh;
+    border: none;
+    overflow: hidden;
 }
-
 
 @media (max-width: 700px) {
-    
-    #contenedorLogo{
+    #contenedorLogo {
         display: flex;
         flex-direction: row;
         align-items: center;
-    
     }
-    
-    #contenedorLogo img{
+    #contenedorLogo img {
         width: 30%;
     }
-    
-
-    
-    
     /* Imagen */
-    
-    .contenedorImagenInicioPagina{
+    .contenedorImagenInicioPagina {
         border: none;
         display: flex;
         flex-direction: column;
         border-radius: 30px;
-        
     }
-    #imagenInicioPagina{
+    #imagenInicioPagina {
         width: 100%;
     }
-    
-    
-    
     /* Contenido */
-    
-
-
     /* Iconos */
-    
-        .Iconos{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-        }
-    
-  }
+    .Iconos {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}

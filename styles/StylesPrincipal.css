@@ -385,6 +385,53 @@ aside {
     color: var(--azul-200);
 }
 
+
+/* Nueva seccion */
+
+.contenderoNuevaSeccion {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.ibb.co/CsGJyb7/Principal-Pantalla-mas-grande.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.alinedorNuevaSeccion,
+.alinedorNuevaSeccion article {
+    width: 80%;
+    font-size: 4vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000037;
+    color: var(--azul-100);
+}
+
+.alinedorNuevaSeccion a,
+.alinedorNuevaSeccion p,
+.alinedorNuevaSeccion i {
+    margin-bottom: 08%;
+}
+
+.alinedorNuevaSeccion a {
+    width: 40%;
+    margin: 08% auto;
+    border-radius: 19%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vw;
+    color: var(--azul-100);
+    background-color: var(--azul-950);
+}
+
 .mensajeOtro {
     width: 100%;
     min-width: 320px;
