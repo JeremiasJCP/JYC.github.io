@@ -111,6 +111,12 @@ main {
     margin: 4vh 0;
 }
 
+.contenderorGeneralFechas i {
+    font-size: 4vw;
+    text-align: center;
+    margin: 4vh 0;
+}
+
 .contenderorGeneralFechas label {
     text-align: center;
     margin: 1.7vh 0;
