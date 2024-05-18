@@ -32,6 +32,24 @@
                 </section>
 
                 <section class="contenedorGeneralBotonesPass fade-in">
+                    <div class="contenderorGeneralFechas">
+                        <h2>Descifre el código para desbloquear la página...</h2>
+                        <p> Para obtener el código de acceso a la página, deberás anotar todas las fechas correctas, si lo haces bien entrarás a la página, en caso contrario deberás verificar las fechas.</p>
+
+                        <label for="fechaImportanteUNO">Fecha donde nació esta relación:</label>
+                        <Input class="inputs" type="date" id="fechaImportanteUNO"></Input>
+
+                        <label for="fechaImportanteDOS">Fecha donde finalizo un largo trayecto entre camisas blancas, azules y marrones:</label>
+                        <Input class="inputs" type="date" id="fechaImportanteDOS"></Input>
+
+                        <label for="fechaImportanteTRES">Fecha de la vez que fuimos al fortín:</label>
+                        <Input class="inputs" type="date" id="fechaImportanteTRES"></Input>
+
+                        <button id="verificarFechas">Verificar</button>
+                        <div id="respuesta" class="ContenedorRespuesta">856714</div>
+                    </div>
+
+
                     <div class="contenedorElementosPass">
                         <label for="accessCode">Código de Acceso</label>
                         <input type="tel" id="accessCode">
@@ -45,5 +63,6 @@
 </body>
 <script src="./js/login.js"></script>
 <script src="./Js/AnchoPantallaIndex.js"></script>
+<script src="./Js/ComprovacionCodigoAcceso.js"></script>
 
 </html>

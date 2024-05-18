@@ -19,7 +19,7 @@ document.getElementById("botonIrPassContenedorBotones1").addEventListener("click
 const inputCodigoAcceso = document.getElementById('accessCode');
 const botonVerificar = document.querySelector('.botonVerificar');
 const urlDestino = "./html/Principal.html"; // Reemplaza con la URL a la que deseas redirigir
-const codigoValido = "6392";
+const codigoValido = "180824";
 
 botonVerificar.addEventListener('click', () => {
     const codigoIntroducido = inputCodigoAcceso.value;
