@@ -1,34 +1,43 @@
-:root{
+:root {
     --azul-50: #f0f9ff;
     --azul-100: #e0f3fe;
     --azul-200: #bae8fd;
-    --azul-300: #7ed6fb;;
-    --azul-400: #39c1f7;;
-    --azul-500: #0faae8;;
-    --azul-600: #0391d3;;
-    --azul-700: #046da0;;
-    --azul-800: #085c84;;
-    --azul-900: #0c4c6e;;
-    --azul-950: #083049;;
+    --azul-300: #7ed6fb;
+    ;
+    --azul-400: #39c1f7;
+    ;
+    --azul-500: #0faae8;
+    ;
+    --azul-600: #0391d3;
+    ;
+    --azul-700: #046da0;
+    ;
+    --azul-800: #085c84;
+    ;
+    --azul-900: #0c4c6e;
+    ;
+    --azul-950: #083049;
+    ;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-body{
-    background: var(--azul-100);
+body {
+    background: white;
 }
+
 
 /*      header      */
 
-.header--encabezado{
+.header--encabezado {
     width: 100%;
     min-width: 320px;
     height: 46vh;
@@ -43,7 +52,7 @@ body{
     background-size: cover;
 }
 
-.header--card-action{
+.header--card-action {
     position: relative;
     top: calc(20% - 50px);
     color: var(--azul-50);
@@ -57,7 +66,7 @@ body{
 
 /*          aside         */
 
-aside{
+aside {
     width: 100%;
     min-width: 320px;
     margin-top: 60px;
@@ -66,7 +75,7 @@ aside{
     align-items: center;
 }
 
-.aside--botones-El-Ella{
+.aside--botones-El-Ella {
     width: 100%;
     min-width: 300px;
     display: flex;
@@ -74,27 +83,27 @@ aside{
     justify-content: center;
 }
 
-.botones-el-ella{
+.botones-el-ella {
     width: 40%;
     max-width: 366px;
     margin: 5%;
     padding: 2%;
     font-size: 3vw;
     text-align: center;
-    font-weight: 500;  
-    text-decoration: none; 
+    font-weight: 500;
+    text-decoration: none;
     border-radius: 15px;
     color: var(--azul-50);
-    background-color: var(--azul-800); 
+    background-color: var(--azul-800);
 }
 
 
 /* notas dinamicas del aside */
 
-.notasDinamicas{
+.notasDinamicas {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     min-width: 200px;
     max-width: 400px;
     margin: 30px auto;
@@ -104,7 +113,7 @@ aside{
     box-shadow: 3px 12px 15px 4px var(--azul-950);
 }
 
-.Nota{
+.Nota {
     width: 100%;
     padding: 5px;
     text-align: center;
@@ -112,8 +121,7 @@ aside{
     color: var(--azul-100);
 }
 
-
-#actualizarNotaBoton{
+#actualizarNotaBoton {
     margin: 10px auto;
     padding: 10px;
     font-size: 3vw;
@@ -123,33 +131,33 @@ aside{
     border: var(--azul-500);
 }
 
-#actualizarNotaBoton:active{
+#actualizarNotaBoton:active {
     color: var(--azul-900);
     background-color: var(--azul-50);
     border: var(--azul-300);
 }
 
 
-        /* tablas con listado de cartas */
-.container-list-cartas{
-    width: 70%;
+/* tablas con listado de cartas */
+
+.container-list-cartas {
+    width: 100%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
-    border-radius: 16px;
     background-color: var(--azul-950);
 }
 
-.contenedorTablaCartas{
+.contenedorTablaCartas {
     width: 100%;
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
 }
 
-.container-list-cartas .container--title-date{
+.container-list-cartas .container--title-date {
     width: 80%;
     margin: 20px auto;
     text-align: center;
@@ -158,13 +166,11 @@ aside{
     border-bottom: 2px solid var(--azul-300);
 }
 
-
-
-.tables-lista-cartas tr{
+.tables-lista-cartas tr {
     height: 100%;
 }
 
-.tables-lista-cartas tbody{
+.tables-lista-cartas tbody {
     width: 100%;
     height: 5%;
     margin-top: 20px;
@@ -173,7 +179,7 @@ aside{
     align-items: center;
 }
 
-.tables-lista-cartas th{
+.tables-lista-cartas th {
     border-bottom: 2px var(--azul-400) solid;
     width: 100%;
     height: 4vh;
@@ -184,7 +190,7 @@ aside{
     color: var(--azul-50);
 }
 
-.tables-lista-cartas a{
+.tables-lista-cartas a {
     display: block;
     width: 100%;
     height: 3vh;
@@ -194,9 +200,10 @@ aside{
     color: var(--azul-100);
 }
 
+
 /* Encabezados El/Ella */
 
-.Encabezado-cartas{
+.Encabezado-cartas {
     width: 80%;
     min-width: 318px;
     height: 100%;
@@ -207,12 +214,12 @@ aside{
     flex-direction: row;
     align-items: center;
     border-radius: 12px 66px;
-    background: rgb(8,48,73);
-    background: linear-gradient(90deg, rgba(8,48,73,1) 0%, rgba(12,76,110,1) 49%, rgba(4,109,160,1) 100%);
+    background: rgb(8, 48, 73);
+    background: linear-gradient(90deg, rgba(8, 48, 73, 1) 0%, rgba(12, 76, 110, 1) 49%, rgba(4, 109, 160, 1) 100%);
     box-shadow: 6px 8px 10px 8px var(--azul-950);
 }
 
-.contenedorTextoTargeta{
+.contenedorTextoTargeta {
     width: 60%;
     margin-left: 10%;
     padding: 14px;
@@ -220,16 +227,17 @@ aside{
     color: var(--azul-100);
 }
 
-.imagen-encabezado-cartas{
+.imagen-encabezado-cartas {
     width: 40%;
     height: 15vh;
     object-fit: contain;
     border-radius: 100%;
 }
 
+
 /* Mensaje de informacion */
 
-.Mensaje-Visualizar-carta{
+.Mensaje-Visualizar-carta {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -241,19 +249,18 @@ aside{
 }
 
 
-
 /* Estilos de cartas */
 
-.Contenedor-Cartas-principal{
+.Contenedor-Cartas-principal {
     width: 100%;
     min-width: 320px;
-    height: calc(100%  + 10%);
+    height: calc(100% + 10%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.container-carta-individual{
+.container-carta-individual {
     width: 60%;
     min-width: 320px;
     height: 60vh;
@@ -270,41 +277,41 @@ aside{
     background-color: var(--azul-950);
 }
 
-.title-carta{
+.title-carta {
     width: 100%;
     text-align: center;
     font-size: 4vw;
 }
 
-.fecha-carta{
+.fecha-carta {
     width: 100%;
     font-size: 3vw;
     margin-bottom: 30px;
     text-align: center;
 }
 
-.Carta{
+.Carta {
     width: 100%;
     font-size: 3.4vw;
     text-align: center;
 }
 
-.Carta p{
+.Carta p {
     margin-bottom: 10%;
 }
 
-#Ella-17Meses .Carta{
+#Ella-17Meses .Carta {
     text-align: start;
 }
 
-#Ella-17Meses .Carta b{
+#Ella-17Meses .Carta b {
     color: var(--azul-200);
 }
 
+
 /*      footer      */
 
-
-footer{
+footer {
     width: 100%;
     min-width: 320px;
     min-width: 320px;
