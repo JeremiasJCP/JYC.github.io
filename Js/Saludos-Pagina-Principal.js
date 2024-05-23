@@ -58,28 +58,5 @@ function proximoAniversario() {
 
 }
 
-function diasQueFaltanParaVernos() {
-    let contenedorHTMLDiasVernos = document.getElementById('numeoroDiasParaVernos')
-    let parrafo = document.getElementById('main--container-info-diasParaPoderVernos-parrafo')
-    let listaParrafoContenedor = [
-        "Para estar a tu lado",
-        "Para estar juntos",
-        "Para poder abrazarte",
-        "Para estar uno junto al otro",
-        "Para nuestro reencuentro"
-    ]
-    let posicionObjetoLista = Math.floor(Math.random() * listaParrafoContenedor.length);
-    let fechaEstimadaParaVernos = new Date('2025-07-01');
-    let fechaActual = new Date();
-    let diferenciaMilisegundos = fechaEstimadaParaVernos - fechaActual;
-    let diasRestantes = diferenciaMilisegundos / (1000 * 60 * 60 * 24);
-    let diasRestantesRedondeados = Math.floor(diasRestantes);
-
-
-    contenedorHTMLDiasVernos.innerHTML = diasRestantesRedondeados;
-    parrafo.innerHTML = listaParrafoContenedor[posicionObjetoLista]
-}
-
 proximoAniversario()
 mostrarSaludo()
-diasQueFaltanParaVernos();
