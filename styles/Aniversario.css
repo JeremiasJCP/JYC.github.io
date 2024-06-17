@@ -201,7 +201,7 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--azul-950);
+    /* background-color: var(--azul-950); */
 }
 
 .titleElementosMensajesBonitos {
@@ -213,16 +213,16 @@ main {
 }
 
 .titleElementosMensajesBonitos b {
-    color: var(--azul-100);
+    color: var(--azul-600);
 }
 
 .titleElementosMensajesBonitos span {
     position: absolute;
     right: 0;
     width: 0;
-    background: var(--azul-950);
+    background: white;
     border-left: 1px solid var(--azul-800);
-    animation: escribir 4s steps(14) infinite alternate;
+    animation: escribir 3s steps(14) infinite alternate;
 }
 
 @keyframes escribir {
@@ -243,16 +243,17 @@ main {
 }
 
 .EstructuraElementos {
-    height: 45vh;
+    height: 60vh;
     padding: 3vh;
     flex: 0 0 250px;
     margin: 10px;
     /* background-color: var(--azul-300);
     border: 3px solid var(--azul-950); */
     text-align: center;
-    overflow-x: auto;
+    overflow-x: hidden;
     border-radius: 16%;
-    color: var(--azul-50);
+    color: black;
+    font-style: italic;
 }
 
 .EstructuraElementos article {
