@@ -442,6 +442,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: white;
+    padding-top: 6vh;
 }
 
 .contendeorLineaDeTiempo h2 {
@@ -449,14 +450,25 @@ main {
     text-align: center;
     font-size: 8vw;
     color: var(--azul-600);
-    background-color: var(--azul-400);
+    /* background-color: var(--azul-400); */
+}
+
+.contendeorLineaDeTiempo h4 {
+    width: 100%;
+    text-align: start;
+    font-size: 4vw;
+    color: var(--azul-800);
+    margin-top: 2vh;
+    padding-left: 1rem;
+    font-weight: bold;
+    /* background-color: var(--azul-400); */
 }
 
 .alineadorLineaDeTiempo {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    background-color: var(--azul-400);
+    /* background-color: var(--azul-400); */
     overflow-x: auto;
 }
 
@@ -471,8 +483,8 @@ main {
     justify-content: center;
     /* border: black solid 2px; */
     border-radius: 13%;
-    color: var(--azul-300);
-    font-size: 4vw;
+    color: black;
+    font-size: 3vw;
 }
 
 .TarjetasIndividaules img {
@@ -486,7 +498,7 @@ main {
     text-align: center;
     padding: 1vh;
     border-radius: 10%;
-    background-color: var(--azul-800);
+    /* background-color: var(--azul-800); */
 }
 
 .text {
@@ -495,10 +507,16 @@ main {
 }
 
 .TarjetasIndividaules:hover {
-    font-size: 4vw;
+    font-size: 3vw;
     flex: 0 0 170px;
-    color: white;
-    background-color: var(--azul-800);
+    color: black;
+}
+
+.TarjetasIndividaules hr {
+    width: 70%;
+    height: 2px;
+    background: grey;
+    margin-bottom: 5px;
 }
 
 
